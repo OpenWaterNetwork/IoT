@@ -1,6 +1,6 @@
 name: documentation
 
-on: [main]
+on: [push]
   #pull_request:
   #  branches: [documentation]
   #push:
