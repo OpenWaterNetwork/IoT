@@ -6,6 +6,7 @@ on: [push]
   #push:
   #  branches: [documentation]
 
+
 jobs:
   checks:
     if: github.event_name != 'push'
