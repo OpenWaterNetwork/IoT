@@ -1,10 +1,11 @@
 name: documentation
 
-on:
-  pull_request:
-    branches: [documentation]
-  push:
-    branches: [documentation]
+on: [push]
+#on: 
+#  pull_request:
+#    branches: [gh-pages]
+#  push:
+#    branches: [gh-pages]
 
 jobs:
   checks:
