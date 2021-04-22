@@ -9,7 +9,7 @@ En este documento por una parte, se describe las caracteristicas técnicas de ha
 ## Technical Characteristics
 
 La unidad central de procesamiento del equipo es la tarjeta de desarrollo Lopy4, las caracteristicas de mayor relevancia fueron tomadas
-de [Lopy 4 datasheet.](https://docs.pycom.io/datasheets/development/lopy4/#datasheet).
+de [Lopy 4 datasheet!](https://docs.pycom.io/datasheets/development/lopy4/#datasheet).
 
 ### Electrical
 
@@ -33,7 +33,7 @@ de [Lopy 4 datasheet.](https://docs.pycom.io/datasheets/development/lopy4/#datas
 -   RAM: 520KB + 4MB
 -   External flash: 8MB
 
-<span>LoRa</span>
+### LoRa
 
 -   Frequency Range: 137–1020MHz
 -   Spreading factor: 6 – 12
@@ -72,7 +72,7 @@ El hardware está integrado en un Placa de Circuito Impreso (PCB), el mismo tien
 
 Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria de Litio, un controlador de carga MPPT y un panel solar de 6V.
 
-![IoT LoRa Gateway Architecture.](img/GatewayArchGen.png "fig:")[fig:GatewayArchGen]
+![](img/GatewayArchGen.png)*IoT LoRa Gateway Architecture*
 
 ### Lopy4 connections
 
@@ -87,7 +87,7 @@ La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alime
 -   P22: Pin de lectura del nivel de tensión de Batería.
 -   P23: Pin de lectura de señal del sensor DHT22.
 
-![Lopy4 pin connections.](img/Lopy4SCH.PNG "fig:") [fig:Lopy4PinCon]
+![Lopy4 pin connections.](img/Lopy4SCH.PNG "fig:")
 
 ### Peripheral Connections
 
