@@ -72,7 +72,9 @@ El hardware está integrado en un Placa de Circuito Impreso (PCB), el mismo tien
 
 Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria de Litio, un controlador de carga MPPT y un panel solar de 6V.
 
-![](img/GatewayArchGen.png)*IoT LoRa Gateway Architecture*
+| ![](img/GatewayArchGen.png) |
+|:--:| 
+| *IoT LoRa Gateway Architecture* |
 
 ### Lopy4 connections
 
