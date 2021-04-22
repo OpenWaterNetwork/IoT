@@ -12,27 +12,18 @@ La unidad central de procesamiento del equipo es la tarjeta de desarrollo Lopy4,
 de [Lopy 4 datasheet.](https://docs.pycom.io/datasheets/development/lopy4/#datasheet).
 
 ### Electrical
-----------
 
 -   Input voltage: 3.5 - 4.2V
-
 -   Output voltage: 3,3V, 1.2 A.
-
 -   Max Input sink curren - GPIO: 12mA
-
 -   Input leakage current: 50nA
-
 -   Max Output source current: 12mA
 
 ### CPU
----
 
 -   Xtensa® dual–core 32–bit LX6 microprocessor(s), up to 600 DMIPS
-
 -   Hardware floating point acceleration
-
 -   Python multi–threading
-
 -   An extra ULP–coprocessor that can monitor GPIOs, the ADC channels
     and control most of the internal peripherals during deep–sleep mode
     while only consuming  25uA
@@ -40,17 +31,13 @@ de [Lopy 4 datasheet.](https://docs.pycom.io/datasheets/development/lopy4/#datas
 ### Memory
 
 -   RAM: 520KB + 4MB
-
 -   External flash: 8MB
 
 <span>LoRa</span>
 
 -   Frequency Range: 137–1020MHz
-
 -   Spreading factor: 6 – 12
-
 -   Effective Bitrate: 0.018 – 37.5 kpbs
-
 -   Sensitivity: –111 to –148 dBm
 
 ### WiFi
@@ -60,72 +47,44 @@ de [Lopy 4 datasheet.](https://docs.pycom.io/datasheets/development/lopy4/#datas
 ### Bluetooth
 
 -   Low energy and classic
-
 -   Compliant with Bluetooth v4.2 BR/EDR and BLE
-
 -   +12 dBm transmitting power
-
 -   Standard HCI based on SDIO/SPI/UART specification
 
 ### GPRS
 
 -   supports command including 3GPP TS 27.007, 27.005 and SIMCOM
     enhanced AT Commands.
-
 -   Working Voltage: 3.5 4.2V
-
 -   Quad-band 850/900/1800/1900MHz
-
 -   Send and receive GPRS data (TCP/IP, HTTP, etc.)
-
 -   low current consumption - 1mA in sleep mode.
 
 ### Power Supply
 
 -   Lithium battery 3.7V 6000mAh.
-
 -   MPPT charge controller for 3.7V lithium batteries.
-
 -   Solar Panel 6V.
 
 ## Hardware component description.
 
-El hardware está integrado en un Placa de Circuito Impreso (PCB), el
-mismo tiene como componente principal el módulo de desarrollo Lopy4,
-encargado de realizar las tareas de control, almacenamiento y
-transmisión.
+El hardware está integrado en un Placa de Circuito Impreso (PCB), el mismo tiene como componente principal el módulo de desarrollo Lopy4, encargado de realizar las tareas de control, almacenamiento y transmisión. Los demás perifericos con los que cuenta el dispositivo (RTC ds3231, FTDI Basic, DHT22 y GPRS SIM800L) están conectados a la mencionada Unidad Central de Procesamiento (Lopy4).
 
-Los demás perifericos con los que cuenta el dispositivo (RTC ds3231,
-FTDI Basic, DHT22 y GPRS SIM800L) están conectados a la mencionada
-Unidad Central de Procesamiento (Lopy4).
+Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria de Litio, un controlador de carga MPPT y un panel solar de 6V.
 
-Además del PCB mencionado anteriormente, el dispositivo cuenta con una
-bateria de Litio, un controlador de carga MPPT y un panel solar de 6V.
-
-![IoT LoRa Gateway Architecture.](img/GatewayArchGen.png "fig:")
-[fig:GatewayArchGen]
+![IoT LoRa Gateway Architecture.](img/GatewayArchGen.png "fig:")[fig:GatewayArchGen]
 
 ### Lopy4 connections
 
-La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines
-de alimentación y una salida de 3.3V, la disposición de los mismos
-podemos observar en la figura [fig:Lopy4PinCon]. A continuación
-detallamos los pines que se conectaron a los perifericos.
+La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alimentación y una salida de 3.3V, la disposición de los mismos podemos observar en la figura [fig:Lopy4PinCon]. A continuación detallamos los pines que se conectaron a los perifericos.
 
 -   P0: Rx P1: Tx. Comunicación UART con el FTDI Basic.
-
 -   P2: Pin de Arranque, para actualizar el firmware.
-
 -   P3: Tx P4: Rx. Comunicación UART con el SIM 800L.
-
 -   P8: Pin de Arranque para el SIM 800L.
-
 -   P9: SDA P10: SDL. Comunicación I2C con el RTC ds3231.
-
 -   P21: Pin de control de modo de funcionamieto.
-
 -   P22: Pin de lectura del nivel de tensión de Batería.
-
 -   P23: Pin de lectura de señal del sensor DHT22.
 
 ![Lopy4 pin connections.](img/Lopy4SCH.PNG "fig:") [fig:Lopy4PinCon]
@@ -134,112 +93,68 @@ detallamos los pines que se conectaron a los perifericos.
 
 ### DHT22
 
-El sensor de temperatura y humedad interno, está conectado a un pin
-digital del MCU, configurado como entrada, también se conecta una
-resistencia de pull up a la salida de la señal, ver figura
-[fig:DHT22PinCon].
+El sensor de temperatura y humedad interno, está conectado a un pin digital del MCU, configurado como entrada, también se conecta una resistencia de pull up a la salida de la señal, ver figura [fig:DHT22PinCon].
 
 ![DHT22 pin connections.](img/dht22SCH.PNG "fig:") [fig:DHT22PinCon]
 
 ### GPRS SIM800L
 
-Este periferico utiliza el protocolo UART para conectarse al MCU y un
-pin digital para el control de arranque del mismo, como podemos observar
-en la figura [fig:Sim800LPinCon]. Está alimentado desde la batería de
-litio (3.7V - 4.2V).
+Este periferico utiliza el protocolo UART para conectarse al MCU y un pin digital para el control de arranque del mismo, como podemos observar en la figura [fig:Sim800LPinCon]. Está alimentado desde la batería de litio (3.7V - 4.2V).
 
 ![GPRS Sim800L pin connections.](img/Sim800LSCH.PNG "fig:")
 [fig:Sim800LPinCon]
 
 ### FTDI Basic
 
-El módulo se conecta al MCU a través del protocolo UART y comparte la
-misma referencia de GND.
+El módulo se conecta al MCU a través del protocolo UART y comparte la misma referencia de GND.
 
 ### RTC DS3231
 
-Esté periferico se conecta al MCU a través del protocolo I2C, se
-utilizan dos resistencia de pull up en los pines de comunicación (ver
-figura [fig:DS3231PinCon] ), además cuenta con una pila pequeña que lo
-alimenta en caso de corte de energía.
+Este periferico se conecta al MCU a través del protocolo I2C, se utilizan dos resistencia de pull up en los pines de comunicación (ver figura [fig:DS3231PinCon] ), además cuenta con una pila pequeña que lo alimenta en caso de corte de energía.
 
-![RTC DS3231 pin connections.](img/ds3231SCH.PNG "fig:")
-[fig:DS3231PinCon]
+![RTC DS3231 pin connections.](img/ds3231SCH.PNG "fig:")[fig:DS3231PinCon]
 
 # Installation and Start-up
 
-This section introduces the start-up of the device, gives a brief
-description of the software to be used and describes the commands
-required for configuration.
-
-Figure [fig:gateway~3~d] shows a 3D view of the LoRa Gateway IoT device
-with each of its components, which are detailed below:
+This section introduces the start-up of the device, gives a brief description of the software to be used and describes the commands required for configuration. Figure [fig:gateway~3~d] shows a 3D view of the LoRa Gateway IoT device with each of its components, which are detailed below:
 
 -   U1: GPRS module SIM 800L
-
 -   U2: Lopy 4
-
 -   U3: RTC DS3231
-
 -   J1: Temperature and humidity sensor DHT22
-
 -   P1: Power In connector
-
 -   H1: Jumper conector - boot mode selector.
-
 -   H2: usb to serial converter.
-
 -   S1: Operating mode selector button
 
 ![IoT LoRa Gateway Device](img/gateway_3d.PNG "fig:") [fig:gateway~3~d]
 
 #Start-up
---------
 
-Para comenzar la configuración del Gateway, es necesario descargar el
-software para gestión y programación según lo indicado en la pagina de
-[Documentos de Pycom Lopy
-4](https://docs.pycom.io/gettingstarted/software/). Se puede trabajar
-con las 2 opciones tanto el software “ATOM” como también “Visual Studio
-Code”.
+Para comenzar la configuración del Gateway, es necesario descargar el software para gestión y programación según lo indicado en la pagina de [Documentos de Pycom Lopy4](https://docs.pycom.io/gettingstarted/software/). Se puede trabajar con las 2 opciones tanto el software “ATOM” como también “Visual Studio Code”.
 
-En caso de usar Windows es necesario descargar los drivers del conversor
-Usb-serial desde la página de [FTDI Chip -
-VCP](https://ftdichip.com/drivers/vcp-drivers/) , de esta manera se
-tiene el puerto COM correspondiente.
+En caso de usar Windows es necesario descargar los drivers del conversor Usb-serial desde la página de [FTDI Chip -VCP](https://ftdichip.com/drivers/vcp-drivers/) , de esta manera se tiene el puerto COM correspondiente.
 
-Una vez se han instalado los componentes de software, conecte la placa a
-la alimentación a travéz de P1 y a una PC con un cable micro USB para
-uso de datos, a travéz de P2.
+Una vez se han instalado los componentes de software, conecte la placa a la alimentación a travéz de P1 y a una PC con un cable micro USB para uso de datos, a travéz de P2.
 
-La placa tiene un led que indica el arranque normal de la placa y el
-modo en que se encuentra funcionando. La secuencia inicia con el led de
-color verde encendido por 3 segundos, lo que quiere decir que la placa
-entra en modo de espera (Modo de configuración).
+La placa tiene un led que indica el arranque normal de la placa y el modo en que se encuentra funcionando. La secuencia inicia con el led de color verde encendido por 3 segundos, lo que quiere decir que la placa entra en modo de espera (Modo de configuración).
 
 ![USB connection.](img/usbConnect.PNG "fig:") [fig:usbConnect]
 
-Ahora es necesario abrir el entorno de programación, para agregar el
-dispositivo COM y configuar el dispositivo gateway. A continuación se
-detallan los pasos a seguir:
+Ahora es necesario abrir el entorno de programación, para agregar el dispositivo COM y configuar el dispositivo gateway. A continuación se detallan los pasos a seguir:
 
 -   Open Pymakr.
-
     ![Pymakr package opened.](img/openCOM_1.png "fig:") [fig:pymakrOPEN]
 
 -   Open Global Settings.
-
     ![Open Global Settings.](img/openCOM_2.png "fig:")
     [fig:globalSettings]
-
+    
 -   Set the corresponding COM port, verify from the device manager.
-
     ![Set COM port.](img/openCOM_3.png "fig:") [fig:globalSettings]
-
+    
 -   Open COM port from Connected Devices.
-
     ![Open COM port.](img/openCOM_4.png "fig:") [fig:OpenCom]
-
     ![Console ready for configuration.](img/openCOM_5.png "fig:")
     [fig:OpenCom]
 
@@ -248,127 +163,74 @@ Configuration Methods
 
 ### System Operation
 
-Como se menciono en el apartado anterior, el led verde encendido por 3
-segundos luego de conectar la placa, indica que está lsita la
-configuración. Para empezar el funcionamiento automatico del sistema se
-debe crear un archivo de configuración con el método detallado a
-continuación.
+Como se menciono en el apartado anterior, el led verde encendido por 3 segundos luego de conectar la placa, indica que está lsita la configuración. Para empezar el funcionamiento automatico del sistema se debe crear un archivo de configuración con el método detallado a continuación.
 
 **configFile(stationNum, idStation, Url, NTPServer, frequencyTx)**
 
 -   stationNum: Number of nodes to be connected to the Gateway.
-
 -   idStation: Gateway ID (240 - 255).
-
 -   Url: Url for transmitting packets via http get.
-
 -   NTPServer: NTP server IP.
-
 -   frequencyTx: Packet Transmission Frequency in minutes.
-
--   Exxample: configFile(3, 250,
+-   Example: configFile(3, 250,
     “http://api.thingspeak.com/update?api\_key=XXXX&field1=”,“162.159.200.1”,
     5)
 
 The system automatically resets and the next process begins:
 
 -   Time and date synchronization.
-
 -   Alarm initiation for packet transmission.
-
 -   Send synchronization packet to the nodes.
-
 -   Deep sleep mode until the data packet is sent back to the server,
 
 When the sending time is reached, the system performs the following
 repetitive process:
-
 -   Time and date synchronization.
-
 -   Alarm initiation for packet transmission.
-
 -   Send channel assignment packet.
-
 -   Send data to the server.
-
 -   Deep sleep mode until the data packet is sent back to the server,
 
 ### GPRS SIM800L mobile connection
 
-To configure the device, the first thing to consider is the time
-synchronization via Network time protocol (NTP) and the GPRS SIM 800L
+To configure the device, the first thing to consider is the time synchronization via Network time protocol (NTP) and the GPRS SIM 800L
 
-The following are the methods for synchronization with the GPRS SIM 800L
-module.
+The following are the methods for synchronization with the GPRS SIM 800L module.
 
 **sim800L.signalLevel(None)**
 
 -   Response: +CSQ: rssi, ber
-
     -   rssi
-
-        -   0
-
-            -115 dBm or less
-
-        -   1
-
-            -111 dBm
-
-        -   2...30
-
-            -110... -54 dBm
-
-        -   31
-
-            -52 dBm or greater
-
-        -   99
-
-            not known or not detectable
-
+        -   0: -115 dBm or less
+        -   1: -111 dBm
+        -   2...30: -110... -54 dBm
+        -   31: -52 dBm or greater
+        -   99: not known or not detectable
     -   ber (in percent):
-
         -   0...7 As RXQUAL values in the table in GSM 05.08
-
         -   99 Not known or not detectable
 
 **sim800L.GPRS\_init(None)**
 
 -   Response: +SAPBR: cid, Status, IP\_Addr
-
     -   cid : Bearer profile identifier
-
     -   Status
-
         -   0 Bearer is connecting
-
         -   1 Bearer is connected
-
         -   2 Bearer is closing
-
         -   3 Bearer is closed
-
     -   IP\_Addr: IP address
 
 **sim800L.GPRS\_NTP(None)**
 
 -   Response: +SAPBR: cid, Status, IP\_Addr
-
     -   cid : Bearer profile identifier
-
     -   Status
-
         -   0 Bearer is connecting
-
         -   1 Bearer is connected
-
         -   2 Bearer is closing
-
         -   3 Bearer is closed
-
     -   IP\_Addr: IP address
-
 -   Response: (year, day, month, hour, minute, second, millisecond,
     None)
 
@@ -382,7 +244,6 @@ battery. The methods for synchronization are presented below.
 
 -   Synchronizes the external real-time clock (ds3231) with the internal
     time (lopy 4).
-
 -   Response: (year, day, month, hour, minute, second, millisecond,
     None)
 
@@ -390,7 +251,6 @@ battery. The methods for synchronization are presented below.
 
 -   Obtains the date and time from the external real-time clock
     (ds3231).
-
 -   Response: (year, day, month, hour, minute, second, millisecond,
     None)
 
@@ -398,28 +258,24 @@ battery. The methods for synchronization are presented below.
 
 -   Synchronizes the internal clock (lopy 4) with the time of the
     external real-time clock (ds3231).
-
 -   Response: (year, day, month, hour, minute, second, millisecond,
     None)
 
 ### Temperature and humidity sensor DHT11
 
 The sensor reading is done by the following method:
-
+```python:
 result = th.read(None)
+```
 
 -   Response: result.temperature
-
 -   Response: result.humidity
-
-
-
 
 En esta sección por una parte, se describe las caracteristicas técnicas de hardware, así como tammbién se detalla los componentes del dispositivo. Por otra parte, se indican los métodos de programación y los comandos de configuración del dispositivo concentrador de datos meteorológicos (Iot-LoRa-Gateway). Cabe mencionar que el producto es compatible con dispositivos que cuenten con comunicación LoRa. 
 
 ## Technical Characteristics
 
-La unidad central de procesamiento del equipo es la tarjeta de desarrollo Lopy4, las caracteristicas de mayor relevancia fueron tomadas de \href{https://docs.pycom.io/datasheets/development/lopy4/#datasheet} {Lopy 4 datasheet.}.
+La unidad central de procesamiento del equipo es la tarjeta de desarrollo Lopy4, las caracteristicas de mayor relevancia fueron tomadas de https://docs.pycom.io/datasheets/development/lopy4/#datasheet {Lopy 4 datasheet.}.
 
 ## Functionality and cost
 
