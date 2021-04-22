@@ -193,7 +193,7 @@ with each of its components, which are detailed below:
 
 ![IoT LoRa Gateway Device](img/gateway_3d.PNG "fig:") [fig:gateway~3~d]
 
-Start-up
+#Start-up
 --------
 
 Para comenzar la configuración del Gateway, es necesario descargar el
