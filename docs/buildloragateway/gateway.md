@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Gateway
 
-En este documento por una parte, se describe las caracteristicas técnicas de hardware, así como tammbién se detalla los componentes del dispositivo. Por otra parte, se indican los metodos de programación y los comandos de configuración del dispositivo concentrador de datos meteorológicos (Iot-LoRa-Gateway). Cabe mencionar que el producto es compatible con dispositivos que cuenten con comunicación LoRa.
+En este documento por una parte, se describe las caracteristicas técnicas de hardware, así como también se detalla los componentes del dispositivo. Por otra parte, se indican los metodos de programación y los comandos de configuración del dispositivo concentrador de datos meteorológicos (Iot-LoRa-Gateway). Cabe mencionar que el producto es compatible con dispositivos que cuenten con comunicación LoRa.
 
 ## Technical Characteristics
 
@@ -89,7 +89,9 @@ La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alime
 -   P22: Pin de lectura del nivel de tensión de Batería.
 -   P23: Pin de lectura de señal del sensor DHT22.
 
-![Lopy4 pin connections.](img/Lopy4SCH.PNG "fig:")
+| ![](img/img/Lopy4SCH.PNG) |
+|:--:| 
+| *Lopy4 pin connections.* |
 
 ### Peripheral Connections
 
