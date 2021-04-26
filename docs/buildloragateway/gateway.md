@@ -100,13 +100,13 @@ La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alime
 El sensor de temperatura y humedad interno, está conectado a un pin digital del MCU, configurado como entrada, también se conecta una resistencia de pull up a la salida de la señal, como en la siguiente figura:
 
 
-![fig:DHT22PinCon](img/dht22SCH.PNG "fig:") [DHT22 pin connections.]
+![DHT22 pin connections.](img/dht22SCH.PNG "fig:")
 
 ### GPRS SIM800L
 
 Este periferico utiliza el protocolo UART para conectarse al MCU y un pin digital para el control de arranque del mismo, como podemos observar en la figura a continuación. Está alimentado desde la batería de litio (3.7V - 4.2V).
 
-![fig:Sim800LPinCon](img/Sim800LSCH.PNG "fig:")[GPRS Sim800L pin connections.]
+![GPRS Sim800L pin connections.](img/Sim800LSCH.PNG "fig:")
 
 ### FTDI Basic
 
@@ -116,7 +116,7 @@ El módulo se conecta al MCU a través del protocolo UART y comparte la misma re
 
 Este periferico se conecta al MCU a través del protocolo I2C, se utilizan dos resistencia de pull up en los pines de comunicación (ver figura [fig:DS3231PinCon] ), además cuenta con una pila pequeña que lo alimenta en caso de corte de energía.
 
-![fig:DS3231PinCon](img/ds3231SCH.PNG "fig:")[RTC DS3231 pin connections.]
+![RTC DS3231 pin connections.](img/ds3231SCH.PNG "fig:")
 
 # Installation and Start-up
 
@@ -131,7 +131,7 @@ This section introduces the start-up of the device, gives a brief description of
 -   H2: usb to serial converter.
 -   S1: Operating mode selector button
 
-![fig:gateway~3~d](img/gateway_3d.PNG "fig:") [IoT LoRa Gateway Device]
+![IoT LoRa Gateway Device](img/gateway_3d.PNG "fig:") 
 
 ## Start-up
 
@@ -143,27 +143,27 @@ Una vez se han instalado los componentes de software, conecte la placa a la alim
 
 La placa tiene un led que indica el arranque normal de la placa y el modo en que se encuentra funcionando. La secuencia inicia con el led de color verde encendido por 3 segundos, lo que quiere decir que la placa entra en modo de espera (Modo de configuración).
 
-![fig:usbConnect](img/usbConnect.PNG "fig:") [USB connection.]
+![USB connection.](img/usbConnect.PNG "fig:") 
 
 Ahora es necesario abrir el entorno de programación, para agregar el dispositivo COM y configuar el dispositivo gateway. A continuación se detallan los pasos a seguir:
 
 -   Open Pymakr.
 
-    ![fig:pymakrOPEN](img/openCOM_1.png "fig:") [Pymakr package opened.]
+    ![Pymakr package opened.](img/openCOM_1.png "fig:") 
 
 -   Open Global Settings.
 
-    ![fig:globalSettings](img/openCOM_2.png "fig:")[Open Global Settings.]
+    ![Open Global Settings.](img/openCOM_2.png "fig:")
     
 -   Set the corresponding COM port, verify from the device manager.
 
-    ![fig:globalSettings](img/openCOM_3.png "fig:") [Set COM port.]
+    ![Set COM port.](img/openCOM_3.png "fig:") 
     
 -   Open COM port from Connected Devices.
 
-    ![fig:OpenCom](img/openCOM_4.png "fig:") [Open COM port.]
+    ![Open COM port.](img/openCOM_4.png "fig:") 
     
-    ![fig:OpenCom2](img/openCOM_5.png "fig:") [Console ready for configuration.]
+    ![Console ready for configuration.](img/openCOM_5.png "fig:") 
 
 Configuration Methods
 ---------------------
