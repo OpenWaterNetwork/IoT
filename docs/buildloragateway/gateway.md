@@ -133,7 +133,7 @@ This section introduces the start-up of the device, gives a brief description of
 
 ![fig:gateway~3~d](img/gateway_3d.PNG "fig:") [IoT LoRa Gateway Device]
 
-#Start-up
+## Start-up
 
 Para comenzar la configuración del Gateway, es necesario descargar el software para gestión y programación según lo indicado en la pagina de [Documentos de Pycom Lopy4](https://docs.pycom.io/gettingstarted/software/). Se puede trabajar con las 2 opciones tanto el software “ATOM” como también “Visual Studio Code”.
 
@@ -162,6 +162,7 @@ Ahora es necesario abrir el entorno de programación, para agregar el dispositiv
 -   Open COM port from Connected Devices.
 
     ![fig:OpenCom](img/openCOM_4.png "fig:") [Open COM port.]
+    
     ![fig:OpenCom2](img/openCOM_5.png "fig:") [Console ready for configuration.]
 
 Configuration Methods
@@ -171,7 +172,12 @@ Configuration Methods
 
 Como se menciono en el apartado anterior, el led verde encendido por 3 segundos luego de conectar la placa, indica que está lsita la configuración. Para empezar el funcionamiento automatico del sistema se debe crear un archivo de configuración con el método detallado a continuación.
 
+
 **configFile(stationNum, idStation, Url, NTPServer, frequencyTx)**
+
+```python:
+configFile(stationNum, idStation, Url, NTPServer, frequencyTx
+```
 
 -   stationNum: Number of nodes to be connected to the Gateway.
 -   idStation: Gateway ID (240 - 255).
@@ -189,8 +195,7 @@ The system automatically resets and the next process begins:
 -   Send synchronization packet to the nodes.
 -   Deep sleep mode until the data packet is sent back to the server,
 
-When the sending time is reached, the system performs the following
-repetitive process:
+When the sending time is reached, the system performs the following repetitive process:
 -   Time and date synchronization.
 -   Alarm initiation for packet transmission.
 -   Send channel assignment packet.
@@ -276,12 +281,6 @@ result = th.read(None)
 
 -   Response: result.temperature
 -   Response: result.humidity
-
-En esta sección por una parte, se describe las caracteristicas técnicas de hardware, así como tammbién se detalla los componentes del dispositivo. Por otra parte, se indican los métodos de programación y los comandos de configuración del dispositivo concentrador de datos meteorológicos (Iot-LoRa-Gateway). Cabe mencionar que el producto es compatible con dispositivos que cuenten con comunicación LoRa. 
-
-## Technical Characteristics
-
-La unidad central de procesamiento del equipo es la tarjeta de desarrollo Lopy4, las caracteristicas de mayor relevancia fueron tomadas de https://docs.pycom.io/datasheets/development/lopy4/#datasheet {Lopy 4 datasheet.}.
 
 ## Functionality and cost
 
