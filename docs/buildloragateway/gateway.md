@@ -99,7 +99,8 @@ La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alime
 
 El sensor de temperatura y humedad interno, está conectado a un pin digital del MCU, configurado como entrada, también se conecta una resistencia de pull up a la salida de la señal, ver figura [fig:DHT22PinCon].
 
-![DHT22 pin connections.](img/dht22SCH.PNG "fig:") [fig:DHT22PinCon]
+
+![fig:DHT22PinCon](img/dht22SCH.PNG "fig:") [DHT22 pin connections.]
 
 ### GPRS SIM800L
 
