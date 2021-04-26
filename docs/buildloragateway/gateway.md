@@ -97,17 +97,18 @@ La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alime
 
 ### DHT22
 
-El sensor de temperatura y humedad interno, está conectado a un pin digital del MCU, configurado como entrada, también se conecta una resistencia de pull up a la salida de la señal, ver figura [fig:DHT22PinCon].
+El sensor de temperatura y humedad interno, está conectado a un pin digital del MCU, configurado como entrada, también se conecta una resistencia de pull up a la salida de la señal, como en la siguiente figura:
 
 
-![fig:DHT22PinCon](img/dht22SCH.PNG "fig:") [DHT22 pin connections.]
+![DHT22 pin connections](img/dht22SCH.PNG "fig:") [fig:DHT22PinCon]
 
 ### GPRS SIM800L
 
-Este periferico utiliza el protocolo UART para conectarse al MCU y un pin digital para el control de arranque del mismo, como podemos observar en la figura [fig:Sim800LPinCon]. Está alimentado desde la batería de litio (3.7V - 4.2V).
+Este periferico utiliza el protocolo UART para conectarse al MCU y un pin digital para el control de arranque del mismo, como podemos observar en la figura a continuación. Está alimentado desde la batería de litio (3.7V - 4.2V).
 
-![GPRS Sim800L pin connections.](img/Sim800LSCH.PNG "fig:")
-[fig:Sim800LPinCon]
+![fig:Sim800LPinCon]
+(img/Sim800LSCH.PNG "fig:")
+[GPRS Sim800L pin connections.]
 
 ### FTDI Basic
 
