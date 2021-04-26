@@ -170,23 +170,7 @@ Configuration Methods
 
 ### System Operation
 
-Como se menciono en el apartado anterior, el led verde encendido por 3 segundos luego de conectar la placa, indica que está lsita la configuración. Para empezar el funcionamiento automatico del sistema se debe crear un archivo de configuración con el método detallado a continuación.
-
-
-**configFile(stationNum, idStation, Url, NTPServer, frequencyTx)**
-
-```python:
-configFile(stationNum, idStation, Url, NTPServer, frequencyTx
-```
-
--   stationNum: Number of nodes to be connected to the Gateway.
--   idStation: Gateway ID (240 - 255).
--   Url: Url for transmitting packets via http get.
--   NTPServer: NTP server IP.
--   frequencyTx: Packet Transmission Frequency in minutes.
--   Example: configFile(3, 250,
-    “http://api.thingspeak.com/update?api\_key=XXXX&field1=”,“162.159.200.1”,
-    5)
+Como se mencionó en el apartado anterior, el led verde encendido por 3 segundos luego de conectar la placa, indica que está lsita la configuración. Para empezar el funcionamiento automatico del sistema se debe crear un archivo de configuración con el método detallado a continuación.
 
 The system automatically resets and the next process begins:
 
@@ -202,14 +186,27 @@ When the sending time is reached, the system performs the following repetitive p
 -   Send data to the server.
 -   Deep sleep mode until the data packet is sent back to the server,
 
+```python:
+configFile(stationNum, idStation, Url, NTPServer, frequencyTx)
+```
+-   stationNum: Number of nodes to be connected to the Gateway.
+-   idStation: Gateway ID (240 - 255).
+-   Url: Url for transmitting packets via http get.
+-   NTPServer: NTP server IP.
+-   frequencyTx: Packet Transmission Frequency in minutes.
+-   Example: configFile(3, 250,
+    “http://api.thingspeak.com/update?api\_key=XXXX&field1=”,“162.159.200.1”,
+    5)
+
 ### GPRS SIM800L mobile connection
 
 To configure the device, the first thing to consider is the time synchronization via Network time protocol (NTP) and the GPRS SIM 800L
 
 The following are the methods for synchronization with the GPRS SIM 800L module.
 
-**sim800L.signalLevel(None)**
-
+```python:
+sim800L.signalLevel(None)
+```
 -   Response: +CSQ: rssi, ber
     -   rssi
         -   0: -115 dBm or less
@@ -221,7 +218,9 @@ The following are the methods for synchronization with the GPRS SIM 800L module.
         -   0...7 As RXQUAL values in the table in GSM 05.08
         -   99 Not known or not detectable
 
-**sim800L.GPRS\_init(None)**
+```python:
+sim800L.GPRS\_init(None)
+```
 
 -   Response: +SAPBR: cid, Status, IP\_Addr
     -   cid : Bearer profile identifier
@@ -232,7 +231,9 @@ The following are the methods for synchronization with the GPRS SIM 800L module.
         -   3 Bearer is closed
     -   IP\_Addr: IP address
 
-**sim800L.GPRS\_NTP(None)**
+```python:
+sim800L.GPRS\_NTP(None)
+```
 
 -   Response: +SAPBR: cid, Status, IP\_Addr
     -   cid : Bearer profile identifier
@@ -251,22 +252,28 @@ The external real time clock (RTC) ds3231 is the one that will keep the
 system synchronized in time and date, because it has an independent
 battery. The methods for synchronization are presented below.
 
-**ds3231.ds1307init\_sinc(None)**
+
+```python:
+ds3231.ds1307init\_sinc(None)
+```
 
 -   Synchronizes the external real-time clock (ds3231) with the internal
     time (lopy 4).
 -   Response: (year, day, month, hour, minute, second, millisecond,
     None)
 
-**get\_time\_ds3231(None)**
+```python:
+get\_time\_ds3231(None)
+```
 
 -   Obtains the date and time from the external real-time clock
     (ds3231).
 -   Response: (year, day, month, hour, minute, second, millisecond,
     None)
 
-**ds3231.sinc\_RTC\_from\_ds3231(None)**
-
+```python:
+ds3231.sinc\_RTC\_from\_ds3231(None)
+```
 -   Synchronizes the internal clock (lopy 4) with the time of the
     external real-time clock (ds3231).
 -   Response: (year, day, month, hour, minute, second, millisecond,
