@@ -106,9 +106,7 @@ El sensor de temperatura y humedad interno, está conectado a un pin digital del
 
 Este periferico utiliza el protocolo UART para conectarse al MCU y un pin digital para el control de arranque del mismo, como podemos observar en la figura a continuación. Está alimentado desde la batería de litio (3.7V - 4.2V).
 
-![fig:Sim800LPinCon]
-(img/Sim800LSCH.PNG "fig:")
-[GPRS Sim800L pin connections.]
+![fig:Sim800LPinCon](img/Sim800LSCH.PNG "fig:")[GPRS Sim800L pin connections.]
 
 ### FTDI Basic
 
@@ -118,7 +116,7 @@ El módulo se conecta al MCU a través del protocolo UART y comparte la misma re
 
 Este periferico se conecta al MCU a través del protocolo I2C, se utilizan dos resistencia de pull up en los pines de comunicación (ver figura [fig:DS3231PinCon] ), además cuenta con una pila pequeña que lo alimenta en caso de corte de energía.
 
-![RTC DS3231 pin connections.](img/ds3231SCH.PNG "fig:")[fig:DS3231PinCon]
+![fig:DS3231PinCon](img/ds3231SCH.PNG "fig:")[RTC DS3231 pin connections.]
 
 # Installation and Start-up
 
