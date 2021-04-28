@@ -331,6 +331,9 @@ The docs version dropdown appears in your navbar:
 ![Docs Version Dropdown](/img/tutorial/docsVersionDropdown.png)
 
 ## Scripts (the full scripts with some explanation)
+Los scripts con los que cuenta el sistema se encuentran divididos en archivos .py que contienen las calses y los métodos para el correcto funcionamiento del sistema. Se encuentran divididos en los siguientes archivos:
+
+### Boot.py
 
 El primer archivo es el llamado boot.py, es el que arranca el sistema y en el se define:
 
@@ -363,6 +366,7 @@ wlan.deinit()
 machine.main('main.py')
 
 ```
+
 
 It is possible to edit versioned docs in their respective folder:
 
