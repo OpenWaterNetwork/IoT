@@ -332,8 +332,7 @@ The docs version dropdown appears in your navbar:
 
 ## Scripts (the full scripts with some explanation)
 ```
-python:
-
+    python:
 import machine
 import os
 from machine import UART
