@@ -331,8 +331,7 @@ The docs version dropdown appears in your navbar:
 ![Docs Version Dropdown](/img/tutorial/docsVersionDropdown.png)
 
 ## Scripts (the full scripts with some explanation)
-```
-    python:
+```python:
 import machine
 import os
 from machine import UART
