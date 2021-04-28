@@ -331,6 +331,13 @@ The docs version dropdown appears in your navbar:
 ![Docs Version Dropdown](/img/tutorial/docsVersionDropdown.png)
 
 ## Scripts (the full scripts with some explanation)
+
+El primer archivo es el llamado boot.py, es el que arranca el sistema y en el se define:
+
+- La comunicación serial para la consola de visualización y para subir los programas.
+- Se desabilita el módulo WIFI para reducir el consumo energético.
+- Se define el programa que arrancará a continuación de estás configuraciones.
+
 ```python:
 import machine
 import os
