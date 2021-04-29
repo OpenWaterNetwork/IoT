@@ -748,6 +748,9 @@ class DS3231():
         self.__rtc.init((annint, mesint, diaint, horasint, minutosint, segundosint, 0, 0),source=RTC.INTERNAL_RC)
         print(self.__rtc.now())
 ```
+### dht.py 
+
+Este archivo contiene la clase y los métodos para la configuración y muestreo del sensor de temperatura y humedad dht22, fue tomada de [JurassicPork/DHT_PyCom](https://github.com/JurassicPork/DHT_PyCom/blob/master/dth.py)
 
 It is possible to edit versioned docs in their respective folder:
 
