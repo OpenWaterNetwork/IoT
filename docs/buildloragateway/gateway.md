@@ -341,7 +341,8 @@ El primer archivo es el llamado boot.py, es el que arranca el sistema y en el se
 - Se desabilita el módulo WIFI para reducir el consumo energético.
 - Se define el programa que arrancará a continuación de estás configuraciones.
 
-```python:
+```python
+
 import machine
 import os
 from machine import UART
@@ -366,7 +367,8 @@ machine.main('main.py')
 ```
 ### sim800L.py
 
-```python:
+```python
+
 import time
 import pycom
 import os
