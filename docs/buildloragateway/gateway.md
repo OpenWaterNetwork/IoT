@@ -482,11 +482,8 @@ class SIM800L():
 ###-- Connect to the NTP server and match system time.
 
     def GPRS_NTP(self):
-
         float_retransmit=True
-
         try:
-
             self.__ser_gprs.write("AT+SAPBR=0,1\r\n")
             time.sleep(2)
             self.readGPRSdata()
@@ -501,25 +498,18 @@ class SIM800L():
             self.readGPRSdata()
             self.__ser_gprs.write("AT+SAPBR=3,1,\"APN\",\"internet.claro.com.ec\"\r\n")
             self.readGPRSdata()
-            #ser_gprs.write("AT+SAPBR=3,1,\"USER\",\"movistar\"\r\n") #movistar
-            #readGPRSdata()
-            #ser_gprs.write("AT+SAPBR=3,1,\"PWD\",\"movistar\"\r\n") #movistar
-            #readGPRSdata()
             self.__ser_gprs.write("AT+SAPBR=1,1"+"\r\n")
             time.sleep(3)
             self.readGPRSdata()
             self.__ser_gprs.write("AT+SAPBR=2,1"+"\r\n")
             dataRead = self.readGPRSdata()
-
             arraydataread=str(dataRead).split("\\r\\n")
             print(arraydataread[1])
+            
             comp="0.0.0.0" in arraydataread[1]
-
             if comp==True or arraydataread[1]=="ERROR":
                 float_retransmit=False
-
             if float_retransmit==True:
-
                 self.__ser_gprs.write("AT+CNTPCID=1"+"\r\n")
                 self.readGPRSdata()
                 self.__ser_gprs.write("AT+CNTP=\"162.159.200.1\",-20"+"\r\n")   ###-- Ip NTP server
@@ -529,12 +519,11 @@ class SIM800L():
                 #self.readGPRSdata()
                 self.__ser_gprs.write("AT+CCLK?"+"\r\n")
                 gprsdataread = self.readGPRSdata()
-
                 NMEA1 = str(gprsdataread)
                 #print(NMEA1)
                 NMEA1_array = NMEA1.split("\\r\\n")
                 #print(NMEA1_array)
-
+                
                 if(len(NMEA1_array)>2 and len(NMEA1_array[1].split(","))==2):
                     datos_fecha_hora= NMEA1_array[1].split(",")
                     #print(datos_fecha_hora[0])
@@ -575,7 +564,7 @@ class SIM800L():
 
             print("Error NTP server connecting")
             float_retransmit=False
-
+            
         self.__ser_gprs.write("AT+SAPBR=0,1\r\n")
         time.sleep(2)
         self.readGPRSdata()
