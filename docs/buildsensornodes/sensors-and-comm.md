@@ -8,7 +8,7 @@ sidebar_position: 1
 
 La unidad central de procesamiento del equipo es la tarjeta de desarrollo Lopy4, las caracteristicas de mayor relevancia fueron tomadas de [Lopy 4 datasheet](https://docs.pycom.io/datasheets/development/lopy4/#datasheet).
 
-El sensor es el MB7388 HRXL-MaxSonar-WRMLT, este sensor es una solución rentable en aplicaciones que requieren precisión en la detección de distancias. Las caracteristicas técnicas principales se han tomado de [HRXL-MaxSonar- WR Series](\href{https://www.maxbotix.com/documents/HRXL-MaxSonar-WR_Datasheet.pdf)
+El sensor es el MB7388 HRXL-MaxSonar-WRMLT, este sensor es una solución rentable en aplicaciones que requieren precisión en la detección de distancias. Las caracteristicas técnicas principales se han tomado de [HRXL-MaxSonar- WR Series](https://www.maxbotix.com/documents/HRXL-MaxSonar-WR_Datasheet.pdf)
 
 ## Create a docs version
 
