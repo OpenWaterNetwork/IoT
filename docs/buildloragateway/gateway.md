@@ -366,7 +366,340 @@ wlan.deinit()
 machine.main('main.py')
 
 ```
+### sim800L.py
 
+```python:
+import time
+import pycom
+import os
+from machine import RTC
+from machine import Timer
+from machine import UART
+
+class SIM800L():
+
+    def __init__(self):
+        self.__ser_gprs = UART(1, baudrate=9600)
+        self.__rtc = RTC()
+        time.sleep(1.0)
+        
+####################  ############################
+################################################################################
+    
+    def readGPRSdata(self):
+    
+        time.sleep(0.2)
+        readData = False
+        scape = False
+        datos_gprs=True
+        gprsdataread=''
+        chrono = Timer.Chrono()
+        chrono.start()
+
+        while (datos_gprs == True):
+            time.sleep(0.2)
+            timeWait=chrono.read()
+
+            if(self.__ser_gprs.any() > 0):
+                gprsdataread= gprsdataread + str(self.__ser_gprs.readall())
+                readData = True
+                scape = False
+                chrono.reset()
+            elif readData == True:
+                if scape == False:
+                    scape = True
+                    continue
+            if(timeWait > 40 or scape == True):
+                datos_gprs=False
+
+        chrono.stop()
+        chrono.reset()
+    
+        #print(gprsdataread, len(gprsdataread))
+
+        return gprsdataread
+
+    def bandGPRS(self):
+        self.__ser_gprs.write("AT+CBAND?")
+        self.__ser_gprs.write("\r\n")
+        self.readGPRSdata()
+        self.__ser_gprs.write("AT+CBAND=\"GSM850_MODE\"")
+        self.__ser_gprs.write("\r\n")
+        self.readGPRSdata()
+
+    def signalLevel(self):
+        self.__ser_gprs.write("AT+CSQ")
+        self.__ser_gprs.write("\r\n")
+        dataRead = self.readGPRSdata()
+
+        arraydataread=str(dataRead).split("\\r\\n")
+        print(arraydataread[1])
+        comp=":0,0" in arraydataread[1]
+
+        if (comp==True or arraydataread[1]=="ERROR"):
+            return False
+
+        return True
+
+    def GPRS_init(self):
+
+        contRetrans = 0
+        float_retransmit=True
+
+        try:
+
+            self.__ser_gprs.write("AT+SAPBR=0,1\r\n")
+            time.sleep(2)
+            self.readGPRSdata()
+
+            self.__ser_gprs.write("AT+SAPBR=3,1,\"APN\",\"internet.claro.com.ec\"\r\n")
+            self.readGPRSdata()
+
+            self.__ser_gprs.write("AT+SAPBR=1,1\r\n")
+            time.sleep(2)
+            gprsdataread = self.readGPRSdata()
+
+            self.__ser_gprs.write("AT+SAPBR=2,1\r\n")
+            dataRead = self.readGPRSdata()
+
+            arraydataread=str(dataRead).split("\\r\\n")
+            print(arraydataread[1])
+            comp="0.0.0.0" in arraydataread[1]
+
+            if comp==True or arraydataread[1]=="ERROR":
+                float_retransmit=False
+
+        except Exception as e:
+            print("Error network connecting")
+            float_retransmit=False
+
+        time.sleep(1)
+
+        return float_retransmit
+
+    def GPRS_NTP(self):
+
+        float_retransmit=True
+
+        try:
+
+            self.__ser_gprs.write("AT+SAPBR=0,1\r\n")
+            time.sleep(2)
+            self.readGPRSdata()
+            contRetrans = 0
+            self.__ser_gprs.write("AT")
+            self.__ser_gprs.write("\r\n")
+            self.readGPRSdata()
+            self.__ser_gprs.write("AT+CSQ")
+            self.__ser_gprs.write("\r\n")
+            self.readGPRSdata()
+            self.__ser_gprs.write("AT+SAPBR=3,1,\"Contype\",\"GPRS\"\r\n")
+            self.readGPRSdata()
+            self.__ser_gprs.write("AT+SAPBR=3,1,\"APN\",\"internet.claro.com.ec\"\r\n")
+            self.readGPRSdata()
+            #ser_gprs.write("AT+SAPBR=3,1,\"USER\",\"movistar\"\r\n") #movistar
+            #readGPRSdata()
+            #ser_gprs.write("AT+SAPBR=3,1,\"PWD\",\"movistar\"\r\n") #movistar
+            #readGPRSdata()
+            self.__ser_gprs.write("AT+SAPBR=1,1"+"\r\n")
+            time.sleep(3)
+            self.readGPRSdata()
+            self.__ser_gprs.write("AT+SAPBR=2,1"+"\r\n")
+            dataRead = self.readGPRSdata()
+
+            arraydataread=str(dataRead).split("\\r\\n")
+            print(arraydataread[1])
+            comp="0.0.0.0" in arraydataread[1]
+
+            if comp==True or arraydataread[1]=="ERROR":
+                float_retransmit=False
+
+            if float_retransmit==True:
+
+                self.__ser_gprs.write("AT+CNTPCID=1"+"\r\n")
+                self.readGPRSdata()
+                self.__ser_gprs.write("AT+CNTP=\"162.159.200.1\",-20"+"\r\n")
+                self.readGPRSdata()
+                self.__ser_gprs.write("AT+CNTP"+"\r\n")
+                self.readGPRSdata()
+                #self.readGPRSdata()
+                self.__ser_gprs.write("AT+CCLK?"+"\r\n")
+                gprsdataread = self.readGPRSdata()
+
+                NMEA1 = str(gprsdataread)
+                #print(NMEA1)
+                NMEA1_array = NMEA1.split("\\r\\n")
+                #print(NMEA1_array)
+
+                if(len(NMEA1_array)>2 and len(NMEA1_array[1].split(","))==2):
+                    datos_fecha_hora= NMEA1_array[1].split(",")
+                    #print(datos_fecha_hora[0])
+                    seg_gprs=int(datos_fecha_hora[1][6:8])
+                    min_gprs=int(datos_fecha_hora[1][3:5])
+                    hora_gprs=int(datos_fecha_hora[1][0:2])
+                    dia_gprs=int(datos_fecha_hora[0][14:16])
+                    mes_gprs=int(datos_fecha_hora[0][11:13])
+                    age_gprs=int(datos_fecha_hora[0][8:10])+2000
+                    #print(hora_gprs,min_gprs,seg_gprs,dia_gprs,mes_gprs,age_gprs)
+                    self.__rtc.init((age_gprs, mes_gprs, dia_gprs, hora_gprs, min_gprs, seg_gprs, 0, 0),source=RTC.INTERNAL_RC) #COnfig Clock
+                    epoch_time=time.time()
+                    tuple_time = time.gmtime(epoch_time+8)
+                    self.__rtc.init(tuple_time)
+                    print(self.__rtc.now())
+                    pycom.heartbeat(False)
+                    pycom.rgbled(0x007f00)
+                    time.sleep(0.25)
+                    pycom.heartbeat(False)
+                    time.sleep(0.25)
+                    pycom.rgbled(0x007f00)
+                    time.sleep(0.25)
+                    pycom.heartbeat(False)
+                    time.sleep(1)
+                    #ser_gprs.write("AT+SAPBR=0,1\r\n")
+                    #time.sleep(0.2)
+                    #readGPRSdata()
+            else:
+                print("THE TIME CANNOT BE SYNCHRONIZED")
+                pycom.heartbeat(False)
+                pycom.rgbled(0x7f0000)
+                time.sleep(0.25)
+                pycom.heartbeat(False)
+                time.sleep(0.25)
+                pycom.rgbled(0x7f0000)
+                time.sleep(0.25)
+                pycom.heartbeat(False)
+                #ser_gprs.write("AT+SAPBR=0,1\r\n")
+                #time.sleep(3)
+                #readGPRSdata()
+                time.sleep(2)
+
+        except Exception as e:
+
+            print("Error NTP server connecting")
+            float_retransmit=False
+
+        self.__ser_gprs.write("AT+SAPBR=0,1\r\n")
+        time.sleep(2)
+        self.readGPRSdata()
+        time.sleep(1)
+
+        return float_retransmit
+
+    def send_GPRS(self,url_trasm):
+
+        contRetrans = 0
+        maxRetrans = 5
+        float_retransmit=True
+        gprsdataread=''
+        flagTrans1=False
+
+        self.__ser_gprs.write("AT+HTTPTERM")
+        self.__ser_gprs.write("\r\n")
+        self.readGPRSdata()
+        self.__ser_gprs.write("AT+HTTPINIT")
+        self.__ser_gprs.write("\r\n")
+        self.readGPRSdata()
+        self.__ser_gprs.write("AT+HTTPPARA=\"CID\",1\r\n")
+        self.readGPRSdata()
+        self.__ser_gprs.write("AT+HTTPPARA=\"URL\"," +"\""+url_trasm+"\""+"\r\n")
+        self.readGPRSdata()
+        self.__ser_gprs.write("AT+HTTPACTION=0\r\n")
+        self.readGPRSdata()
+        time.sleep(2)
+        gprsdataread=self.readGPRSdata()
+
+        print(gprsdataread)
+
+        if (str(gprsdataread).find("HTTPACTION: 0,200")==-1):
+            print("Send Failed ")
+            flagTrans1=False
+
+        if (str(gprsdataread).find("HTTPACTION: 0,200") >= 0):
+            print("Send OK")
+            flagTrans1=True
+
+        self.__ser_gprs.write("AT+HTTPTERM\r\n")
+        self.readGPRSdata()
+
+        self.__ser_gprs.write("AT+SAPBR=0,1\r\n")
+        time.sleep(2)
+        self.readGPRSdata()
+
+        return flagTrans1
+
+    def send_GPRS_POST(self, datos):
+        contRetrans = 0
+        maxRetrans = 5
+        float_retransmit=True
+        gprsdataread=''
+        flagTrans1=0
+
+        self.__ser_gprs.write("AT+HTTPTERM")
+        self.__ser_gprs.write("\r\n")
+        self.readGPRSdata()
+        self.__ser_gprs.write("AT+HTTPINIT")
+        self.__ser_gprs.write("\r\n")
+        self.readGPRSdata()
+        self.__ser_gprs.write("AT+HTTPPARA=\"CID\",1\r\n")
+        self.readGPRSdata()
+        self.__ser_gprs.write("AT+HTTPPARA=\"URL\"," +"\""+"http://api.thingspeak.com/update"+"\""+"\r\n")
+        self.readGPRSdata()
+        self.__ser_gprs.write("AT+HTTPPARA=\"CONTENT\"," +"\""+"application/x-www-form-urlencoded"+"\""+"\r\n")
+        self.readGPRSdata()
+        datos_enviar = datos.replace('+','%2B')
+        http_data = "api_key=IANS5HS4PBO289IM&field1="+ datos_enviar
+        print(http_data)
+        self.__ser_gprs.write("AT+HTTPDATA=1000,10000\r\n")
+        time.sleep(2)
+        self.__ser_gprs.write(http_data)
+        time.sleep(0.5)
+        self.readGPRSdata()
+        self.readGPRSdata()
+        self.__ser_gprs.write("AT+HTTPACTION=1\r\n")
+        self.readGPRSdata()
+        time.sleep(2)
+        gprsdataread=readGPRSdata()
+
+        while (str(gprsdataread).find("HTTPACTION: 1,200")==-1):
+            if (str(gprsdataread).find("HTTPACTION: 1,200")==-1):
+                if contRetrans == maxRetrans:
+                    print("Forzar reinicio de GPRS para retransmision")
+                    #dataSave("log",("Forzar reinicio de GPRS para retransmision "+generals.gprsdataread))
+                    float_retransmit= False
+                    break
+
+                contRetrans = contRetrans + 1;
+                print("Retransmision # " + str(contRetrans))
+                #dataSave("log",("Retransmision # " + str(contRetrans) + " " + generals.gprsdataread))
+                flagTrans1=0
+                self.__ser_gprs.write("AT+HTTPACTION=1\r\n")
+                self.readGPRSdata()
+                time.sleep(2)
+                self.readGPRSdata()
+
+        if (str(gprsdataread).find("HTTPACTION: 1,200") >= 0):
+            flagTrans1=1
+
+        ser_gprs.write("AT+HTTPTERM\r\n")
+        self.readGPRSdata()
+
+        self.__ser_gprs.write("AT+SAPBR=0,1\r\n")
+        time.sleep(2)
+        self.readGPRSdata()
+
+        return float_retransmit
+
+    def GPRS_sleep(self):
+        self.__ser_gprs.write("AT+CSCLK=1\r\n")
+        gprsdataread=self.readGPRSdata()
+        time.sleep(2)
+
+    def GPRS_reset(self):
+        p_out_2.value(0)
+        time.sleep(0.2)
+        p_out_2.value(1)
+        time.sleep(10)
+ ```
 
 It is possible to edit versioned docs in their respective folder:
 
