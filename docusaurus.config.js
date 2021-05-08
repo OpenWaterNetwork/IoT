@@ -9,6 +9,10 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'OpenWaterNetwork', // Usually your GitHub org/user name.
   projectName: 'IoT', // Usually your repo name.
+  i18n: {
+	defaultLocale: 'en',
+	locales: ['en','es']
+  },
   themeConfig: {
     navbar: {
       title: 'OpenWaterNetwork',
@@ -17,13 +21,17 @@ module.exports = {
         src: 'img/logo.svg',
       },
       items: [
+		{
+		  type: 'localeDropdown',
+		  position: 'left',
+		},
         {
           type: 'doc',
           docId: 'intro',
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        //{to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
