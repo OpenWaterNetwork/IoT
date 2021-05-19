@@ -32,7 +32,7 @@ jobs:
       - name: Release to GitHub Pages
         env:
           USE_SSH: true
-          GIT_USER: git
+          GIT_USER: fabianastudillo
         run: |
           git config --global user.email "fabian.astudillo.salinas@gmail.com"
           git config --global user.name "fabianastudillo"
