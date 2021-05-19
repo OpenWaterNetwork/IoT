@@ -77,7 +77,7 @@ In addition to the PCB mentioned above, the device has a Lithium battery, an MPP
 
 ### Lopy4 connections
 
-La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alimentación y una salida de 3.3V, la disposición de los mismos y su conexion con los distintos periféricos se detallana a continuación:
+The Lopy4 card has 28 pins, among which are the power pins and a 3.3V output, their arrangement and their connection with the different peripherals are detailed below:
 
 -   P0: Rx P1: Tx. Comunicación UART con el FTDI Basic.
 -   P2: Pin de Arranque, para actualizar el firmware.
