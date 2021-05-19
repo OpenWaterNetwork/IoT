@@ -35,6 +35,8 @@ jobs:
           USE_SSH: true
           GIT_USER: fabianastudillo
         run: |
+          echo Installing
+          yarn install
           echo Deploying
           yarn build
           git config --global user.email "fabian.astudillo.salinas@gmail.com"
