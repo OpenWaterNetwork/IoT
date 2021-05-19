@@ -5,6 +5,7 @@ sidebar_position: 1
 # Gateway
 
 In this document, on the one hand, the technical characteristics of the hardware are described, as well as the components of the device. On the other hand, the programming methods and the configuration commands of the meteorological data concentrator device (Iot-LoRa-Gateway) are indicated. It is worth mentioning that the product is compatible with devices that have LoRa communication.
+test
 
 ## Technical Characteristics
 
