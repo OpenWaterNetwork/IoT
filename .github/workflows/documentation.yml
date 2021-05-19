@@ -36,6 +36,7 @@ jobs:
           GIT_USER: fabianastudillo
         run: |
           echo Deploying
+          echo `pwd`
           yarn build
           git config --global user.email "fabian.astudillo.salinas@gmail.com"
           git config --global user.name "fabianastudillo"
