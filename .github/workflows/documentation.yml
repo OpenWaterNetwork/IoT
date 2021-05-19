@@ -38,10 +38,10 @@ jobs:
           USE_SSH: true
           GIT_USER: fabianastudillo
         run: |
-          echo Deploying
-          echo `pwd`
-          echo `ls`
-          yarn build
+          echo Building
+          npm run build
           git config --global user.email "fabian.astudillo.salinas@gmail.com"
           git config --global user.name "fabianastudillo"
+          echo Deploing
           npm run deploy
+          echo Finish deploying
