@@ -96,7 +96,7 @@ La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alime
 
 ### DHT22
 
-El sensor de temperatura y humedad interno, está conectado a un pin digital del MCU, configurado como entrada, también se conecta una resistencia de pull up a la salida de la señal, como en la siguiente figura:
+The internal temperature and humidity sensor is connected to a digital pin of the MCU, configured as an input, a pull up resistor is also connected to the signal output, as in the following figure:
 
 
 ![DHT22 pin connections.](img/dht22SCH.PNG "fig:")
