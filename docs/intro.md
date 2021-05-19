@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Tutorial introductorio
 
-Let's discover **Open Water Network**.
+Descubra **Open Water Network**.
 
 ## Getting Started
 
