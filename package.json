@@ -39,10 +39,7 @@
     "doc": "docs"
   },
   "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OpenWaterNetwork/IoT.git"
-  },
+  "repository": "git+https://github.com/OpenWaterNetwork/IoT.git",
   "keywords": [
     "Sensors",
     "Water",
