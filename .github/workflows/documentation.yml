@@ -41,9 +41,9 @@ jobs:
           echo Installing
           yarn install
           echo Building
-          yarn run build
+          yarn build
           git config --global user.email "fabian.astudillo.salinas@gmail.com"
           git config --global user.name "fabianastudillo"
           echo Deploing
-          yarn run deploy
+          yarn deploy
           echo Finish deploying
