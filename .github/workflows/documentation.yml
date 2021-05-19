@@ -24,7 +24,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '15.x'
+      
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Executing action
@@ -35,9 +38,10 @@ jobs:
           USE_SSH: true
           GIT_USER: fabianastudillo
         run: |
-          echo Deploying
-          echo `pwd`
-          yarn build
+          echo Building
+          npm run build
           git config --global user.email "fabian.astudillo.salinas@gmail.com"
           git config --global user.name "fabianastudillo"
-          yarn deploy
+          echo Deploing
+          npm run deploy
+          echo Finish deploying
