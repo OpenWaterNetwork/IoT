@@ -2,9 +2,9 @@ name: deploydocusaurus
 
 on:
   pull_request:
-    branches: [documentation]
+    branches: [documentation main]
   push:
-    branches: [documentation]
+    branches: [documentation main]
 
 jobs:
   checks:
