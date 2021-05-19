@@ -109,7 +109,7 @@ Este periferico utiliza el protocolo UART para conectarse al MCU y un pin digita
 
 ### FTDI Basic
 
-El módulo se conecta al MCU a través del protocolo UART y comparte la misma referencia de GND.
+The module connects to the MCU via UART protocol and shares the same GND reference.
 
 ### RTC DS3231
 
