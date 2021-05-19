@@ -570,9 +570,9 @@
     "36": {
       "js": [
         {
-          "file": "assets/js/c4f5d8e4.899cf3ab.js",
-          "hash": "e90f7674490a781d1b3b",
-          "publicPath": "/IoT/es/assets/js/c4f5d8e4.899cf3ab.js"
+          "file": "assets/js/c4f5d8e4.5f240f74.js",
+          "hash": "93e54093c8dedab13318",
+          "publicPath": "/IoT/es/assets/js/c4f5d8e4.5f240f74.js"
         }
       ]
     },
@@ -651,18 +651,18 @@
     "45": {
       "js": [
         {
-          "file": "assets/js/main.c197e998.js",
-          "hash": "50a69767cd4b236d392d",
-          "publicPath": "/IoT/es/assets/js/main.c197e998.js"
+          "file": "assets/js/main.121a579f.js",
+          "hash": "b2f8c7dae65c39ce896a",
+          "publicPath": "/IoT/es/assets/js/main.121a579f.js"
         }
       ]
     },
     "46": {
       "js": [
         {
-          "file": "assets/js/runtime~main.aca1cfcf.js",
-          "hash": "11cd24a5d8d3705384b5",
-          "publicPath": "/IoT/es/assets/js/runtime~main.aca1cfcf.js"
+          "file": "assets/js/runtime~main.9613a452.js",
+          "hash": "3156267663cc72aaf2ce",
+          "publicPath": "/IoT/es/assets/js/runtime~main.9613a452.js"
         }
       ]
     },
