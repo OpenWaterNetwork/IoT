@@ -1,0 +1,8 @@
+{
+  "name": "IoT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:OpenWaterNetwork/IoT.git",
+  "author": "Fabian Astudillo <fabian.astudillo.salinas@gmail.com>",
+  "license": "MIT"
+}
