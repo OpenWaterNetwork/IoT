@@ -8,8 +8,7 @@ In this document, on the one hand, the technical characteristics of the hardware
 
 ## Technical Characteristics
 
-La unidad central de procesamiento del equipo es la tarjeta de desarrollo Lopy4, las caracteristicas de mayor relevancia fueron tomadas
-de [Lopy 4 datasheet!](https://docs.pycom.io/datasheets/development/lopy4/#datasheet).
+The central processing unit of the equipment is the Lopy4 development card, the most relevant features were taken from [Lopy 4 datasheet!](https://docs.pycom.io/datasheets/development/lopy4/#datasheet).
 
 ### Electrical
 
