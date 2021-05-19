@@ -1,6 +1,6 @@
 {
-  "name": "io-t",
-  "version": "0.0.0",
+  "name": "iot-own",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -32,5 +32,26 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.",
+  "main": "babel.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenWaterNetwork/IoT.git"
+  },
+  "keywords": [
+    "Sensors",
+    "Water",
+    "Resources"
+  ],
+  "author": "Fabian Astudillo-Salinas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OpenWaterNetwork/IoT/issues"
+  },
+  "homepage": "https://github.com/OpenWaterNetwork/IoT#readme"
 }
