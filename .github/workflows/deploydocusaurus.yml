@@ -1,7 +1,7 @@
 name: deploydocusaurus
 
 on:
-  commit_comment:
+  push:
     branches:
       - documentation
 
