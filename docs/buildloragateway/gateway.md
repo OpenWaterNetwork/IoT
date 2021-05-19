@@ -104,7 +104,7 @@ The internal temperature and humidity sensor is connected to a digital pin of th
 
 ### GPRS SIM800L
 
-Este periferico utiliza el protocolo UART para conectarse al MCU y un pin digital para el control de arranque del mismo, como podemos observar en la figura a continuación. Está alimentado desde la batería de litio (3.7V - 4.2V).
+This peripheral uses the UART protocol to connect to the MCU and a digital pin for control of the start, as we can see in the figure below. It is powered from the lithium battery (3.7V - 4.2V).
 
 ![GPRS Sim800L pin connections.](img/Sim800LSCH.PNG "fig:")
 
