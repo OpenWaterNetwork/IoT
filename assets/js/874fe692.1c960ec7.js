@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{95:function(o){o.exports=JSON.parse('{"allTagsPath":"/IoT/blog/tags","slug":"hola","name":"hola","count":1,"permalink":"/IoT/blog/tags/hola"}')}}]);
