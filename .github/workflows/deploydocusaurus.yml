@@ -1,11 +1,9 @@
 name: deploydocusaurus
 
 on:
-  push:
+  commit_comment:
     branches:
       - documentation
-  schedule:
-    - cron: '*/5 * * * *'
 
 jobs:
   checks:
