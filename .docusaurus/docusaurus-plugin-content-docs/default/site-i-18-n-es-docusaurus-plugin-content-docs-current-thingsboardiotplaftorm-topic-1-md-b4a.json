@@ -1,0 +1,26 @@
+{
+  "unversionedId": "thingsboardiotplaftorm/topic1",
+  "id": "thingsboardiotplaftorm/topic1",
+  "isDocsHomePage": false,
+  "title": "Topic 1",
+  "description": "Docusaurus can manage multiple versions of your docs.",
+  "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/thingsboardiotplaftorm/topic1.md",
+  "sourceDirName": "thingsboardiotplaftorm",
+  "slug": "/thingsboardiotplaftorm/topic1",
+  "permalink": "/IoT/es/docs/thingsboardiotplaftorm/topic1",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/thingsboardiotplaftorm/topic1.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sensor node registration on TTN",
+    "permalink": "/IoT/es/docs/buildsensornodes/wseb"
+  },
+  "next": {
+    "title": "Topic 2",
+    "permalink": "/IoT/es/docs/thingsboardiotplaftorm/topic2"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "facebook": {
+    "allTagsPath": "/IoT/fr/blog/tags",
+    "slug": "facebook",
+    "name": "facebook",
+    "count": 1,
+    "permalink": "/IoT/fr/blog/tags/facebook"
+  },
+  "hello": {
+    "allTagsPath": "/IoT/fr/blog/tags",
+    "slug": "hello",
+    "name": "hello",
+    "count": 2,
+    "permalink": "/IoT/fr/blog/tags/hello"
+  },
+  "docusaurus": {
+    "allTagsPath": "/IoT/fr/blog/tags",
+    "slug": "docusaurus",
+    "name": "docusaurus",
+    "count": 3,
+    "permalink": "/IoT/fr/blog/tags/docusaurus"
+  },
+  "hola": {
+    "allTagsPath": "/IoT/fr/blog/tags",
+    "slug": "hola",
+    "name": "hola",
+    "count": 1,
+    "permalink": "/IoT/fr/blog/tags/hola"
+  }
+}

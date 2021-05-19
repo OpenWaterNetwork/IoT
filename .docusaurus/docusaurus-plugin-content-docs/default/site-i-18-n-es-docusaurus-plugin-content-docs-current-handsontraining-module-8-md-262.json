@@ -1,0 +1,26 @@
+{
+  "unversionedId": "handsontraining/module8",
+  "id": "handsontraining/module8",
+  "isDocsHomePage": false,
+  "title": "Module 8 - Building your own LoRa Gateway for data transmission",
+  "description": "Add Markdown or React files to src/pages to create a standalone page:",
+  "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/handsontraining/module8.md",
+  "sourceDirName": "handsontraining",
+  "slug": "/handsontraining/module8",
+  "permalink": "/IoT/es/docs/handsontraining/module8",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module8.md",
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 7 - Keeping time and introducing the deep sleep concept",
+    "permalink": "/IoT/es/docs/handsontraining/module7"
+  },
+  "next": {
+    "title": "Module 9 - IoT Data transmission, storage,  visualization and download",
+    "permalink": "/IoT/es/docs/handsontraining/module9"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "buildloragateway/gatewayonttn",
+  "id": "buildloragateway/gatewayonttn",
+  "isDocsHomePage": false,
+  "title": "Gateway registration on TTN",
+  "description": "Let's translate docs/getting-started.md to French.",
+  "source": "@site/docs/buildloragateway/gatewayonttn.md",
+  "sourceDirName": "buildloragateway",
+  "slug": "/buildloragateway/gatewayonttn",
+  "permalink": "/IoT/docs/buildloragateway/gatewayonttn",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/buildloragateway/gatewayonttn.md",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "PyGate",
+    "permalink": "/IoT/docs/buildloragateway/pygate"
+  },
+  "next": {
+    "title": "Sensors and communication protocols",
+    "permalink": "/IoT/docs/buildsensornodes/sensors-and-comm"
+  }
+}

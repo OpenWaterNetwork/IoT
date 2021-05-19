@@ -1,0 +1,26 @@
+{
+  "unversionedId": "buildloragateway/pygate",
+  "id": "buildloragateway/pygate",
+  "isDocsHomePage": false,
+  "title": "PyGate",
+  "description": "Let's translate docs/getting-started.md to French.",
+  "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/buildloragateway/pygate.md",
+  "sourceDirName": "buildloragateway",
+  "slug": "/buildloragateway/pygate",
+  "permalink": "/IoT/es/docs/buildloragateway/pygate",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/buildloragateway/pygate.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gateway",
+    "permalink": "/IoT/es/docs/buildloragateway/gateway"
+  },
+  "next": {
+    "title": "Gateway registration on TTN",
+    "permalink": "/IoT/es/docs/buildloragateway/gatewayonttn"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "buildsensornodes/sensors-and-comm",
+  "id": "buildsensornodes/sensors-and-comm",
+  "isDocsHomePage": false,
+  "title": "Sensors and communication protocols",
+  "description": "Docusaurus can manage multiple versions of your docs.",
+  "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/buildsensornodes/sensors-and-comm.md",
+  "sourceDirName": "buildsensornodes",
+  "slug": "/buildsensornodes/sensors-and-comm",
+  "permalink": "/IoT/es/docs/buildsensornodes/sensors-and-comm",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/buildsensornodes/sensors-and-comm.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gateway registration on TTN",
+    "permalink": "/IoT/es/docs/buildloragateway/gatewayonttn"
+  },
+  "next": {
+    "title": "Printed Circuit Boards (PCBs)",
+    "permalink": "/IoT/es/docs/buildsensornodes/pcbs"
+  }
+}

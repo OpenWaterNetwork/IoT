@@ -1,0 +1,26 @@
+{
+  "unversionedId": "buildloragateway/gateway",
+  "id": "buildloragateway/gateway",
+  "isDocsHomePage": false,
+  "title": "Gateway",
+  "description": "In this document, on the one hand, the technical characteristics of the hardware are described, as well as the components of the device. On the other hand, the programming methods and the configuration commands of the meteorological data concentrator device (Iot-LoRa-Gateway) are indicated. It is worth mentioning that the product is compatible with devices that have LoRa communication.",
+  "source": "@site/docs/buildloragateway/gateway.md",
+  "sourceDirName": "buildloragateway",
+  "slug": "/buildloragateway/gateway",
+  "permalink": "/IoT/docs/buildloragateway/gateway",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/buildloragateway/gateway.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 10 - Individual/group projects",
+    "permalink": "/IoT/docs/handsontraining/module10"
+  },
+  "next": {
+    "title": "PyGate",
+    "permalink": "/IoT/docs/buildloragateway/pygate"
+  }
+}

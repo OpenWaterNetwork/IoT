@@ -1,0 +1,841 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/IoT/es/docs",
+          "versionEditUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs",
+          "versionEditUrlLocalized": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/i18n/es/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/home/fabian/MEGA/DEET/ProyectoIoD/IoT/sidebars.js",
+          "contentPath": "/home/fabian/MEGA/DEET/ProyectoIoD/IoT/docs",
+          "contentPathLocalized": "/home/fabian/MEGA/DEET/ProyectoIoD/IoT/i18n/es/docusaurus-plugin-content-docs/current",
+          "mainDocId": "intro",
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "intro"
+              },
+              {
+                "type": "category",
+                "label": "Hands-on training on IoT for beginners (slides and video’s training course)",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "handsontraining/module1"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "handsontraining/module2"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "handsontraining/module4"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "handsontraining/module3"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "handsontraining/module5"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "handsontraining/module6"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "handsontraining/module7"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "handsontraining/module8"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "handsontraining/module9"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "handsontraining/module10"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "Build your own LoRa gateway",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "buildloragateway/gateway"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "buildloragateway/pygate"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "buildloragateway/gatewayonttn"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "Build your own sensor nodes",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "buildsensornodes/sensors-and-comm"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "buildsensornodes/pcbs"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "buildsensornodes/sensornodesttn"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "buildsensornodes/wseb"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "ThingsBoard IoT platform ",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "thingsboardiotplaftorm/topic1"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "thingsboardiotplaftorm/topic2"
+                  }
+                ],
+                "collapsed": true
+              }
+            ]
+          },
+          "permalinkToSidebar": {
+            "/IoT/es/docs/buildloragateway/gateway": "tutorialSidebar",
+            "/IoT/es/docs/buildloragateway/gatewayonttn": "tutorialSidebar",
+            "/IoT/es/docs/buildloragateway/pygate": "tutorialSidebar",
+            "/IoT/es/docs/buildsensornodes/pcbs": "tutorialSidebar",
+            "/IoT/es/docs/buildsensornodes/sensornodesttn": "tutorialSidebar",
+            "/IoT/es/docs/buildsensornodes/sensors-and-comm": "tutorialSidebar",
+            "/IoT/es/docs/buildsensornodes/wseb": "tutorialSidebar",
+            "/IoT/es/docs/handsontraining/module1": "tutorialSidebar",
+            "/IoT/es/docs/handsontraining/module10": "tutorialSidebar",
+            "/IoT/es/docs/handsontraining/module2": "tutorialSidebar",
+            "/IoT/es/docs/handsontraining/module3": "tutorialSidebar",
+            "/IoT/es/docs/handsontraining/module4": "tutorialSidebar",
+            "/IoT/es/docs/handsontraining/module5": "tutorialSidebar",
+            "/IoT/es/docs/handsontraining/module6": "tutorialSidebar",
+            "/IoT/es/docs/handsontraining/module7": "tutorialSidebar",
+            "/IoT/es/docs/handsontraining/module8": "tutorialSidebar",
+            "/IoT/es/docs/handsontraining/module9": "tutorialSidebar",
+            "/IoT/es/docs/intro": "tutorialSidebar",
+            "/IoT/es/docs/thingsboardiotplaftorm/topic1": "tutorialSidebar",
+            "/IoT/es/docs/thingsboardiotplaftorm/topic2": "tutorialSidebar"
+          },
+          "docs": [
+            {
+              "unversionedId": "buildloragateway/gateway",
+              "id": "buildloragateway/gateway",
+              "isDocsHomePage": false,
+              "title": "Gateway",
+              "description": "En este documento por una parte, se describe las caracteristicas técnicas de hardware, así como tammbién se detalla los componentes del dispositivo. Por otra parte, se indican los metodos de programación y los comandos de configuración del dispositivo concentrador de datos meteorológicos (Iot-LoRa-Gateway). Cabe mencionar que el producto es compatible con dispositivos que cuenten con comunicación LoRa.",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/buildloragateway/gateway.md",
+              "sourceDirName": "buildloragateway",
+              "slug": "/buildloragateway/gateway",
+              "permalink": "/IoT/es/docs/buildloragateway/gateway",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/buildloragateway/gateway.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Module 10 - Individual/group projects",
+                "permalink": "/IoT/es/docs/handsontraining/module10"
+              },
+              "next": {
+                "title": "PyGate",
+                "permalink": "/IoT/es/docs/buildloragateway/pygate"
+              }
+            },
+            {
+              "unversionedId": "buildloragateway/gatewayonttn",
+              "id": "buildloragateway/gatewayonttn",
+              "isDocsHomePage": false,
+              "title": "Gateway registration on TTN",
+              "description": "Let's translate docs/getting-started.md to French.",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/buildloragateway/gatewayonttn.md",
+              "sourceDirName": "buildloragateway",
+              "slug": "/buildloragateway/gatewayonttn",
+              "permalink": "/IoT/es/docs/buildloragateway/gatewayonttn",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/buildloragateway/gatewayonttn.md",
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "PyGate",
+                "permalink": "/IoT/es/docs/buildloragateway/pygate"
+              },
+              "next": {
+                "title": "Sensors and communication protocols",
+                "permalink": "/IoT/es/docs/buildsensornodes/sensors-and-comm"
+              }
+            },
+            {
+              "unversionedId": "buildloragateway/pygate",
+              "id": "buildloragateway/pygate",
+              "isDocsHomePage": false,
+              "title": "PyGate",
+              "description": "Let's translate docs/getting-started.md to French.",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/buildloragateway/pygate.md",
+              "sourceDirName": "buildloragateway",
+              "slug": "/buildloragateway/pygate",
+              "permalink": "/IoT/es/docs/buildloragateway/pygate",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/buildloragateway/pygate.md",
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Gateway",
+                "permalink": "/IoT/es/docs/buildloragateway/gateway"
+              },
+              "next": {
+                "title": "Gateway registration on TTN",
+                "permalink": "/IoT/es/docs/buildloragateway/gatewayonttn"
+              }
+            },
+            {
+              "unversionedId": "buildsensornodes/pcbs",
+              "id": "buildsensornodes/pcbs",
+              "isDocsHomePage": false,
+              "title": "Printed Circuit Boards (PCBs)",
+              "description": "Let's translate docs/getting-started.md to French.",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/buildsensornodes/pcbs.md",
+              "sourceDirName": "buildsensornodes",
+              "slug": "/buildsensornodes/pcbs",
+              "permalink": "/IoT/es/docs/buildsensornodes/pcbs",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/buildsensornodes/pcbs.md",
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Sensors and communication protocols",
+                "permalink": "/IoT/es/docs/buildsensornodes/sensors-and-comm"
+              },
+              "next": {
+                "title": "Water sensor expansion board 1.0 for LoPy4/FiPy/GPy/SiPy/WiPy",
+                "permalink": "/IoT/es/docs/buildsensornodes/sensornodesttn"
+              }
+            },
+            {
+              "unversionedId": "buildsensornodes/sensornodesttn",
+              "id": "buildsensornodes/sensornodesttn",
+              "isDocsHomePage": false,
+              "title": "Water sensor expansion board 1.0 for LoPy4/FiPy/GPy/SiPy/WiPy",
+              "description": "Let's translate docs/getting-started.md to French.",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/buildsensornodes/sensornodesttn.md",
+              "sourceDirName": "buildsensornodes",
+              "slug": "/buildsensornodes/sensornodesttn",
+              "permalink": "/IoT/es/docs/buildsensornodes/sensornodesttn",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/buildsensornodes/sensornodesttn.md",
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Printed Circuit Boards (PCBs)",
+                "permalink": "/IoT/es/docs/buildsensornodes/pcbs"
+              },
+              "next": {
+                "title": "Sensor node registration on TTN",
+                "permalink": "/IoT/es/docs/buildsensornodes/wseb"
+              }
+            },
+            {
+              "unversionedId": "buildsensornodes/sensors-and-comm",
+              "id": "buildsensornodes/sensors-and-comm",
+              "isDocsHomePage": false,
+              "title": "Sensors and communication protocols",
+              "description": "Docusaurus can manage multiple versions of your docs.",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/buildsensornodes/sensors-and-comm.md",
+              "sourceDirName": "buildsensornodes",
+              "slug": "/buildsensornodes/sensors-and-comm",
+              "permalink": "/IoT/es/docs/buildsensornodes/sensors-and-comm",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/buildsensornodes/sensors-and-comm.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Gateway registration on TTN",
+                "permalink": "/IoT/es/docs/buildloragateway/gatewayonttn"
+              },
+              "next": {
+                "title": "Printed Circuit Boards (PCBs)",
+                "permalink": "/IoT/es/docs/buildsensornodes/pcbs"
+              }
+            },
+            {
+              "unversionedId": "buildsensornodes/wseb",
+              "id": "buildsensornodes/wseb",
+              "isDocsHomePage": false,
+              "title": "Sensor node registration on TTN",
+              "description": "Let's translate docs/getting-started.md to French.",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/buildsensornodes/wseb.md",
+              "sourceDirName": "buildsensornodes",
+              "slug": "/buildsensornodes/wseb",
+              "permalink": "/IoT/es/docs/buildsensornodes/wseb",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/buildsensornodes/wseb.md",
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Water sensor expansion board 1.0 for LoPy4/FiPy/GPy/SiPy/WiPy",
+                "permalink": "/IoT/es/docs/buildsensornodes/sensornodesttn"
+              },
+              "next": {
+                "title": "Topic 1",
+                "permalink": "/IoT/es/docs/thingsboardiotplaftorm/topic1"
+              }
+            },
+            {
+              "unversionedId": "handsontraining/module1",
+              "id": "handsontraining/module1",
+              "isDocsHomePage": false,
+              "title": "Module 1 - Introduction to the Internet of Things (IoT)",
+              "description": "Docusaurus can manage multiple versions of your docs.",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/handsontraining/module1.md",
+              "sourceDirName": "handsontraining",
+              "slug": "/handsontraining/module1",
+              "permalink": "/IoT/es/docs/handsontraining/module1",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module1.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Tutorial Intro",
+                "permalink": "/IoT/es/docs/intro"
+              },
+              "next": {
+                "title": "Module 2 - Basic components of an IoT system",
+                "permalink": "/IoT/es/docs/handsontraining/module2"
+              }
+            },
+            {
+              "unversionedId": "handsontraining/module10",
+              "id": "handsontraining/module10",
+              "isDocsHomePage": false,
+              "title": "Module 10 - Individual/group projects",
+              "description": "Add Markdown or React files to src/pages to create a standalone page:",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/handsontraining/module10.md",
+              "sourceDirName": "handsontraining",
+              "slug": "/handsontraining/module10",
+              "permalink": "/IoT/es/docs/handsontraining/module10",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module10.md",
+              "version": "current",
+              "sidebarPosition": 10,
+              "frontMatter": {
+                "sidebar_position": 10
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Module 9 - IoT Data transmission, storage,  visualization and download",
+                "permalink": "/IoT/es/docs/handsontraining/module9"
+              },
+              "next": {
+                "title": "Gateway",
+                "permalink": "/IoT/es/docs/buildloragateway/gateway"
+              }
+            },
+            {
+              "unversionedId": "handsontraining/module2",
+              "id": "handsontraining/module2",
+              "isDocsHomePage": false,
+              "title": "Module 2 - Basic components of an IoT system",
+              "description": "Documents are groups of pages connected through:",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/handsontraining/module2.md",
+              "sourceDirName": "handsontraining",
+              "slug": "/handsontraining/module2",
+              "permalink": "/IoT/es/docs/handsontraining/module2",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module2.md",
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Module 1 - Introduction to the Internet of Things (IoT)",
+                "permalink": "/IoT/es/docs/handsontraining/module1"
+              },
+              "next": {
+                "title": "Module 3 - Introduction to python/Micro-python",
+                "permalink": "/IoT/es/docs/handsontraining/module4"
+              }
+            },
+            {
+              "unversionedId": "handsontraining/module3",
+              "id": "handsontraining/module3",
+              "isDocsHomePage": false,
+              "title": "Module 4 - The IoT processing unit",
+              "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/handsontraining/module3.md",
+              "sourceDirName": "handsontraining",
+              "slug": "/handsontraining/module3",
+              "permalink": "/IoT/es/docs/handsontraining/module3",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module3.md",
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Module 3 - Introduction to python/Micro-python",
+                "permalink": "/IoT/es/docs/handsontraining/module4"
+              },
+              "next": {
+                "title": "Module 5 - Building the first basic IoT system",
+                "permalink": "/IoT/es/docs/handsontraining/module5"
+              }
+            },
+            {
+              "unversionedId": "handsontraining/module4",
+              "id": "handsontraining/module4",
+              "isDocsHomePage": false,
+              "title": "Module 3 - Introduction to python/Micro-python",
+              "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/handsontraining/module4.md",
+              "sourceDirName": "handsontraining",
+              "slug": "/handsontraining/module4",
+              "permalink": "/IoT/es/docs/handsontraining/module4",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module4.md",
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Module 2 - Basic components of an IoT system",
+                "permalink": "/IoT/es/docs/handsontraining/module2"
+              },
+              "next": {
+                "title": "Module 4 - The IoT processing unit",
+                "permalink": "/IoT/es/docs/handsontraining/module3"
+              }
+            },
+            {
+              "unversionedId": "handsontraining/module5",
+              "id": "handsontraining/module5",
+              "isDocsHomePage": false,
+              "title": "Module 5 - Building the first basic IoT system",
+              "description": "Docusaurus is a static-site-generator (also called Jamstack).",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/handsontraining/module5.md",
+              "sourceDirName": "handsontraining",
+              "slug": "/handsontraining/module5",
+              "permalink": "/IoT/es/docs/handsontraining/module5",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module5.md",
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Module 4 - The IoT processing unit",
+                "permalink": "/IoT/es/docs/handsontraining/module3"
+              },
+              "next": {
+                "title": "Module 6 - Building an improved IoT system with more sensors",
+                "permalink": "/IoT/es/docs/handsontraining/module6"
+              }
+            },
+            {
+              "unversionedId": "handsontraining/module6",
+              "id": "handsontraining/module6",
+              "isDocsHomePage": false,
+              "title": "Module 6 - Building an improved IoT system with more sensors",
+              "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/handsontraining/module6.md",
+              "sourceDirName": "handsontraining",
+              "slug": "/handsontraining/module6",
+              "permalink": "/IoT/es/docs/handsontraining/module6",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module6.md",
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Module 5 - Building the first basic IoT system",
+                "permalink": "/IoT/es/docs/handsontraining/module5"
+              },
+              "next": {
+                "title": "Module 7 - Keeping time and introducing the deep sleep concept",
+                "permalink": "/IoT/es/docs/handsontraining/module7"
+              }
+            },
+            {
+              "unversionedId": "handsontraining/module7",
+              "id": "handsontraining/module7",
+              "isDocsHomePage": false,
+              "title": "Module 7 - Keeping time and introducing the deep sleep concept",
+              "description": "Add Markdown or React files to src/pages to create a standalone page:",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/handsontraining/module7.md",
+              "sourceDirName": "handsontraining",
+              "slug": "/handsontraining/module7",
+              "permalink": "/IoT/es/docs/handsontraining/module7",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module7.md",
+              "version": "current",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "sidebar_position": 7
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Module 6 - Building an improved IoT system with more sensors",
+                "permalink": "/IoT/es/docs/handsontraining/module6"
+              },
+              "next": {
+                "title": "Module 8 - Building your own LoRa Gateway for data transmission",
+                "permalink": "/IoT/es/docs/handsontraining/module8"
+              }
+            },
+            {
+              "unversionedId": "handsontraining/module8",
+              "id": "handsontraining/module8",
+              "isDocsHomePage": false,
+              "title": "Module 8 - Building your own LoRa Gateway for data transmission",
+              "description": "Add Markdown or React files to src/pages to create a standalone page:",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/handsontraining/module8.md",
+              "sourceDirName": "handsontraining",
+              "slug": "/handsontraining/module8",
+              "permalink": "/IoT/es/docs/handsontraining/module8",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module8.md",
+              "version": "current",
+              "sidebarPosition": 8,
+              "frontMatter": {
+                "sidebar_position": 8
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Module 7 - Keeping time and introducing the deep sleep concept",
+                "permalink": "/IoT/es/docs/handsontraining/module7"
+              },
+              "next": {
+                "title": "Module 9 - IoT Data transmission, storage,  visualization and download",
+                "permalink": "/IoT/es/docs/handsontraining/module9"
+              }
+            },
+            {
+              "unversionedId": "handsontraining/module9",
+              "id": "handsontraining/module9",
+              "isDocsHomePage": false,
+              "title": "Module 9 - IoT Data transmission, storage,  visualization and download",
+              "description": "Add Markdown or React files to src/pages to create a standalone page:",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/handsontraining/module9.md",
+              "sourceDirName": "handsontraining",
+              "slug": "/handsontraining/module9",
+              "permalink": "/IoT/es/docs/handsontraining/module9",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module9.md",
+              "version": "current",
+              "sidebarPosition": 9,
+              "frontMatter": {
+                "sidebar_position": 9
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Module 8 - Building your own LoRa Gateway for data transmission",
+                "permalink": "/IoT/es/docs/handsontraining/module8"
+              },
+              "next": {
+                "title": "Module 10 - Individual/group projects",
+                "permalink": "/IoT/es/docs/handsontraining/module10"
+              }
+            },
+            {
+              "unversionedId": "intro",
+              "id": "intro",
+              "isDocsHomePage": false,
+              "title": "Tutorial Intro",
+              "description": "Let's discover Open Water Network.",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/IoT/es/docs/intro",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/intro.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Module 1 - Introduction to the Internet of Things (IoT)",
+                "permalink": "/IoT/es/docs/handsontraining/module1"
+              }
+            },
+            {
+              "unversionedId": "thingsboardiotplaftorm/topic1",
+              "id": "thingsboardiotplaftorm/topic1",
+              "isDocsHomePage": false,
+              "title": "Topic 1",
+              "description": "Docusaurus can manage multiple versions of your docs.",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/thingsboardiotplaftorm/topic1.md",
+              "sourceDirName": "thingsboardiotplaftorm",
+              "slug": "/thingsboardiotplaftorm/topic1",
+              "permalink": "/IoT/es/docs/thingsboardiotplaftorm/topic1",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/thingsboardiotplaftorm/topic1.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Sensor node registration on TTN",
+                "permalink": "/IoT/es/docs/buildsensornodes/wseb"
+              },
+              "next": {
+                "title": "Topic 2",
+                "permalink": "/IoT/es/docs/thingsboardiotplaftorm/topic2"
+              }
+            },
+            {
+              "unversionedId": "thingsboardiotplaftorm/topic2",
+              "id": "thingsboardiotplaftorm/topic2",
+              "isDocsHomePage": false,
+              "title": "Topic 2",
+              "description": "Let's translate docs/getting-started.md to French.",
+              "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/thingsboardiotplaftorm/topic2.md",
+              "sourceDirName": "thingsboardiotplaftorm",
+              "slug": "/thingsboardiotplaftorm/topic2",
+              "permalink": "/IoT/es/docs/thingsboardiotplaftorm/topic2",
+              "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/thingsboardiotplaftorm/topic2.md",
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Topic 1",
+                "permalink": "/IoT/es/docs/thingsboardiotplaftorm/topic1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogPosts": [
+        {
+          "id": "welcome",
+          "metadata": {
+            "permalink": "/IoT/es/blog/welcome",
+            "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/blog/blog/2019-05-30-welcome.md",
+            "source": "@site/blog/2019-05-30-welcome.md",
+            "title": "Welcome",
+            "description": "Blog features are powered by the blog plugin. Simply add files to the blog directory. It supports tags as well!",
+            "date": "2019-05-30T00:00:00.000Z",
+            "formattedDate": "29 de mayo de 2019",
+            "tags": [
+              {
+                "label": "facebook",
+                "permalink": "/IoT/es/blog/tags/facebook"
+              },
+              {
+                "label": "hello",
+                "permalink": "/IoT/es/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/IoT/es/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.175,
+            "truncated": false,
+            "nextItem": {
+              "title": "Hello",
+              "permalink": "/IoT/es/blog/hello-world"
+            }
+          }
+        },
+        {
+          "id": "hello-world",
+          "metadata": {
+            "permalink": "/IoT/es/blog/hello-world",
+            "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/blog/blog/2019-05-29-hello-world.md",
+            "source": "@site/blog/2019-05-29-hello-world.md",
+            "title": "Hello",
+            "description": "Welcome to this blog. This blog is created with Docusaurus 2 alpha.",
+            "date": "2019-05-29T00:00:00.000Z",
+            "formattedDate": "28 de mayo de 2019",
+            "tags": [
+              {
+                "label": "hello",
+                "permalink": "/IoT/es/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/IoT/es/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.12,
+            "truncated": true,
+            "prevItem": {
+              "title": "Welcome",
+              "permalink": "/IoT/es/blog/welcome"
+            },
+            "nextItem": {
+              "title": "Hola",
+              "permalink": "/IoT/es/blog/hola"
+            }
+          }
+        },
+        {
+          "id": "hola",
+          "metadata": {
+            "permalink": "/IoT/es/blog/hola",
+            "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/blog/blog/2019-05-28-hola.md",
+            "source": "@site/blog/2019-05-28-hola.md",
+            "title": "Hola",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
+            "date": "2019-05-28T00:00:00.000Z",
+            "formattedDate": "27 de mayo de 2019",
+            "tags": [
+              {
+                "label": "hola",
+                "permalink": "/IoT/es/blog/tags/hola"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/IoT/es/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.12,
+            "truncated": false,
+            "prevItem": {
+              "title": "Hello",
+              "permalink": "/IoT/es/blog/hello-world"
+            }
+          }
+        }
+      ],
+      "blogListPaginated": [
+        {
+          "metadata": {
+            "permalink": "/IoT/es/blog",
+            "page": 1,
+            "postsPerPage": 10,
+            "totalPages": 1,
+            "totalCount": 3,
+            "previousPage": null,
+            "nextPage": null,
+            "blogDescription": "Blog",
+            "blogTitle": "Blog"
+          },
+          "items": [
+            "welcome",
+            "hello-world",
+            "hola"
+          ]
+        }
+      ],
+      "blogTags": {
+        "facebook": {
+          "name": "facebook",
+          "items": [
+            "welcome"
+          ],
+          "permalink": "/IoT/es/blog/tags/facebook"
+        },
+        "hello": {
+          "name": "hello",
+          "items": [
+            "welcome",
+            "hello-world"
+          ],
+          "permalink": "/IoT/es/blog/tags/hello"
+        },
+        "docusaurus": {
+          "name": "docusaurus",
+          "items": [
+            "welcome",
+            "hello-world",
+            "hola"
+          ],
+          "permalink": "/IoT/es/blog/tags/docusaurus"
+        },
+        "hola": {
+          "name": "hola",
+          "items": [
+            "hola"
+          ],
+          "permalink": "/IoT/es/blog/tags/hola"
+        }
+      },
+      "blogTagsListPath": "/IoT/es/blog/tags"
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/IoT/es/",
+        "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/IoT/es/markdown-page",
+        "source": "@site/src/pages/markdown-page.md"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  }
+}

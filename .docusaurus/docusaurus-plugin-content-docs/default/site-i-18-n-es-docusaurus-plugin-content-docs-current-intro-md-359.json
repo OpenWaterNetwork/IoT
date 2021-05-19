@@ -1,0 +1,22 @@
+{
+  "unversionedId": "intro",
+  "id": "intro",
+  "isDocsHomePage": false,
+  "title": "Tutorial Intro",
+  "description": "Let's discover Open Water Network.",
+  "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/IoT/es/docs/intro",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/intro.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Module 1 - Introduction to the Internet of Things (IoT)",
+    "permalink": "/IoT/es/docs/handsontraining/module1"
+  }
+}

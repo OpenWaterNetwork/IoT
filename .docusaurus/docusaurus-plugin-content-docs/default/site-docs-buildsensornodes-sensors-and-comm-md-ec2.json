@@ -1,0 +1,26 @@
+{
+  "unversionedId": "buildsensornodes/sensors-and-comm",
+  "id": "buildsensornodes/sensors-and-comm",
+  "isDocsHomePage": false,
+  "title": "Sensors and communication protocols",
+  "description": "River Level Sensor",
+  "source": "@site/docs/buildsensornodes/sensors-and-comm.md",
+  "sourceDirName": "buildsensornodes",
+  "slug": "/buildsensornodes/sensors-and-comm",
+  "permalink": "/IoT/docs/buildsensornodes/sensors-and-comm",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/buildsensornodes/sensors-and-comm.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gateway registration on TTN",
+    "permalink": "/IoT/docs/buildloragateway/gatewayonttn"
+  },
+  "next": {
+    "title": "Printed Circuit Boards (PCBs)",
+    "permalink": "/IoT/docs/buildsensornodes/pcbs"
+  }
+}

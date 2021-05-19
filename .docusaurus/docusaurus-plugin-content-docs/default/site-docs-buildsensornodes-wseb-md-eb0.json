@@ -1,0 +1,26 @@
+{
+  "unversionedId": "buildsensornodes/wseb",
+  "id": "buildsensornodes/wseb",
+  "isDocsHomePage": false,
+  "title": "Sensor node registration on TTN",
+  "description": "Let's translate docs/getting-started.md to French.",
+  "source": "@site/docs/buildsensornodes/wseb.md",
+  "sourceDirName": "buildsensornodes",
+  "slug": "/buildsensornodes/wseb",
+  "permalink": "/IoT/docs/buildsensornodes/wseb",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/buildsensornodes/wseb.md",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Water sensor expansion board 1.0 for LoPy4/FiPy/GPy/SiPy/WiPy",
+    "permalink": "/IoT/docs/buildsensornodes/sensornodesttn"
+  },
+  "next": {
+    "title": "Topic 1",
+    "permalink": "/IoT/docs/thingsboardiotplaftorm/topic1"
+  }
+}

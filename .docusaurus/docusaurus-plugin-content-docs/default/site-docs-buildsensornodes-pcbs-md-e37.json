@@ -1,0 +1,26 @@
+{
+  "unversionedId": "buildsensornodes/pcbs",
+  "id": "buildsensornodes/pcbs",
+  "isDocsHomePage": false,
+  "title": "Printed Circuit Boards (PCBs)",
+  "description": "Let's translate docs/getting-started.md to French.",
+  "source": "@site/docs/buildsensornodes/pcbs.md",
+  "sourceDirName": "buildsensornodes",
+  "slug": "/buildsensornodes/pcbs",
+  "permalink": "/IoT/docs/buildsensornodes/pcbs",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/buildsensornodes/pcbs.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sensors and communication protocols",
+    "permalink": "/IoT/docs/buildsensornodes/sensors-and-comm"
+  },
+  "next": {
+    "title": "Water sensor expansion board 1.0 for LoPy4/FiPy/GPy/SiPy/WiPy",
+    "permalink": "/IoT/docs/buildsensornodes/sensornodesttn"
+  }
+}

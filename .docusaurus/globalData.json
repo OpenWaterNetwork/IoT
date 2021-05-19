@@ -1,0 +1,118 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/IoT/es/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/IoT/es/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "buildloragateway/gateway",
+              "path": "/IoT/es/docs/buildloragateway/gateway",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "buildloragateway/gatewayonttn",
+              "path": "/IoT/es/docs/buildloragateway/gatewayonttn",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "buildloragateway/pygate",
+              "path": "/IoT/es/docs/buildloragateway/pygate",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "buildsensornodes/pcbs",
+              "path": "/IoT/es/docs/buildsensornodes/pcbs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "buildsensornodes/sensornodesttn",
+              "path": "/IoT/es/docs/buildsensornodes/sensornodesttn",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "buildsensornodes/sensors-and-comm",
+              "path": "/IoT/es/docs/buildsensornodes/sensors-and-comm",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "buildsensornodes/wseb",
+              "path": "/IoT/es/docs/buildsensornodes/wseb",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "handsontraining/module1",
+              "path": "/IoT/es/docs/handsontraining/module1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "handsontraining/module10",
+              "path": "/IoT/es/docs/handsontraining/module10",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "handsontraining/module2",
+              "path": "/IoT/es/docs/handsontraining/module2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "handsontraining/module3",
+              "path": "/IoT/es/docs/handsontraining/module3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "handsontraining/module4",
+              "path": "/IoT/es/docs/handsontraining/module4",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "handsontraining/module5",
+              "path": "/IoT/es/docs/handsontraining/module5",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "handsontraining/module6",
+              "path": "/IoT/es/docs/handsontraining/module6",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "handsontraining/module7",
+              "path": "/IoT/es/docs/handsontraining/module7",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "handsontraining/module8",
+              "path": "/IoT/es/docs/handsontraining/module8",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "handsontraining/module9",
+              "path": "/IoT/es/docs/handsontraining/module9",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/IoT/es/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "thingsboardiotplaftorm/topic1",
+              "path": "/IoT/es/docs/thingsboardiotplaftorm/topic1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "thingsboardiotplaftorm/topic2",
+              "path": "/IoT/es/docs/thingsboardiotplaftorm/topic2",
+              "sidebar": "tutorialSidebar"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

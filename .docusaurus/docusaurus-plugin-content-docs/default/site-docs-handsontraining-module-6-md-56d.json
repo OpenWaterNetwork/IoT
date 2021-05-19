@@ -1,0 +1,26 @@
+{
+  "unversionedId": "handsontraining/module6",
+  "id": "handsontraining/module6",
+  "isDocsHomePage": false,
+  "title": "Module 6 - Building an improved IoT system with more sensors",
+  "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+  "source": "@site/docs/handsontraining/module6.md",
+  "sourceDirName": "handsontraining",
+  "slug": "/handsontraining/module6",
+  "permalink": "/IoT/docs/handsontraining/module6",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module6.md",
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 5 - Building the first basic IoT system",
+    "permalink": "/IoT/docs/handsontraining/module5"
+  },
+  "next": {
+    "title": "Module 7 - Keeping time and introducing the deep sleep concept",
+    "permalink": "/IoT/docs/handsontraining/module7"
+  }
+}

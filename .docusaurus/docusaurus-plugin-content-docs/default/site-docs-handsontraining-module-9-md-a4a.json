@@ -1,0 +1,26 @@
+{
+  "unversionedId": "handsontraining/module9",
+  "id": "handsontraining/module9",
+  "isDocsHomePage": false,
+  "title": "Module 9 - IoT Data transmission, storage,  visualization and download",
+  "description": "Add Markdown or React files to src/pages to create a standalone page:",
+  "source": "@site/docs/handsontraining/module9.md",
+  "sourceDirName": "handsontraining",
+  "slug": "/handsontraining/module9",
+  "permalink": "/IoT/docs/handsontraining/module9",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module9.md",
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 8 - Building your own LoRa Gateway for data transmission",
+    "permalink": "/IoT/docs/handsontraining/module8"
+  },
+  "next": {
+    "title": "Module 10 - Individual/group projects",
+    "permalink": "/IoT/docs/handsontraining/module10"
+  }
+}

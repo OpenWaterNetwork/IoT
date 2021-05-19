@@ -1,0 +1,26 @@
+{
+  "unversionedId": "handsontraining/module7",
+  "id": "handsontraining/module7",
+  "isDocsHomePage": false,
+  "title": "Module 7 - Keeping time and introducing the deep sleep concept",
+  "description": "Add Markdown or React files to src/pages to create a standalone page:",
+  "source": "@site/docs/handsontraining/module7.md",
+  "sourceDirName": "handsontraining",
+  "slug": "/handsontraining/module7",
+  "permalink": "/IoT/docs/handsontraining/module7",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module7.md",
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 6 - Building an improved IoT system with more sensors",
+    "permalink": "/IoT/docs/handsontraining/module6"
+  },
+  "next": {
+    "title": "Module 8 - Building your own LoRa Gateway for data transmission",
+    "permalink": "/IoT/docs/handsontraining/module8"
+  }
+}

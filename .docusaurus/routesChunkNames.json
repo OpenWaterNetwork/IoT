@@ -1,0 +1,179 @@
+{
+  "/IoT/es/-14f": {
+    "component": "c4f5d8e4",
+    "config": "5e9f5e1a"
+  },
+  "/IoT/es/blog-87e": {
+    "component": "a6aa9e1f",
+    "sidebar": "a0747ff7",
+    "items": [
+      {
+        "content": "af172acd"
+      },
+      {
+        "content": "3570154c"
+      },
+      {
+        "content": "8e9f0a8a"
+      }
+    ],
+    "metadata": "b297d5ce"
+  },
+  "/IoT/es/blog/hello-world-bd0": {
+    "component": "ccc49370",
+    "sidebar": "a0747ff7",
+    "content": "d610846f"
+  },
+  "/IoT/es/blog/hola-a66": {
+    "component": "ccc49370",
+    "sidebar": "a0747ff7",
+    "content": "bdd709f1"
+  },
+  "/IoT/es/blog/tags-d16": {
+    "component": "01a85c17",
+    "sidebar": "a0747ff7",
+    "tags": "f849a2d4"
+  },
+  "/IoT/es/blog/tags/docusaurus-f64": {
+    "component": "6875c492",
+    "sidebar": "a0747ff7",
+    "items": [
+      {
+        "content": "af172acd"
+      },
+      {
+        "content": "3570154c"
+      },
+      {
+        "content": "8e9f0a8a"
+      }
+    ],
+    "metadata": "13ad8c64"
+  },
+  "/IoT/es/blog/tags/facebook-c8b": {
+    "component": "6875c492",
+    "sidebar": "a0747ff7",
+    "items": [
+      {
+        "content": "af172acd"
+      }
+    ],
+    "metadata": "e40e6fb2"
+  },
+  "/IoT/es/blog/tags/hello-12e": {
+    "component": "6875c492",
+    "sidebar": "a0747ff7",
+    "items": [
+      {
+        "content": "af172acd"
+      },
+      {
+        "content": "3570154c"
+      }
+    ],
+    "metadata": "26ae9853"
+  },
+  "/IoT/es/blog/tags/hola-f75": {
+    "component": "6875c492",
+    "sidebar": "a0747ff7",
+    "items": [
+      {
+        "content": "8e9f0a8a"
+      }
+    ],
+    "metadata": "672857f9"
+  },
+  "/IoT/es/blog/welcome-78d": {
+    "component": "ccc49370",
+    "sidebar": "a0747ff7",
+    "content": "2868cdab"
+  },
+  "/IoT/es/markdown-page-c26": {
+    "component": "1f391b9e",
+    "content": "393be207"
+  },
+  "/IoT/es/docs-794": {
+    "component": "1be78505",
+    "versionMetadata": "935f2afb"
+  },
+  "/IoT/es/docs/buildloragateway/gateway-da8": {
+    "component": "17896441",
+    "content": "3611eb66"
+  },
+  "/IoT/es/docs/buildloragateway/gatewayonttn-81b": {
+    "component": "17896441",
+    "content": "8fc9a861"
+  },
+  "/IoT/es/docs/buildloragateway/pygate-569": {
+    "component": "17896441",
+    "content": "6313e862"
+  },
+  "/IoT/es/docs/buildsensornodes/pcbs-7c5": {
+    "component": "17896441",
+    "content": "7341e6e0"
+  },
+  "/IoT/es/docs/buildsensornodes/sensornodesttn-d94": {
+    "component": "17896441",
+    "content": "53febcc5"
+  },
+  "/IoT/es/docs/buildsensornodes/sensors-and-comm-5a2": {
+    "component": "17896441",
+    "content": "8ff04f29"
+  },
+  "/IoT/es/docs/buildsensornodes/wseb-dc9": {
+    "component": "17896441",
+    "content": "f85749ef"
+  },
+  "/IoT/es/docs/handsontraining/module1-02b": {
+    "component": "17896441",
+    "content": "c5e7aeb6"
+  },
+  "/IoT/es/docs/handsontraining/module10-952": {
+    "component": "17896441",
+    "content": "7af1b430"
+  },
+  "/IoT/es/docs/handsontraining/module2-320": {
+    "component": "17896441",
+    "content": "c2059287"
+  },
+  "/IoT/es/docs/handsontraining/module3-155": {
+    "component": "17896441",
+    "content": "1075bf0d"
+  },
+  "/IoT/es/docs/handsontraining/module4-293": {
+    "component": "17896441",
+    "content": "638212b0"
+  },
+  "/IoT/es/docs/handsontraining/module5-700": {
+    "component": "17896441",
+    "content": "43803e6a"
+  },
+  "/IoT/es/docs/handsontraining/module6-9a0": {
+    "component": "17896441",
+    "content": "2ee2a2e0"
+  },
+  "/IoT/es/docs/handsontraining/module7-40d": {
+    "component": "17896441",
+    "content": "d863c586"
+  },
+  "/IoT/es/docs/handsontraining/module8-32f": {
+    "component": "17896441",
+    "content": "26238282"
+  },
+  "/IoT/es/docs/handsontraining/module9-3a6": {
+    "component": "17896441",
+    "content": "db4a191a"
+  },
+  "/IoT/es/docs/intro-76b": {
+    "component": "17896441",
+    "content": "359fb69f"
+  },
+  "/IoT/es/docs/thingsboardiotplaftorm/topic1-be0": {
+    "component": "17896441",
+    "content": "b4a1037c"
+  },
+  "/IoT/es/docs/thingsboardiotplaftorm/topic2-bd6": {
+    "component": "17896441",
+    "content": "249eb373"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "thingsboardiotplaftorm/topic2",
+  "id": "thingsboardiotplaftorm/topic2",
+  "isDocsHomePage": false,
+  "title": "Topic 2",
+  "description": "Let's translate docs/getting-started.md to French.",
+  "source": "@site/i18n/es/docusaurus-plugin-content-docs/current/thingsboardiotplaftorm/topic2.md",
+  "sourceDirName": "thingsboardiotplaftorm",
+  "slug": "/thingsboardiotplaftorm/topic2",
+  "permalink": "/IoT/es/docs/thingsboardiotplaftorm/topic2",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/thingsboardiotplaftorm/topic2.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Topic 1",
+    "permalink": "/IoT/es/docs/thingsboardiotplaftorm/topic1"
+  }
+}

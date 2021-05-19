@@ -1,0 +1,26 @@
+{
+  "unversionedId": "handsontraining/module10",
+  "id": "handsontraining/module10",
+  "isDocsHomePage": false,
+  "title": "Module 10 - Individual/group projects",
+  "description": "Add Markdown or React files to src/pages to create a standalone page:",
+  "source": "@site/docs/handsontraining/module10.md",
+  "sourceDirName": "handsontraining",
+  "slug": "/handsontraining/module10",
+  "permalink": "/IoT/docs/handsontraining/module10",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module10.md",
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 9 - IoT Data transmission, storage,  visualization and download",
+    "permalink": "/IoT/docs/handsontraining/module9"
+  },
+  "next": {
+    "title": "Gateway",
+    "permalink": "/IoT/docs/buildloragateway/gateway"
+  }
+}

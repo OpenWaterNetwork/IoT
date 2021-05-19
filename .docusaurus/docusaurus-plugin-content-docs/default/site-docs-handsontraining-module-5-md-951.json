@@ -1,0 +1,26 @@
+{
+  "unversionedId": "handsontraining/module5",
+  "id": "handsontraining/module5",
+  "isDocsHomePage": false,
+  "title": "Module 5 - Building the first basic IoT system",
+  "description": "Docusaurus is a static-site-generator (also called Jamstack).",
+  "source": "@site/docs/handsontraining/module5.md",
+  "sourceDirName": "handsontraining",
+  "slug": "/handsontraining/module5",
+  "permalink": "/IoT/docs/handsontraining/module5",
+  "editUrl": "https://github.com/OpenWaterNetwork/IoT/blob/documentation/docs/handsontraining/module5.md",
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 4 - The IoT processing unit",
+    "permalink": "/IoT/docs/handsontraining/module3"
+  },
+  "next": {
+    "title": "Module 6 - Building an improved IoT system with more sensors",
+    "permalink": "/IoT/docs/handsontraining/module6"
+  }
+}
