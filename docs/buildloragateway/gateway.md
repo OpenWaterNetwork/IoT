@@ -69,7 +69,7 @@ The central processing unit of the equipment is the Lopy4 development card, the 
 
 The hardware is integrated into a Printed Circuit Board (PCB), it has as its main component the Lopy4 development module, responsible for carrying out control, storage and transmission tasks. The other peripherals that the device has (RTC ds3231, FTDI Basic, DHT22 y GPRS SIM800L) are connected to the aforementioned Central Processing Unit (Lopy4).
 
-Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria de Litio, un controlador de carga MPPT y un panel solar de 6V.
+In addition to the PCB mentioned above, the device has a Lithium battery, an MPPT charge controller and a 6V solar panel.
 
 | ![](img/GatewayArchGen.png) |
 |:--:| 
