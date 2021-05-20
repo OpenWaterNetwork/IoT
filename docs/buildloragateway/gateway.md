@@ -304,33 +304,11 @@ Your docs now have 2 versions:
 - `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
 - `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
 
-## Hardware (all the details needed to make it)
+## Hardware
 
-To navigate seamlessly across versions, add a version dropdown.
+All the details needed to make it.
 
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The docs version dropdown appears in your navbar:
-
-![Docs Version Dropdown](/img/tutorial/docsVersionDropdown.png)
-
-## Scripts (the full scripts with some explanation)
+## Scripts
 
 The scripts that the system has are divided into .py files that contain the classes and methods for the correct operation of the system. They are divided into the following files:
 
