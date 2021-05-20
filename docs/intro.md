@@ -2,6 +2,6 @@
 sidebar_position: 1
 ---
 
-# Introducción
+# Introduction
 
-Descubra **Open Water Network**.
+Discover **Open Water Network**.
