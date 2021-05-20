@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Hands-on training on IoT for beginners (slides and video’s training course)": {
+    "message": "Hands-on training on IoT for beginners (slides and video’s training course)",
+    "description": "The label for category Hands-on training on IoT for beginners (slides and video’s training course) in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Build your own LoRa gateway": {
+    "message": "Construya su propio LoRa gateway",
+    "description": "The label for category Build your own LoRa gateway in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Build your own sensor nodes": {
+    "message": "Construya sus propios sensor nodes",
+    "description": "The label for category Build your own sensor nodes in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.ThingsBoard IoT platform ": {
+    "message": "ThingsBoard IoT platform ",
+    "description": "The label for category ThingsBoard IoT platform  in sidebar tutorialSidebar"
+  }
+}
