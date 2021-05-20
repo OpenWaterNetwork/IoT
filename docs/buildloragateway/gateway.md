@@ -343,7 +343,7 @@ El primer archivo es el llamado boot.py, es el que arranca el sistema y en el se
 - Se define el programa que arrancará a continuación de estás configuraciones.
 
 <details open>
-<summary>Boot.py</summary>
+<summary>**Code:** Boot.py</summary>
 
 <p>
 
