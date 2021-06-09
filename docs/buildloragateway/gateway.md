@@ -78,16 +78,16 @@ In addition to the PCB, the device has a Lithium battery, an MPPT charge control
 
 ### Lopy4 connections
 
-The Lopy4 card has 28 pins, among which are the power pins and a 3.3V output, their arrangement and their connection with the different peripherals are detailed below:
+The Lopy4 card has 28 pins, incluiding the power pins and a 3.3V output. The arrangement and connections with other peripherals are detailed below:
 
--   P0: Rx P1: Tx. Comunicación UART con el FTDI Basic.
--   P2: Pin de Arranque, para actualizar el firmware.
--   P3: Tx P4: Rx. Comunicación UART con el SIM 800L.
--   P8: Pin de Arranque para el SIM 800L.
--   P9: SDA P10: SDL. Comunicación I2C con el RTC ds3231.
--   P21: Pin de control de modo de funcionamieto.
--   P22: Pin de lectura del nivel de tensión de Batería.
--   P23: Pin de lectura de señal del sensor DHT22.
+-   P0: Rx P1: Tx. UART communication with the FTDI Basic.
+-   P2: Boot pin to update the firmware.
+-   P3: Tx P4: Rx. UART coomunication with the SIM 800L.
+-   P8: Boot pin for SIM 800L.
+-   P9: SDA P10: SDL. I2C communication with the RTC ds3231.
+-   P21: Operating mode control pin.
+-   P22: Battery voltage level reading pin.
+-   P23: DHT22 sensor signal reading pin.
 
 | ![](img/Lopy4SCH.PNG) |
 |:--:| 
@@ -97,7 +97,7 @@ The Lopy4 card has 28 pins, among which are the power pins and a 3.3V output, th
 
 ### DHT22
 
-The internal temperature and humidity sensor is connected to a digital pin of the MCU, configured as an input, a pull up resistor is also connected to the signal output, as in the following figure:
+The internal temperature and humidity sensor are connected to a MCU digital pin, which is configured as an input. A pull up resistor is also connected to the signal output, as shown in the following figure:
 
 
 ![DHT22 pin connections.](img/dht22SCH.PNG "fig:")
