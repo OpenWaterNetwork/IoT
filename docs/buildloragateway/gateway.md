@@ -299,26 +299,26 @@ npm run docusaurus docs:version 1.0
 
 The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
 
-Your docs now have 2 versions:
+Your docs now has 2 versions:
 
 - `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
 - `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
 
 ## Hardware
 
-All the details needed to make it.
+Below are all the details needed to do it.
 
 ## Scripts
 
-The scripts that the system has are divided into .py files that contain the classes and methods for the correct operation of the system. They are divided into the following files:
+The scripts within the system are divided into .py files, which contain the classes and methods for the correct operation of the system. These files are:
 
 ### Boot.py
 
-El primer archivo es el llamado boot.py, es el que arranca el sistema y en el se define:
+The first file is called boot.py, which is the once that starts the system and it defines:
 
-- La comunicación serial para la consola de visualización y para subir los programas.
-- Se desabilita el módulo WIFI para reducir el consumo energético.
-- Se define el programa que arrancará a continuación de estás configuraciones.
+- The serial communication for the display console and to upload the programs.
+- The WIFI module is disabled to reduce energy consumption.
+- The program that will start after these configurations is defined.
 
 <details open>
 <summary><strong>Code:</strong> Boot.py</summary>
@@ -737,7 +737,7 @@ class DS3231():
 ```
 ### dht.py 
 
-Este archivo contiene la clase y los métodos para la configuración y muestreo del sensor de temperatura y humedad dht22, fue tomada de [JurassicPork/DHT_PyCom](https://github.com/JurassicPork/DHT_PyCom/blob/master/dth.py)
+This file contains the class and methods for the configuration and sampling of the temperature and humidity sensor dht22, it was taken from [JurassicPork/DHT_PyCom](https://github.com/JurassicPork/DHT_PyCom/blob/master/dth.py)
 
 ### main.py 
 
