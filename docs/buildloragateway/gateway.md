@@ -145,7 +145,7 @@ The board has a LED that indicates the normal startup of the board and the mode 
 
 ![USB connection.](img/usbConnect.PNG "fig:") 
 
-Ahora es necesario abrir el entorno de programación, para agregar el dispositivo COM y configuar el dispositivo gateway. A continuación se detallan los pasos a seguir:
+Not it is necessary to open the programming environment to add the COM device and configure the gateway device. The steps to follow are detailed below:
 
 -   Open Pymakr.
 
@@ -170,7 +170,7 @@ Configuration Methods
 
 ### System Operation
 
-Como se mencionó en el apartado anterior, el led verde encendido por 3 segundos luego de conectar la placa, indica que está lsita la configuración. Para empezar el funcionamiento automatico del sistema se debe crear un archivo de configuración con el método detallado a continuación.
+As mentioned in the previous section, the green LED on for 3 seconds after connecting the board indicated that the configuration is ready. To start the automatic operation of the system, a configuration file must be created using the method described below.
 
 The system automatically resets and the next process begins:
 
