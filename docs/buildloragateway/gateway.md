@@ -104,23 +104,23 @@ The internal temperature and humidity sensor are connected to a MCU digital pin,
 
 ### GPRS SIM800L
 
-This peripheral uses the UART protocol to connect to the MCU and a digital pin for control of the start, as we can see in the figure below. It is powered from the lithium battery (3.7V - 4.2V).
+This peripheral uses the UART protocol to connect to the MCU and to a digital pin to control the start, as shown in the figure below. It is powered from a lithium battery (3.7V - 4.2V).
 
 ![GPRS Sim800L pin connections.](img/Sim800LSCH.PNG "fig:")
 
 ### FTDI Basic
 
-The module connects to the MCU via UART protocol and shares the same GND reference.
+The module connects to the MCU through the UART protocol and shares the same GND reference.
 
 ### RTC DS3231
 
-Este periferico se conecta al MCU a través del protocolo I2C, se utilizan dos resistencia de pull up en los pines de comunicación (ver figura [fig:DS3231PinCon] ), además cuenta con una pila pequeña que lo alimenta en caso de corte de energía.
+This peripheral is connected to the MCU through the I2C protocol, two pull-up resistors are used in the communication pins (see figure [fig:DS3231PinCon] ). It also has a small battery to power it in case of power failure.
 
 ![RTC DS3231 pin connections.](img/ds3231SCH.PNG "fig:")
 
 # Installation and Start-up
 
-This section introduces the start-up of the device, gives a brief description of the software to be used and describes the commands required for configuration. A continuación se muestra una vita 3D del dispositivo LoRa Gateway IoT y un detalle de con cada uno de sus componetes:
+This section introduces the device start-up, it also gives a brief description of the software to be used and describes the commands required for the configuration. Below is a 3D view of the LoRa Gateway IoT device and a detail of each component:
 
 -   U1: GPRS module SIM 800L
 -   U2: Lopy 4
@@ -135,13 +135,13 @@ This section introduces the start-up of the device, gives a brief description of
 
 ## Start-up
 
-Para comenzar la configuración del Gateway, es necesario descargar el software para gestión y programación según lo indicado en la pagina de [Documentos de Pycom Lopy4](https://docs.pycom.io/gettingstarted/software/). Se puede trabajar con las 2 opciones tanto el software “ATOM” como también “Visual Studio Code”.
+To start configuring the Gateway, it is necessary to download the software for management and programming as indicated in the webpage [Documentos de Pycom Lopy4](https://docs.pycom.io/gettingstarted/software/). You can work with both “ATOM” as well as “Visual Studio Code” software.
 
-En caso de usar Windows es necesario descargar los drivers del conversor Usb-serial desde la página de [FTDI Chip -VCP](https://ftdichip.com/drivers/vcp-drivers/) , de esta manera se tiene el puerto COM correspondiente.
+In case of using Windows, it is necessary to download the Usb-serial converter drivers from the website [FTDI Chip -VCP](https://ftdichip.com/drivers/vcp-drivers/). In this way, you will have the corresponding COM port.
 
-Una vez se han instalado los componentes de software, conecte la placa a la alimentación a travéz de P1 y a una PC con un cable micro USB para uso de datos, a travéz de P2.
+Once the software components have been installed, connect the board to the power supply through P1 and to a PC with a micro USB cable for data use through P2.
 
-La placa tiene un led que indica el arranque normal de la placa y el modo en que se encuentra funcionando. La secuencia inicia con el led de color verde encendido por 3 segundos, lo que quiere decir que la placa entra en modo de espera (Modo de configuración).
+The board has a LED that indicates the normal startup of the board and the mode in which it is running. The sequence starts with the green LED on for 3 seconds, which means that the board enters in a standby mode (Configuration mode).
 
 ![USB connection.](img/usbConnect.PNG "fig:") 
 
