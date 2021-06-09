@@ -49,7 +49,7 @@ In development, you can only use one locale at a same time.
 
 ## Add a Locale Dropdown
 
-To navigate seamlessly across languages, add a locale dropdown.
+To navigate smoothly across languages, add a locale dropdown.
 
 Modify the `docusaurus.config.js` file:
 
