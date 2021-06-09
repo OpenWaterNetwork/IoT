@@ -200,9 +200,9 @@ configFile(stationNum, idStation, Url, NTPServer, frequencyTx)
 
 ### GPRS SIM800L mobile connection
 
-To configure the device, the first thing to consider is the time synchronization via Network time protocol (NTP) and the GPRS SIM 800L
+To configure the device, the time synchronization should be consired first through the Network time protocol (NTP) and the GPRS SIM 800L
 
-The following are the methods for synchronization with the GPRS SIM 800L module.
+The following are the synchronization methods with the GPRS SIM 800L module.
 
 ```python:
 sim800L.signalLevel(None)
@@ -249,7 +249,7 @@ sim800L.GPRS\_NTP(None)
 ### Real time clock (RTC) ds3231
 
 The external real time clock (RTC) ds3231 is the one that will keep the
-system synchronized in time and date, because it has an independent
+system synchronized in time and date, due to an independent
 battery. The methods for synchronization are presented below.
 
 
@@ -281,7 +281,7 @@ ds3231.sinc\_RTC\_from\_ds3231(None)
 
 ### Temperature and humidity sensor DHT11
 
-The sensor reading is done by the following method:
+The sensor reading is carried out by the following method:
 ```python:
 result = th.read(None)
 ```
