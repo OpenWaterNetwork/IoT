@@ -4,18 +4,18 @@ sidebar_position: 1
 
 # Gateway
 
-In this document, on the one hand, the technical characteristics of the hardware are described, as well as the components of the device. On the other hand, the programming methods and the configuration commands of the meteorological data concentrator device (Iot-LoRa-Gateway) are indicated. It is worth mentioning that the product is compatible with devices that have LoRa communication.
+This document contains the hardware technical characteristics, as well as its components. Additionally, there is a full description of the programming methods and the configuration commands of the meteorological data concentrator device (Iot-LoRa-Gateway). It is worth mentioning that the product is compatible with devices that have LoRa communication.
 Test
 
 ## Technical Characteristics
 
-The central processing unit of the equipment is the Lopy4 development card, the most relevant features were taken from [Lopy 4 datasheet!](https://docs.pycom.io/datasheets/development/lopy4/#datasheet).
+The Lopy4 development card is the central processing unit of the equipment. The main relevant features can be found in [Lopy 4 datasheet!](https://docs.pycom.io/datasheets/development/lopy4/#datasheet).
 
 ### Electrical
 
 -   Input voltage: 3.5 - 4.2V
--   Output voltage: 3,3V, 1.2 A.
--   Max Input sink curren - GPIO: 12mA
+-   Output voltage: 3.3V, 1.2 A.
+-   Max Input sink current - GPIO: 12mA
 -   Input leakage current: 50nA
 -   Max Output source current: 12mA
 
@@ -26,7 +26,7 @@ The central processing unit of the equipment is the Lopy4 development card, the 
 -   Python multi–threading
 -   An extra ULP–coprocessor that can monitor GPIOs, the ADC channels
     and control most of the internal peripherals during deep–sleep mode
-    while only consuming  25uA
+    while only consuming 25uA
 
 ### Memory
 
@@ -66,11 +66,11 @@ The central processing unit of the equipment is the Lopy4 development card, the 
 -   MPPT charge controller for 3.7V lithium batteries.
 -   Solar Panel 6V.
 
-## Hardware component description.
+## Hardware component description
 
-The hardware is integrated into a Printed Circuit Board (PCB), it has as its main component the Lopy4 development module, responsible for carrying out control, storage and transmission tasks. The other peripherals that the device has (RTC ds3231, FTDI Basic, DHT22 y GPRS SIM800L) are connected to the aforementioned Central Processing Unit (Lopy4).
+The hardware is integrated into a Printed Circuit Board (PCB), which has the Lopy4 development module as its main component, responsible for carrying out control, storage and transmission tasks. The other device peripherals (RTC ds3231, FTDI Basic, DHT22 and GPRS SIM800L) are connected to the aforementioned Central Processing Unit (Lopy4).
 
-In addition to the PCB mentioned above, the device has a Lithium battery, an MPPT charge controller and a 6V solar panel.
+In addition to the PCB, the device has a Lithium battery, an MPPT charge controller and a 6V solar panel.
 
 | ![](img/GatewayArchGen.png) |
 |:--:| 
