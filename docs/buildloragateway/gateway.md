@@ -314,7 +314,7 @@ The scripts within the system are divided into .py files, which contain the clas
 
 ### Boot.py
 
-The first file is called boot.py, which is the once that starts the system and it defines:
+The first file is called boot.py, which starts the system and defines:
 
 - The serial communication for the display console and to upload the programs.
 - The WIFI module is disabled to reduce energy consumption.
