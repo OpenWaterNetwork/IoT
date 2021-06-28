@@ -135,7 +135,7 @@ This section introduces the device start-up, it also gives a brief description o
 
 ## Start-up
 
-To start configuring the Gateway, it is necessary to download the software for management and programming as indicated in the webpage [Documentos de Pycom Lopy4](https://docs.pycom.io/gettingstarted/software/). You can work with both “ATOM” as well as “Visual Studio Code” software.
+To start configuring the Gateway, it is necessary to download the software for management and programming as indicated in the webpage [Documentos de Pycom Lopy4](https://docs.pycom.io/gettingstarted/software/). You can work with both “ATOM” and/or “Visual Studio Code” software.
 
 In case of using Windows, it is necessary to download the Usb-serial converter drivers from the website [FTDI Chip -VCP](https://ftdichip.com/drivers/vcp-drivers/). In this way, you will have the corresponding COM port.
 
