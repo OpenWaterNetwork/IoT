@@ -191,7 +191,7 @@ configFile(stationNum, idStation, Url, NTPServer, frequencyTx)
 ```
 -   stationNum: Number of nodes to be connected to the Gateway.
 -   idStation: Gateway ID (240 - 255).
--   Url: Url for transmitting packets via http get.
+-   URL: URL for transmitting packets via http get.
 -   NTPServer: NTP server IP.
 -   frequencyTx: Packet Transmission Frequency in minutes.
 -   Example: configFile(3, 250,
