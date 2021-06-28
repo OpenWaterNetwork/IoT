@@ -145,7 +145,7 @@ The board has a LED that indicates the normal startup of the board and the mode 
 
 ![USB connection.](img/usbConnect.PNG "fig:") 
 
-Not it is necessary to open the programming environment to add the COM device and configure the gateway device. The steps to follow are detailed below:
+Note that it is necessary to open the programming environment to add the COM device and configure the gateway device. The steps to follow are detailed below:
 
 -   Open Pymakr.
 
