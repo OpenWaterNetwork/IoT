@@ -9,7 +9,7 @@ Test
 
 ## Technical Characteristics
 
-The Lopy4 development card is the central processing unit of the equipment. The main relevant features can be found in [Lopy 4 datasheet!](https://docs.pycom.io/datasheets/development/lopy4/#datasheet).
+The Lopy4 development board is the central processing unit of the equipment. The main relevant features can be found in [Lopy 4 datasheet!](https://docs.pycom.io/datasheets/development/lopy4/#datasheet).
 
 ### Electrical
 
