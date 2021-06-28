@@ -120,7 +120,7 @@ This peripheral is connected to the MCU through the I2C protocol, two pull-up re
 
 # Installation and Start-up
 
-This section introduces the device start-up, it also gives a brief description of the software to be used and describes the commands required for the configuration. Below is a 3D view of the LoRa Gateway IoT device and a detail of each component:
+This section introduces the device start-up, it also gives a brief description of the software to be used and describes the commands required for the configuration. Below is a 3D view of the LoRa Gateway IoT device and detials of each component:
 
 -   U1: GPRS module SIM 800L
 -   U2: Lopy 4
