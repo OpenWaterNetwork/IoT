@@ -68,7 +68,7 @@ The Lopy4 development board is the central processing unit of the equipment. The
 
 ## Hardware component description
 
-The hardware is integrated into a Printed Circuit Board (PCB), which has the Lopy4 development module as its main component, responsible for carrying out control, storage and transmission tasks. The other device peripherals (RTC ds3231, FTDI Basic, DHT22 and GPRS SIM800L) are connected to the aforementioned Central Processing Unit (Lopy4).
+The hardware is integrated into a Printed Circuit Board (PCB), which has the Lopy4 development module as its main component. The PCB is responsible for carrying out control, storage and transmission tasks. The other device peripherals (RTC ds3231, FTDI Basic, DHT22 and GPRS SIM800L) are connected to the aforementioned Central Processing Unit (Lopy4).
 
 In addition to the PCB, the device has a Lithium battery, an MPPT charge controller and a 6V solar panel.
 
