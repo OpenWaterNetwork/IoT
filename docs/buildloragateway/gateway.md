@@ -131,7 +131,10 @@ This section introduces the device start-up, it also gives a brief description o
 -   H2: usb to serial converter.
 -   S1: Operating mode selector button
 
-![IoT LoRa Gateway Device](img/gateway_3d.PNG "fig:") 
+<p align="center"> 
+    <![IoT LoRa Gateway Device](img/gateway_3d.PNG "fig:")>
+ </p>
+ 
 
 ## Start-up
 
