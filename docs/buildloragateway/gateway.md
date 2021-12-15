@@ -72,10 +72,9 @@ The hardware is integrated into a Printed Circuit Board (PCB), which has the Lop
 
 In addition to the PCB, the device has a Lithium battery, an MPPT charge controller and a 6V solar panel.
 
-| ![](img/GatewayArchGen.png) |
-|:--:| 
-| *IoT LoRa Gateway Architecture* |
-
+<p align="center"><img src="img/GatewayArchGen.png" alt="alternate text"></p>
+<p align="center">IoT LoRa Gateway Architecture<p align="center">
+    
 ### Lopy4 connections
 
 The Lopy4 board has 28 pins, incluiding the power pins and a 3.3V output. The arrangement and connections with other peripherals are detailed below:
@@ -89,9 +88,8 @@ The Lopy4 board has 28 pins, incluiding the power pins and a 3.3V output. The ar
 -   P22: Battery voltage level reading pin.
 -   P23: DHT22 sensor signal reading pin.
 
-| ![](img/Lopy4SCH.PNG) |
-|:--:| 
-| *Lopy4 pin connections.* |
+<p align="center"><img src="img/Lopy4SCH.PNG" alt="alternate text"></p>
+<p align="center">Lopy4 pin connections.<p align="center">
 
 ### Peripheral Connections
 
@@ -99,14 +97,15 @@ The Lopy4 board has 28 pins, incluiding the power pins and a 3.3V output. The ar
 
 The internal temperature and humidity sensor are connected to a MCU digital pin, which is configured as an input. A pull up resistor is also connected to the signal output, as shown in the following figure:
 
-
-![DHT22 pin connections.](img/dht22SCH.PNG "fig:")
+<p align="center"><img src="img/dht22SCH.PNG" alt="alternate text"></p>
+<p align="center">DHT22 pin connections.<p align="center">
 
 ### GPRS SIM800L
 
 This peripheral uses the UART protocol to connect to the MCU and to a digital pin to control the start, as shown in the figure below. It is powered from a lithium battery (3.7V - 4.2V).
 
-![GPRS Sim800L pin connections.](img/Sim800LSCH.PNG "fig:")
+<p align="center"><img src="img/Sim800LSCH.PNG" alt="alternate text"></p>
+<p align="center">GPRS Sim800L pin connections.<p align="center">
 
 ### FTDI Basic
 
@@ -116,7 +115,8 @@ The module connects to the MCU through the UART protocol and shares the same GND
 
 This peripheral is connected to the MCU through the I2C protocol, two pull-up resistors are used in the communication pins (see figure [fig:DS3231PinCon] ). It also has a small battery to power it in case of power failure.
 
-![RTC DS3231 pin connections.](img/ds3231SCH.PNG "fig:")
+<p align="center"><img src="img/Sim800LSCH.PNG" alt="img/ds3231SCH.PNG"></p>
+<p align="center">RTC DS3231 pin connections.<p align="center">
 
 # Installation and Start-up
 
@@ -131,11 +131,9 @@ This section introduces the device start-up, it also gives a brief description o
 -   H2: usb to serial converter.
 -   S1: Operating mode selector button
 
-<p align="center"> 
-    <![IoT LoRa Gateway Device](img/gateway_3d.PNG "fig:")>
- </p>
- 
-
+<p align="center"><img src="img/gateway_3d.PNG" alt="alternate text"></p>
+<p align="center">IoT LoRa Gateway Device.<p align="center">
+     
 ## Start-up
 
 To start configuring the Gateway, it is necessary to download the software for management and programming as indicated in the webpage [Documentos de Pycom Lopy4](https://docs.pycom.io/gettingstarted/software/). You can work with both “ATOM” and/or “Visual Studio Code” software.
@@ -146,27 +144,28 @@ Once the software components have been installed, connect the board to the power
 
 The board has a LED that indicates the normal startup of the board and the mode in which it is running. The sequence starts with the green LED on for 3 seconds, which means that the board enters in a standby mode (Configuration mode).
 
-![USB connection.](img/usbConnect.PNG "fig:") 
+<p align="center"><img src="img/usbConnect.PNG" alt="alternate text"></p>
+<p align="center">USB connection.<p align="center">
 
 Note that it is necessary to open the programming environment to add the COM device and configure the gateway device. The steps to follow are detailed below:
 
 -   Open Pymakr.
-
-    ![Pymakr package opened.](img/openCOM_1.png "fig:") 
+    <p align="center"><img src="img/openCOM_1.png" alt="alternate text"></p>
+    <p align="center">Pymakr package opened.<p align="center">
 
 -   Open Global Settings.
-
-    ![Open Global Settings.](img/openCOM_2.png "fig:")
+    <p align="center"><img src="img/openCOM_2.png" alt="alternate text"></p>
+    <p align="center">Open Global Settings.<p align="center">
     
 -   Set the corresponding COM port, verify from the device manager.
-
-    ![Set COM port.](img/openCOM_3.png "fig:") 
+    <p align="center"><img src="img/openCOM_3.png" alt="alternate text"></p>
+    <p align="center">Set COM port.<p align="center">
     
 -   Open COM port from Connected Devices.
-
-    ![Open COM port.](img/openCOM_4.png "fig:") 
-    
-    ![Console ready for configuration.](img/openCOM_5.png "fig:") 
+    <p align="center"><img src="img/openCOM_4.png" alt="alternate text"></p>
+    <p align="center">Open COM port.<p align="center">
+    <p align="center"><img src="img/openCOM_5.png" alt="alternate text"></p>
+    <p align="center">Console ready for configuration.<p align="center">
 
 Configuration Methods
 ---------------------
