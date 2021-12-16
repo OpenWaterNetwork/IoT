@@ -85,6 +85,10 @@ The Lopy4 board has 28 pins, incluiding the power pins and a 3.3V output. The ar
 -   P22: Battery voltage level reading pin.
 -   P23: DHT22 sensor signal reading pin.
 
+|![Lopy4 pin connections](img/Lopy4SCH.PNG)|
+|-----------|
+|Lopy4 pin connections|
+
 <p align="center"><img src="img/Lopy4SCH.PNG" alt="alternate text"></p>
 <p align="center">Lopy4 pin connections.<p align="center">
 
