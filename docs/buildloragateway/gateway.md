@@ -89,24 +89,23 @@ The Lopy4 board has 28 pins, incluiding the power pins and a 3.3V output. The ar
 |-----------|
 |Lopy4 pin connections|
 
-<p align="center"><img src="img/Lopy4SCH.PNG" alt="alternate text"></p>
-<p align="center">Lopy4 pin connections.<p align="center">
-
 ### Peripheral Connections
 
 ### DHT22
 
 The internal temperature and humidity sensor are connected to a MCU digital pin, which is configured as an input. A pull up resistor is also connected to the signal output, as shown in the following figure:
 
-<p align="center"><img src="img/dht22SCH.PNG" alt="alternate text"></p>
-<p align="center">DHT22 pin connections.<p align="center">
+|![DHT22 pin connections](img/dht22SCH.PNG)|
+|-----------|
+|DHT22 pin connections|
 
 ### GPRS SIM800L
 
 This peripheral uses the UART protocol to connect to the MCU and to a digital pin to control the start, as shown in the figure below. It is powered from a lithium battery (3.7V - 4.2V).
 
-<p align="center"><img src="img/Sim800LSCH.PNG" alt="alternate text"></p>
-<p align="center">GPRS Sim800L pin connections.<p align="center">
+|![GPRS Sim800L pin connections](img/Sim800LSCH.PNG)|
+|-----------|
+|GPRS Sim800L pin connections|
 
 ### FTDI Basic
 
@@ -116,8 +115,9 @@ The module connects to the MCU through the UART protocol and shares the same GND
 
 This peripheral is connected to the MCU through the I2C protocol, two pull-up resistors are used in the communication pins (see figure [fig:DS3231PinCon] ). It also has a small battery to power it in case of power failure.
 
-<p align="center"><img src="img/Sim800LSCH.PNG" alt="img/ds3231SCH.PNG"></p>
-<p align="center">RTC DS3231 pin connections.<p align="center">
+|![RTC DS3231 pin connections](img/ds3231SCH.PNG)|
+|-----------|
+|RTC DS3231 pin connections|
 
 Installation and Start-up
 ---------------------
@@ -133,8 +133,9 @@ This section introduces the device start-up, it also gives a brief description o
 -   H2: usb to serial converter.
 -   S1: Operating mode selector button
 
-<p align="center"><img src="img/gateway_3d.PNG" alt="alternate text"></p>
-<p align="center">IoT LoRa Gateway Device.<p align="center">
+|![IoT LoRa Gateway Device](img/gateway_3d.PNG)|
+|-----------|
+|IoT LoRa Gateway Device|
      
 ### Start-up
 
@@ -146,30 +147,35 @@ Once the software components have been installed, connect the board to the power
 
 The board has a LED that indicates the normal startup of the board and the mode in which it is running. The sequence starts with the RED LED on for 1 seconds, which means that the board enters in a standby mode (Configuration mode).
 
-<p align="center"><img src="img/usbConnect.PNG" alt="alternate text"></p>
-<p align="center">USB connection.<p align="center">
+|![USB connection](img/usbConnect.PNG)|
+|-----------|
+|USB connection|
 
 Note that it is necessary to open the programming environment to add the COM device and configure the gateway device. The steps to follow are detailed below:
 
 -   Open Pymakr.
-    <p align="center"><img src="img/openCOM_1.png" alt="alternate text"></p>
-    <p align="center">Pymakr package opened.<p align="center">
+    |![Pymakr package opened](img/openCOM_1.png)|
+    |-----------|
+    |Pymakr package opened|
 
 -   Open Global Settings.
-    <p align="center"><img src="img/openCOM_2.png" alt="alternate text"></p>
-    <p align="center">Open Global Settings.<p align="center">
+    |![Open Global Settings](img/openCOM_2.png)|
+    |-----------|
+    |Open Global Settings|
     
 -   Set the corresponding COM port, verify from the device manager.
-    <p align="center"><img src="img/openCOM_3.png" alt="alternate text"></p>
-    <p align="center">Set COM port.<p align="center">
-    
+    |![Set COM port](img/openCOM_3.png)|
+    |-----------|
+    |Set COM port|
+   
 -   Open COM port from Connected Devices.
-    <p align="center"><img src="img/openCOM_4.png" alt="alternate text"></p>
-    <p align="center">Open COM port.<p align="center">
-    <p align="center"><img src="img/openCOM_5.png" alt="alternate text"></p>
-    <p align="center">Console ready for configuration.<p align="center">
-
-
+    |![Console ready for configuration](img/openCOM_4.png)|
+    |-----------|
+    |Open COM port|
+    |![Console ready for configuration](img/openCOM_5.png)|
+    |-----------|
+    |Set COM port|
+  
 System Operation
 ---------------------
     
