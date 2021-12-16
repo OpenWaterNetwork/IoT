@@ -178,12 +178,20 @@ The system can operate in 3 modes, which are described below:
 
 In configuration mode the system is waiting to execute some command. When the software is loaded for the first time, the system will enter this mode and a RED LED will light up as an indicator.
 
+The system automatically performs the following process:
+-   Synchronizes time and date from the RTC DS3231.
+-   Wait for command execution.
 
-The system automatically resets and the next process begins:
-
+To configure first we must execute the command:
+ ```python:
+sincTimeRTC_ext()
+```   
+This is responsible for synchronizing the time from the NTP server and uploading it to the RTC DS3231.
+ 
+#### Run mode - Active console.
+    
 -   Time and date synchronization.
 -   Alarm initiation for packet transmission.
--   Send synchronization packet to the nodes.
 -   Deep sleep mode until the data packet is sent back to the server,
 
 When the sending time is reached, the system performs the following repetitive process:
@@ -191,8 +199,8 @@ When the sending time is reached, the system performs the following repetitive p
 -   Alarm initiation for packet transmission.
 -   Send channel assignment packet.
 -   Send data to the server.
--   Deep sleep mode until the data packet is sent back to the server,
-
+-   Deep sleep mode until the data packet is sent back to the server.
+    
 ```python:
 configFile(stationNum, idStation, Url, NTPServer, frequencyTx)
 ```
