@@ -142,7 +142,7 @@ In case of using Windows, it is necessary to download the Usb-serial converter d
 
 Once the software components have been installed, connect the board to the power supply through P1 and to a PC with a micro USB cable for data use through P2.
 
-The board has a LED that indicates the normal startup of the board and the mode in which it is running. The sequence starts with the green LED on for 3 seconds, which means that the board enters in a standby mode (Configuration mode).
+The board has a LED that indicates the normal startup of the board and the mode in which it is running. The sequence starts with the RED LED on for 1 seconds, which means that the board enters in a standby mode (Configuration mode).
 
 <p align="center"><img src="img/usbConnect.PNG" alt="alternate text"></p>
 <p align="center">USB connection.<p align="center">
@@ -172,7 +172,12 @@ Configuration Methods
 
 ### System Operation
 
-As mentioned in the previous section, the green LED on for 3 seconds after connecting the board indicated that the configuration is ready. To start the automatic operation of the system, a configuration file must be created using the method described below.
+The system can operate in 3 modes, which are described below:
+    
+#### Configuration mode 
+
+In configuration mode the system is waiting to execute some command. When the software is loaded for the first time, the system will enter this mode and a RED LED will light up as an indicator.
+
 
 The system automatically resets and the next process begins:
 
