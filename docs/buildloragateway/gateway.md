@@ -169,9 +169,11 @@ Note that it is necessary to open the programming environment to add the COM dev
     |Set COM port|
    
 -   Open COM port from Connected Devices.
+    
     |![Console ready for configuration](img/openCOM_4.png)|
     |-----------|
     |Open COM port|
+    
     |![Console ready for configuration](img/openCOM_5.png)|
     |-----------|
     |Set COM port|
