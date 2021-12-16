@@ -68,8 +68,9 @@ The hardware is integrated into a Printed Circuit Board (PCB), which has the Lop
 
 In addition to the PCB, the device has a Lithium battery, an MPPT charge controller and a 6V solar panel.
 
-<p align="center"><img src="img/GatewayArchGen.png" alt="alternate text"></p>
-<p align="center">IoT LoRa Gateway Architecture<p align="center">
+|![IoT LoRa Gateway Architecture](img/GatewayArchGen.png)|
+|-----------|
+|IoT LoRa Gateway Architecture|
     
 ### Lopy4 connections
 
