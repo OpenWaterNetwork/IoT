@@ -154,29 +154,32 @@ The board has a LED that indicates the normal startup of the board and the mode 
 Note that it is necessary to open the programming environment to add the COM device and configure the gateway device. The steps to follow are detailed below:
 
 -   Open Pymakr.
-    |![Pymakr package opened](img/openCOM_1.png)|
-    |-----------|
-    |Pymakr package opened|
+
+|![Pymakr package opened](img/openCOM_1.png)|
+|-----------|
+|Pymakr package opened|
 
 -   Open Global Settings.
-    |![Open Global Settings](img/openCOM_2.png)|
-    |-----------|
-    |Open Global Settings|
+
+|![Open Global Settings](img/openCOM_2.png)|
+|-----------|
+|Open Global Settings|
     
 -   Set the corresponding COM port, verify from the device manager.
-    |![Set COM port](img/openCOM_3.png)|
-    |-----------|
-    |Set COM port|
+
+|![Set COM port](img/openCOM_3.png)|
+|-----------|
+|Set COM port|
    
 -   Open COM port from Connected Devices.
     
-    |![Open COM port](img/openCOM_4.png)|
-    |-----------|
-    |Open COM port|
+|![Open COM port](img/openCOM_4.png)|
+|-----------|
+|Open COM port|
     
-    |![Console ready for configuration](img/openCOM_5.png)|
-    |-----------|
-    |Console ready for configuration|
+|![Console ready for configuration](img/openCOM_5.png)|
+|-----------|
+|Console ready for configuration|
   
 System Operation
 ---------------------
@@ -249,30 +252,30 @@ sim800L.signalLevel(None)
         -   99 Not known or not detectable
 
 ```python:
-sim800L.GPRS\_init(None)
+sim800L.GPRS_init(None)
 ```
 
--   Response: +SAPBR: cid, Status, IP\_Addr
+-   Response: +SAPBR: cid, Status, IP_Addr
     -   cid : Bearer profile identifier
     -   Status
         -   0 Bearer is connecting
         -   1 Bearer is connected
         -   2 Bearer is closing
         -   3 Bearer is closed
-    -   IP\_Addr: IP address
+    -   IP_Addr: IP address
 
 ```python:
-sim800L.GPRS\_NTP(None)
+sim800L.GPRS_NTP(None)
 ```
 
--   Response: +SAPBR: cid, Status, IP\_Addr
+-   Response: +SAPBR: cid, Status, IP_Addr
     -   cid : Bearer profile identifier
     -   Status
         -   0 Bearer is connecting
         -   1 Bearer is connected
         -   2 Bearer is closing
         -   3 Bearer is closed
-    -   IP\_Addr: IP address
+    -   IP_Addr: IP address
 -   Response: (year, day, month, hour, minute, second, millisecond,
     None)
 
@@ -284,7 +287,7 @@ battery. The methods for synchronization are presented below.
 
 
 ```python:
-ds3231.ds1307init\_sinc(None)
+ds3231.ds1307init_sinc(None)
 ```
 
 -   Synchronizes the external real-time clock (ds3231) with the internal
@@ -293,7 +296,7 @@ ds3231.ds1307init\_sinc(None)
     None)
 
 ```python:
-get\_time\_ds3231(None)
+get_time_ds3231(None)
 ```
 
 -   Obtains the date and time from the external real-time clock
@@ -302,7 +305,7 @@ get\_time\_ds3231(None)
     None)
 
 ```python:
-ds3231.sinc\_RTC\_from\_ds3231(None)
+ds3231.sinc_RTC_from_ds3231(None)
 ```
 -   Synchronizes the internal clock (lopy 4) with the time of the
     external real-time clock (ds3231).
