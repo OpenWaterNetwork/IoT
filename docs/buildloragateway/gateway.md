@@ -118,8 +118,9 @@ This peripheral is connected to the MCU through the I2C protocol, two pull-up re
 <p align="center"><img src="img/Sim800LSCH.PNG" alt="img/ds3231SCH.PNG"></p>
 <p align="center">RTC DS3231 pin connections.<p align="center">
 
-# Installation and Start-up
-
+Installation and Start-up
+---------------------
+    
 This section introduces the device start-up, it also gives a brief description of the software to be used and describes the commands required for the configuration. Below is a 3D view of the LoRa Gateway IoT device and details of each component:
 
 -   U1: GPRS module SIM 800L
@@ -134,7 +135,7 @@ This section introduces the device start-up, it also gives a brief description o
 <p align="center"><img src="img/gateway_3d.PNG" alt="alternate text"></p>
 <p align="center">IoT LoRa Gateway Device.<p align="center">
      
-## Start-up
+### Start-up
 
 To start configuring the Gateway, it is necessary to download the software for management and programming as indicated in the webpage [Documentos de Pycom Lopy4](https://docs.pycom.io/gettingstarted/software/). You can work with both “ATOM” and/or “Visual Studio Code” software.
 
@@ -167,51 +168,56 @@ Note that it is necessary to open the programming environment to add the COM dev
     <p align="center"><img src="img/openCOM_5.png" alt="alternate text"></p>
     <p align="center">Console ready for configuration.<p align="center">
 
-Configuration Methods
+
+System Operation
 ---------------------
-
-### System Operation
-
+    
 The system can operate in 3 modes, which are described below:
     
-#### Configuration mode 
+### Configuration mode 
 
 In configuration mode the system is waiting to execute some command. When the software is loaded for the first time, the system will enter this mode and a RED LED will light up as an indicator.
 
 The system automatically performs the following process:
 -   Synchronizes time and date from the RTC DS3231.
+-   Activate LoRaRaw mode.
 -   Wait for command execution.
 
-To configure first we must execute the command:
+To configure first we must execute the next command, this is responsible for synchronizing the time from the NTP server and uploading it to the RTC DS3231.
  ```python:
 sincTimeRTC_ext()
 ```   
-This is responsible for synchronizing the time from the NTP server and uploading it to the RTC DS3231.
- 
-#### Run mode - Active console.
-    
--   Time and date synchronization.
--   Alarm initiation for packet transmission.
--   Deep sleep mode until the data packet is sent back to the server,
+The device must remain in this operating mode to synchronize the time and date of the nodes. Once the nodes are synchronized we can switch to LoraWan mode to send packets to the server for which we use the following command.
+ ```python:
+lorawanStart()
+``` 
+To enter the run mode, execute the following command. 
+ ```python:
+runModeOutConsole()
+```   
+### Run mode - Active console.
 
-When the sending time is reached, the system performs the following repetitive process:
+This is the mode in which the device will remain constantly running. The device will perform the following steps:
+    
 -   Time and date synchronization.
 -   Alarm initiation for packet transmission.
--   Send channel assignment packet.
--   Send data to the server.
--   Deep sleep mode until the data packet is sent back to the server.
+-   Connection to the LoRaWan server.
+-   Wait for node transmission for 2 minutes.
+-   Go into deep sleep mode.
     
-```python:
-configFile(stationNum, idStation, Url, NTPServer, frequencyTx)
-```
--   stationNum: Number of nodes to be connected to the Gateway.
--   idStation: Gateway ID (240 - 255).
--   URL: URL for transmitting packets via http get.
--   NTPServer: NTP server IP.
--   frequencyTx: Packet Transmission Frequency in minutes.
--   Example: configFile(3, 250,
-    “http://api.thingspeak.com/update?api\_key=XXXX&field1=”,“162.159.200.1”,
-    5)
+### Run mode - Inactive console,
+
+This is the mode in which the device will remain constantly running. The device will perform the following steps:
+    
+-   Time and date synchronization.
+-   Disable console.
+-   Alarm initiation for packet transmission.
+-   Connection to the LoRaWan server.
+-   Wait for node transmission for 2 minutes.
+-   Go into deep sleep mode.
+
+Configuration Methods
+---------------------
 
 ### GPRS SIM800L mobile connection
 
@@ -303,26 +309,7 @@ result = th.read(None)
 
 -   Response: result.temperature
 -   Response: result.humidity
-
-## Functionality and cost
-
-Release a version 1.0 of your project:
-
-```bash
-npm run docusaurus docs:version 1.0
-```
-
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
-
-Your docs now has 2 versions:
-
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
-
-## Hardware
-
-Below are all the details needed to do it.
-
+    
 ## Scripts
 
 The scripts within the system are divided into .py files, which contain the classes and methods for the correct operation of the system. These files are:
