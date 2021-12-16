@@ -326,6 +326,7 @@ result = th.read(None)
 
 The scripts within the system are divided into .py files, which contain the classes and methods for the correct operation of the system. These files are:
 
+
 ### Boot.py
 
 The first file is called boot.py, which starts the system and defines:
