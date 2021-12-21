@@ -1,6 +1,6 @@
 # Sensors and communication protocols
 
-##  River Level Sensor
+## River Level Sensor
 
 ### Technical Characteristics
 
@@ -60,6 +60,14 @@ The MB7388 HRXL-MaxSonar-WRMLT sensor is a cost-effective solution for applicati
 - Distance sensor 50-cm to 10-meters
 - Operating voltage of 2.7V to 5.5V
 - Nominal current draw of 2.3mA (peak ~49mA) at 3.3V.
+
+### Hardware component description.
+
+El hardware está integrado en un Placa de Circuito Impreso (PCB), el mismo tiene como componente principal el módulo de desarrollo Lopy4, encargado de realizar las tareas de control, almacenamiento y transmisión. 
+
+Los demás perifericos con los que cuenta el dispositivo (RTC ds3231, FTDI Basic, DHT22 y MB7388 HRXL-MaxSonar-WRMLT sensor) están conectados a la mencionada Unidad Central de Procesamiento (Lopy4). 
+
+Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria de Litio de 3.7V, para alimentar la placa.
 
 ## Create a docs version
 
