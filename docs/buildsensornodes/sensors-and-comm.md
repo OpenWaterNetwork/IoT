@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Sensors and communication protocols
 
 ##  River Level Sensor
