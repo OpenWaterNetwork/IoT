@@ -89,6 +89,7 @@ La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alime
 - P22: Pin de lectura del nivel de tensión de Batería.
 - P23: Pin de lectura de señal del sensor DHT22. 
 
+
 ## Create a docs version
 
 Release a version 1.0 of your project:
