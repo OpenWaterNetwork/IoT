@@ -69,6 +69,26 @@ Los demás perifericos con los que cuenta el dispositivo (RTC ds3231, FTDI Basic
 
 Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria de Litio de 3.7V, para alimentar la placa.
 
+#### Lopy4 connections.
+
+La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alimentación y una salida de 3.3V, la disposición de los mismos podemos observar en la figura [fig:Lopy4pinConnections]. A continuación detallamos los pines que se conectaron a los perifericos.
+
+|![Lopy4pinConnections](img/Lopy4SCHRLS.PNG)|
+|-----------|
+|Lopy4 pin connections.|
+
+- P0: Rx P1: Tx. Comunicación UART con el FTDI Basic.
+- P2: Pin de Arranque, para actualizar el firmware.
+- P3: Tx P4: Rx. Comunicación UART con el SIM 800L.
+- P8: Pin de Arranque para el SIM 800L.
+- P9: SDA P10: SDL. Comunicación I2C con el RTC ds3231.
+- P11: Pulse Width Output Sensor.
+- P12: Pin 4- Ranging Start/Stop Sensor.
+- P20: Pin de control de modo de funcionamieto.
+- P21: Pin de control de fuente de los sensores.
+- P22: Pin de lectura del nivel de tensión de Batería.
+- P23: Pin de lectura de señal del sensor DHT22. 
+
 ## Create a docs version
 
 Release a version 1.0 of your project:
