@@ -113,7 +113,7 @@ The module connects to the MCU through the UART protocol and shares the same GND
 
 ### RTC DS3231
 
-This peripheral is connected to the MCU through the I2C protocol, two pull-up resistors are used in the communication pins (see figure [RTC DS3231 pin connections](fig:DS3231PinCon)). It also has a small battery to power it in case of power failure.
+This peripheral is connected to the MCU through the I2C protocol, two pull-up resistors are used in the communication pins (see figure below). It also has a small battery to power it in case of power failure.
 
 |![fig:DS3231PinCon](img/ds3231SCH.PNG)|
 |-----------|
