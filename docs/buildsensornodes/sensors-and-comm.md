@@ -90,6 +90,12 @@ La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alime
 - P22: Pin de lectura del nivel de tensión de Batería.
 - P23: Pin de lectura de señal del sensor DHT22. 
 
+#### DHT22
+El sensor de temperatura y humedad interno, está conectado a un pin digital del MCU, configurado como entrada, también se conecta una resistencia de pull up a la salida de la señal, ver figura [fig:DHT22pinconnections]
+
+|![DHT22pinconnections(img/dht22SCH.PNG)|
+|-----------|
+|DHT22 pin connections.|
 
 ## Create a docs version
 
