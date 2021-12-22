@@ -1,6 +1,7 @@
 # Sensors and communication protocols
 
-## River Level Sensor
+River Level Sensor
+------------------
 
 ### Technical Characteristics
 
