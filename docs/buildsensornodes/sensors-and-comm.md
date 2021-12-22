@@ -72,7 +72,7 @@ Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria 
 
 #### Lopy4 connections.
 
-La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alimentación y una salida de 3.3V, la disposición de los mismos podemos observar en la figura [fig:Lopy4pinConnections]. A continuación detallamos los pines que se conectaron a los perifericos.
+La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alimentación y una salida de 3.3V, la disposición de los mismos podemos observar en la figura a continuación. También se detalla la conexión de pines con los perifericos.
 
 |![fig:Lopy4pinConnections](img/Lopy4SCHRLS.PNG)|
 |-----------|
@@ -91,11 +91,17 @@ La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alime
 - P23: Pin de lectura de señal del sensor DHT22. 
 
 #### DHT22
-El sensor de temperatura y humedad interno, está conectado a un pin digital del MCU, configurado como entrada, también se conecta una resistencia de pull up a la salida de la señal, ver figura [fig:DHT22pinconnections]
+El sensor de temperatura y humedad interno, está conectado a un pin digital del MCU, configurado como entrada, también se conecta una resistencia de pull up a la salida de la señal, ver la siguiente figura.
 
 |![fig:DHT22pinconnections](img/dht22SCH.PNG)|
 |-----------|
 |DHT22 pin connections.|
+
+#### FTDI BAsic
+
+El módulo se conecta al MCU a través del protocolo UART y comparte la misma referencia de GND.
+
+
 
 ## Create a docs version
 
