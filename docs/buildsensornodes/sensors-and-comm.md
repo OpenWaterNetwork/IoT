@@ -105,7 +105,7 @@ El módulo se conecta al MCU a través del protocolo UART y comparte la misma re
 
 Esté periferico se conecta al MCU a través del protocolo I2C, se utilizan dos resistencia de pull up en los pines de comunicación (ver la figura a continuación), además cuenta con una pila pequeña que lo alimenta en caso de corte de energía.
 
-|![fig:DS3231PinCon]({img/ds3231SCH.PNG)|
+|![fig:DS3231PinCon](img/ds3231SCH.PNG)|
 |-----------|
 |RTC DS3231 pin connections|
 
