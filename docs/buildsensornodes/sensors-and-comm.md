@@ -161,21 +161,23 @@ El sistema realiza automáticamente el siguiente proceso:
 - Si no obtiene respuesta del gateway, obtiene el tiempo del RTC DS3231.
 - Espera la ejecución del comando.
 
-Para configurar primero debemos ejecutar el siguiente comando, este se encarga de sincronizar la hora desde el servidor NTP y subirla al RTC DS3231.
- ``python
-sincTimeRTC_ext()
+Para configurar primero debemos ejecutar el siguiente comando, este se encarga de sincronizar la hora del dispositivo (NODO) con la del GAteway y actualizarla en el RTC DS3231.
+
+```python:
+SincNodefromGateway()
 ```   
-El dispositivo debe permanecer en este modo de funcionamiento para sincronizar la hora y la fecha de los nodos. Una vez sincronizados los nodos podemos pasar al modo LoraWan para enviar paquetes al servidor para lo cual utilizamos el siguiente comando.
- ``python:
-lorawanStart()
-``` 
-Para entrar en el modo de ejecución, ejecutamos el siguiente comando. 
- ``python:
+El dispositivo debe permanecer en este modo de funcionamiento para sincronizar la hora y la fecha del nodo. Una vez sincronizado, se puede enviar los paquetes por lorawan, ejecutando los siguientes comandos:
+
+```python:
+joinLoraWan()
+dataSendLoraWan()
+```   
+Para entrar en el modo de ejecución, se ejecuta el siguiente comando. 
+
+```python:
 runModeOutConsole()
+```
 
-
-
-Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator
 ### Run mode - Active console.
 
 This is the mode in which the device will remain constantly running. The device will perform the following steps:
