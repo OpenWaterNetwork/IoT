@@ -117,6 +117,16 @@ El sensor está conectado al MCU por intermedio de los puertos GPIO digitales, p
 |-----------|
 |Header for MB7388 sensor pin connections.|
 
+## Start-up
+
+En esta sección se presenta la puesta en marcha del dispositivo, se describe los comandos necesarios para la configuración. 
+
+En la siguiente figura se observa una vista 3D del dispositivo IoT LoRa Gateway con cada uno de sus componentes, que se detallan a continuación:
+
+|![fig:RLS_3d](img/RiverLevelSensorDatalogger_3d_Borner.PNG)|
+|-----------|
+|IoT LoRa River Level Sensor Datalogger|
+
 ## Create a docs version
 
 Release a version 1.0 of your project:
