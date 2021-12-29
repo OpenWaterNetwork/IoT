@@ -146,6 +146,9 @@ Una vez se han instalado los componentes de software, conecte la placa a la alim
 
 La placa tiene un led que indica el arranque normal de la placa y el modo en que se encuentra funcionando. La secuencia inicia con el led de color rojo encendido por 1 segundo, lo que quiere decir que la placa entra en modo de espera (Modo de configuración).
 
+|![fig:usbConnect(img/usbConnect.PNG)|
+|-----------|
+|USB connection.|
 
 
 ## Create a docs version
