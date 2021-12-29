@@ -123,7 +123,7 @@ En esta sección se presenta la puesta en marcha del dispositivo, se describe lo
 
 En la siguiente figura se observa una vista 3D del dispositivo IoT LoRa Gateway con cada uno de sus componentes, que se detallan a continuación:
 
-|![fig:RLS_3d](img/RiverLevelSensorDatalogger_3d_Borner.PNG)|
+|![fig:RLS_3d](img/RiverLevelSensorDatalogger_3d_borner.PNG)|
 |-----------|
 |IoT LoRa River Level Sensor Datalogger|
 
