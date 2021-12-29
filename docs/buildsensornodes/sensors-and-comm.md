@@ -109,6 +109,7 @@ Esté periferico se conecta al MCU a través del protocolo I2C, se utilizan dos 
 |-----------|
 |RTC DS3231 pin connections|
 
+
 ## Create a docs version
 
 Release a version 1.0 of your project:
