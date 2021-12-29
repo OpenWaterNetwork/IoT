@@ -127,6 +127,17 @@ En la siguiente figura se observa una vista 3D del dispositivo IoT LoRa Gateway 
 |-----------|
 |IoT LoRa River Level Sensor Datalogger|
 
+- U1: GPRS module SIM800L.
+- U2: Lopy 4.
+- U3: RTC DS3231.
+- J1: Temperature and humidity sensor DHT22.
+- P1: Power In connector.
+- H1: Jumper conector - boot mode selector.
+- H2: usb to serial converter.
+- S1: Operating mode selector button
+- B2: Header - Power sensor.
+- B1: Header - Signals sensor.
+
 ## Create a docs version
 
 Release a version 1.0 of your project:
