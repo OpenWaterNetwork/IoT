@@ -152,25 +152,30 @@ La placa tiene un led que indica el arranque normal de la placa y el modo en que
 
 ### Configuration mode 
 
-In configuration mode the system is waiting to execute some command. When the software is loaded for the first time, the system will enter this mode and a RED LED will light up as an indicator.
+En el modo de configuración el sistema está a la espera de ejecutar algún comando. Al cargar el software por primera vez, el sistema entrará en este modo y se encenderá un LED ROJO como indicador.
 
-The system automatically performs the following process:
--   Synchronizes time and date from the RTC DS3231.
--   Activate LoRaRaw mode.
--   Wait for command execution.
+El sistema realiza automáticamente el siguiente proceso:
 
-To configure first we must execute the next command, this is responsible for synchronizing the time from the NTP server and uploading it to the RTC DS3231.
- ```python:
+- Envía el paquete de sincronización por LoRa y espera por a respuesta del Gateway.
+- Si obtiene la respuesta del gateway, sincroniza el tiempo del RTC DS3231.
+- Si no obtiene respuesta del gateway, obtiene el tiempo del RTC DS3231.
+- Espera la ejecución del comando.
+
+Para configurar primero debemos ejecutar el siguiente comando, este se encarga de sincronizar la hora desde el servidor NTP y subirla al RTC DS3231.
+ ``python
 sincTimeRTC_ext()
 ```   
-The device must remain in this operating mode to synchronize the time and date of the nodes. Once the nodes are synchronized we can switch to LoraWan mode to send packets to the server for which we use the following command.
- ```python:
+El dispositivo debe permanecer en este modo de funcionamiento para sincronizar la hora y la fecha de los nodos. Una vez sincronizados los nodos podemos pasar al modo LoraWan para enviar paquetes al servidor para lo cual utilizamos el siguiente comando.
+ ``python:
 lorawanStart()
 ``` 
-To enter the run mode, execute the following command. 
- ```python:
+Para entrar en el modo de ejecución, ejecutamos el siguiente comando. 
+ ``python:
 runModeOutConsole()
-```   
+
+
+
+Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator
 ### Run mode - Active console.
 
 This is the mode in which the device will remain constantly running. The device will perform the following steps:
