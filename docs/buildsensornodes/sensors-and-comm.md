@@ -109,6 +109,13 @@ Esté periferico se conecta al MCU a través del protocolo I2C, se utilizan dos 
 |-----------|
 |RTC DS3231 pin connections|
 
+#### MB7388 HRXL-MaxSonar-WRMLT
+
+El sensor está conectado al MCU por intermedio de los puertos GPIO digitales, para realizar la lectura y el control del mismo; utiliza dos conectores de tipo bornera para facilitar su integración en la placa electrónica.
+
+|![fig:BornerPinCon](img/BornerconRLS.PNG)|
+|-----------|
+|Header for MB7388 sensor pin connections.|
 
 ## Create a docs version
 
