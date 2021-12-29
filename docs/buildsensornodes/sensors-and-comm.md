@@ -51,7 +51,7 @@ The MB7388 HRXL-MaxSonar-WRMLT sensor is a cost-effective solution for applicati
 - Low current consumption - 1mA in sleep mode.
 
 #### Power Supply
-- Lithium battery 3.7V 6000mAh. 
+- Lithium battery 3.7V 5000mAh. 
 
 #### MB7388 HRXL-MaxSonar-WRMLT Sensor
 
@@ -101,7 +101,13 @@ El sensor de temperatura y humedad interno, está conectado a un pin digital del
 
 El módulo se conecta al MCU a través del protocolo UART y comparte la misma referencia de GND.
 
+#### RTC Ds3231
 
+Esté periferico se conecta al MCU a través del protocolo I2C, se utilizan dos resistencia de pull up en los pines de comunicación (ver la figura a continuación), además cuenta con una pila pequeña que lo alimenta en caso de corte de energía.
+
+|![fig:DS3231PinCon]({img/ds3231SCH.PNG)|
+|-----------|
+|RTC DS3231 pin connections|
 
 ## Create a docs version
 
