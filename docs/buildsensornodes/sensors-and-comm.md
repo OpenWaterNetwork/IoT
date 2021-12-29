@@ -150,6 +150,47 @@ La placa tiene un led que indica el arranque normal de la placa y el modo en que
 |-----------|
 |USB connection.|
 
+### Configuration mode 
+
+In configuration mode the system is waiting to execute some command. When the software is loaded for the first time, the system will enter this mode and a RED LED will light up as an indicator.
+
+The system automatically performs the following process:
+-   Synchronizes time and date from the RTC DS3231.
+-   Activate LoRaRaw mode.
+-   Wait for command execution.
+
+To configure first we must execute the next command, this is responsible for synchronizing the time from the NTP server and uploading it to the RTC DS3231.
+ ```python:
+sincTimeRTC_ext()
+```   
+The device must remain in this operating mode to synchronize the time and date of the nodes. Once the nodes are synchronized we can switch to LoraWan mode to send packets to the server for which we use the following command.
+ ```python:
+lorawanStart()
+``` 
+To enter the run mode, execute the following command. 
+ ```python:
+runModeOutConsole()
+```   
+### Run mode - Active console.
+
+This is the mode in which the device will remain constantly running. The device will perform the following steps:
+    
+-   Time and date synchronization.
+-   Alarm initiation for packet transmission.
+-   Connection to the LoRaWan server.
+-   Wait for node transmission for 2 minutes.
+-   Go into deep sleep mode.
+    
+### Run mode - Inactive console,
+
+This is the mode in which the device will remain constantly running. The device will perform the following steps:
+    
+-   Time and date synchronization.
+-   Disable console.
+-   Alarm initiation for packet transmission.
+-   Connection to the LoRaWan server.
+-   Wait for node transmission for 2 minutes.
+-   Go into deep sleep mode.
 
 ## Create a docs version
 
