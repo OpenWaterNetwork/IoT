@@ -199,6 +199,97 @@ This is the mode in which the device will remain constantly running. The device 
 -   Wait for node transmission for 2 minutes.
 -   Go into deep sleep mode.
 
+### GPRS SIM800L mobile connection
+
+To configure the device, the time synchronization should be consired first through the Network time protocol (NTP) and the GPRS SIM 800L
+
+The following are the synchronization methods with the GPRS SIM 800L module.
+
+```python:
+sim800L.signalLevel(None)
+```
+-   Response: +CSQ: rssi, ber
+    -   rssi
+        -   0: -115 dBm or less
+        -   1: -111 dBm
+        -   2...30: -110... -54 dBm
+        -   31: -52 dBm or greater
+        -   99: not known or not detectable
+    -   ber (in percent):
+        -   0...7 As RXQUAL values in the table in GSM 05.08
+        -   99 Not known or not detectable
+
+```python:
+sim800L.GPRS_init(None)
+```
+
+-   Response: +SAPBR: cid, Status, IP_Addr
+    -   cid : Bearer profile identifier
+    -   Status
+        -   0 Bearer is connecting
+        -   1 Bearer is connected
+        -   2 Bearer is closing
+        -   3 Bearer is closed
+    -   IP_Addr: IP address
+
+```python:
+sim800L.GPRS_NTP(None)
+```
+
+-   Response: +SAPBR: cid, Status, IP_Addr
+    -   cid : Bearer profile identifier
+    -   Status
+        -   0 Bearer is connecting
+        -   1 Bearer is connected
+        -   2 Bearer is closing
+        -   3 Bearer is closed
+    -   IP_Addr: IP address
+-   Response: (year, day, month, hour, minute, second, millisecond,
+    None)
+
+### Real time clock (RTC) ds3231
+
+The external real time clock (RTC) ds3231 is the one that will keep the
+system synchronized in time and date, due to an independent
+battery. The methods for synchronization are presented below.
+
+
+```python:
+ds3231.ds1307init_sinc(None)
+```
+
+-   Synchronizes the external real-time clock (ds3231) with the internal
+    time (lopy 4).
+-   Response: (year, day, month, hour, minute, second, millisecond,
+    None)
+
+```python:
+get_time_ds3231(None)
+```
+
+-   Obtains the date and time from the external real-time clock
+    (ds3231).
+-   Response: (year, day, month, hour, minute, second, millisecond,
+    None)
+
+```python:
+ds3231.sinc_RTC_from_ds3231(None)
+```
+-   Synchronizes the internal clock (lopy 4) with the time of the
+    external real-time clock (ds3231).
+-   Response: (year, day, month, hour, minute, second, millisecond,
+    None)
+
+### Temperature and humidity sensor DHT11
+
+The sensor reading is carried out by the following method:
+```python:
+result = th.read(None)
+```
+
+-   Response: result.temperature
+-   Response: result.humidity
+    
 ## Create a docs version
 
 Release a version 1.0 of your project:
