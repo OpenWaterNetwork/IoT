@@ -150,7 +150,7 @@ La placa tiene un led que indica el arranque normal del sistema y el modo en que
 |-----------|
 |USB connection.|
 
-### Configuration mode 
+### Mododos de funcionamiento.
 
 En el modo de configuración el sistema está a la espera de ejecutar algún comando. Al cargar el software por primera vez, el sistema entrará en este modo y se encenderá un LED ROJO como indicador.
 
@@ -205,10 +205,7 @@ Este es el modo en el que el dispositivo permanecerá constantemente en funciona
 
 ### Real time clock (RTC) ds3231
 
-The external real time clock (RTC) ds3231 is the one that will keep the
-system synchronized in time and date, due to an independent
-battery. The methods for synchronization are presented below.
-
+The external real time clock (RTC) ds3231 is the one that will keep the system synchronized in time and date, due to an independent battery. The methods for synchronization are presented below.
 
 ```python:
 ds3231.ds1307init_sinc(None)
@@ -231,6 +228,7 @@ get_time_ds3231(None)
 ```python:
 ds3231.sinc_RTC_from_ds3231(None)
 ```
+
 -   Synchronizes the internal clock (lopy 4) with the time of the
     external real-time clock (ds3231).
 -   Response: (year, day, month, hour, minute, second, millisecond,
@@ -239,13 +237,36 @@ ds3231.sinc_RTC_from_ds3231(None)
 ### Temperature and humidity sensor DHT11
 
 The sensor reading is carried out by the following method:
+
 ```python:
 result = th.read(None)
 ```
-
 -   Response: result.temperature
 -   Response: result.humidity
-    
+
+### MB7388 HRXL sensor DHT11
+
+The sensor reading is carried out by the following method:
+
+```python:
+    level = level_data(None)
+```
+-   Response: level
+
+### LoRaWan
+
+```python:
+    joinLoraWan() 
+```
+- Configura los parámetros necesarios de la red LoraWan y se une al servidor.
+- Respuesta: joined 
+
+```python:
+    dataSendLoraWan() 
+```
+- Adquiere los datos de los sensores, los almacena y los transmite por LoRaWan
+- Response: (dataTempInt, dataHumInt, dataLevel)
+
 ## Create a docs version
 
 Release a version 1.0 of your project:
