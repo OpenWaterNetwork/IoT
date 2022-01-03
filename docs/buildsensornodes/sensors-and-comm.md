@@ -144,7 +144,7 @@ En caso de usar Windows es necesario descargar los drivers del conversor Usb-ser
 
 Una vez se han instalado los componentes de software, conecte la placa a la alimentación a travéz de P1 y a una PC con un cable micro USB para uso de datos, a travéz de P2.
 
-La placa tiene un led que indica el arranque normal de la placa y el modo en que se encuentra funcionando. La secuencia inicia con el led de color rojo encendido por 1 segundo, lo que quiere decir que la placa entra en modo de espera (Modo de configuración).
+La placa tiene un led que indica el arranque normal del sistema y el modo en que se encuentra funcionando. La secuencia inicia con el led de color rojo encendido por 1 segundo, lo que quiere decir que la placa entra en modo de espera (Modo de configuración).
 
 |![fig:usbConnect](img/usbConnect.PNG)|
 |-----------|
@@ -180,72 +180,28 @@ runModeOutConsole()
 
 ### Run mode - Active console.
 
-This is the mode in which the device will remain constantly running. The device will perform the following steps:
+Este es el modo en el que el dispositivo permanecerá constantemente en funcionamiento. El dispositivo realizará los siguientes pasos:
     
--   Time and date synchronization.
--   Alarm initiation for packet transmission.
--   Connection to the LoRaWan server.
--   Wait for node transmission for 2 minutes.
--   Go into deep sleep mode.
+- Sincronización de fecha y hora, a través del RTC DS3231.
+- Iniciación de la alarma para la transmisión de paquetes.
+- Se activa alarma.
+- Se adquiere datos de los sensores y se almacena.
+- Se une a la red lorawan y transmite los paquetes.
+- Entra en modo de reposo profundo.
     
 ### Run mode - Inactive console,
 
-This is the mode in which the device will remain constantly running. The device will perform the following steps:
+Este es el modo en el que el dispositivo permanecerá constantemente en funcionamiento. El dispositivo realizará los siguientes pasos:
     
--   Time and date synchronization.
--   Disable console.
--   Alarm initiation for packet transmission.
--   Connection to the LoRaWan server.
--   Wait for node transmission for 2 minutes.
--   Go into deep sleep mode.
+- Sincronización de fecha y hora, a través del RTC DS3231.
+- Desabilita la consola.
+- Iniciación de la alarma para la transmisión de paquetes.
+- Se activa alarma.
+- Se adquiere datos de los sensores y se almacena.
+- Se une a la red lorawan y transmite los paquetes.
+- Entra en modo de reposo profundo.
 
-### GPRS SIM800L mobile connection
-
-To configure the device, the time synchronization should be consired first through the Network time protocol (NTP) and the GPRS SIM 800L
-
-The following are the synchronization methods with the GPRS SIM 800L module.
-
-```python:
-sim800L.signalLevel(None)
-```
--   Response: +CSQ: rssi, ber
-    -   rssi
-        -   0: -115 dBm or less
-        -   1: -111 dBm
-        -   2...30: -110... -54 dBm
-        -   31: -52 dBm or greater
-        -   99: not known or not detectable
-    -   ber (in percent):
-        -   0...7 As RXQUAL values in the table in GSM 05.08
-        -   99 Not known or not detectable
-
-```python:
-sim800L.GPRS_init(None)
-```
-
--   Response: +SAPBR: cid, Status, IP_Addr
-    -   cid : Bearer profile identifier
-    -   Status
-        -   0 Bearer is connecting
-        -   1 Bearer is connected
-        -   2 Bearer is closing
-        -   3 Bearer is closed
-    -   IP_Addr: IP address
-
-```python:
-sim800L.GPRS_NTP(None)
-```
-
--   Response: +SAPBR: cid, Status, IP_Addr
-    -   cid : Bearer profile identifier
-    -   Status
-        -   0 Bearer is connecting
-        -   1 Bearer is connected
-        -   2 Bearer is closing
-        -   3 Bearer is closed
-    -   IP_Addr: IP address
--   Response: (year, day, month, hour, minute, second, millisecond,
-    None)
+## Métodos de configuración.
 
 ### Real time clock (RTC) ds3231
 
