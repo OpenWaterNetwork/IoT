@@ -1,15 +1,10 @@
 # Sensors and communication protocols
 
-River Level Sensor
-------------------
-
-### Technical Characteristics
+## Technical Characteristics
 
 The central processing unit of the equipment is the Lopy4 development board. The most relevant features were taken from [Lopy 4 datasheet](https://docs.pycom.io/datasheets/development/lopy4/#datasheet).
 
-The MB7388 HRXL-MaxSonar-WRMLT sensor is a cost-effective solution for applications that requiere accurate distance detection. The main technical features are taken from [HRXL-MaxSonar- WR Series](https://www.maxbotix.com/documents/HRXL-MaxSonar-WR_Datasheet.pdf).
-
-#### Electrical
+### Electrical
 
 - Input voltage: 3.5 - 4.2V
 - Output voltage: 3.3V, 1.2 A.
@@ -17,43 +12,45 @@ The MB7388 HRXL-MaxSonar-WRMLT sensor is a cost-effective solution for applicati
 - Input leakage current: 50nA
 - Max Output source current: 12mA
 
-#### CPU
+### CPU
 - Xtensa® dual–core 32–bit LX6 microprocessor(s), up to 600 DMIPS
 - Hardware floating point acceleration
 - Python multi–threading
 - An extra ULP–coprocessor that can monitor GPIOs and the ADC channels and it can control most of the internal peripherals during deep–sleep mode while only consuming ~25uA
 
-#### Memory
+### Memory
 - RAM: 520KB + 4MB
 - External flash: 8MB
 
-#### LoRa
+### LoRa
 
 - Frequency Range: 137–1020MHz
 - Spreading factor: 6 – 12
 - Effective Bitrate: 0.018 – 37.5 kpbs
 - Sensitivity: –111 to –148 dBm
 
-#### WiFi
+### WiFi
 - 802.11b/g/n 16mbps.
 
-#### Bluetooth
+### Bluetooth
 - Low energy and classic
 - Compliant with Bluetooth v4.2 BR/EDR and BLE
 - +12 dBm transmitting power
 - Standard HCI based on SDIO/SPI/UART specification
 
-#### GPRS
+### GPRS
 - Supports command including 3GPP TS 27.007, 27.005 and SIMCOM enhanced AT Commands.
 - Working Voltage: 3.5~4.2V
 - Quad-band 850/900/1800/1900MHz
 - Send and receive GPRS data (TCP/IP, HTTP, etc.)
 - Low current consumption - 1mA in sleep mode.
 
-#### Power Supply
+### Power Supply
 - Lithium battery 3.7V 5000mAh. 
 
-#### MB7388 HRXL-MaxSonar-WRMLT Sensor
+### MB7388 HRXL-MaxSonar-WRMLT Sensor
+
+The MB7388 HRXL-MaxSonar-WRMLT sensor is a cost-effective solution for applications that requiere accurate distance detection. The main technical features are taken from [HRXL-MaxSonar- WR Series](https://www.maxbotix.com/documents/HRXL-MaxSonar-WR_Datasheet.pdf).
 
 - Low cost ultrasonic rangefinder.
 - Detection out to 10-meters
@@ -62,7 +59,9 @@ The MB7388 HRXL-MaxSonar-WRMLT sensor is a cost-effective solution for applicati
 - Operating voltage of 2.7V to 5.5V
 - Nominal current draw of 2.3mA (peak ~49mA) at 3.3V.
 
-### Hardware component description.
+## Hardware component description.
+
+### River Level Sensor
 
 El hardware está integrado en un Placa de Circuito Impreso (PCB), el mismo tiene como componente principal el módulo de desarrollo Lopy4, encargado de realizar las tareas de control, almacenamiento y transmisión. 
 
