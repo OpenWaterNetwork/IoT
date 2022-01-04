@@ -46,7 +46,8 @@ The central processing unit of the equipment is the Lopy4 development board. The
 - Low current consumption - 1mA in sleep mode.
 
 ### Power Supply
-- Lithium battery 3.7V 5000mAh. 
+- Lithium battery 
+    - 3.7V 5000mAh. 
 
 ### MB7388 HRXL-MaxSonar-WRMLT Sensor
 
@@ -58,6 +59,18 @@ The MB7388 HRXL-MaxSonar-WRMLT sensor is a cost-effective solution for applicati
 - Distance sensor 50-cm to 10-meters
 - Operating voltage of 2.7V to 5.5V
 - Nominal current draw of 2.3mA (peak ~49mA) at 3.3V.
+
+###  Rain collector with AeroCone 
+
+El sensor de precipitación es de tipo balancín, elcual concentra la lluvia en un cono que al llenarse provoca un cambio de estado de 0 a 3.3V. Las principales caracteristicas son tomadas de [Rain collector with AeroCone.](https://www.kritech.be/en/products/meteorology/sensors/precipitation-sensors/136-7852m-tipping-bucket-rain-gauge-starter-version)
+
+- Collecting area : 214 cm²
+- Resolution : 0,2 mm
+- Accuracy : ± 5% up to intensity of max. 2 mm/min.
+- Output : contact closure
+- Material : UV-stabilized ABS plastic
+- Mounting : on a flat surface
+- Delivered with bird spikes, new filter and 12 m cable
 
 ## Hardware component description.
 
