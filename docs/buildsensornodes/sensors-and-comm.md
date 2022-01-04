@@ -84,6 +84,41 @@ El sensor de temperatura DS18B20 es una sonda que mide la temperatura de forma p
 - 1 Wire interface 
 - Probe is 7mm in diameter and roughly 26mm long, overall length (including wire) is 6 feet.
 
+### WATERMARK Soil Moisture Sensor 
+
+El sensor de humedad de suelo es una sonda que permite medir la resistencia eléctrica de un sólido y por intermedio de la misma se mide la tensión del suelo. Para lo cual se utiliza un circuito de excitación que se puede encontrar en [IRROMETER](https://www.irrometer.com/200ss.html). Las caracteristicas principales se detallan a continuación:
+
+- 0-200 Centibar range
+- Stainless steel enclosure
+- Fully solid state
+- Will not dissolve in soil
+- Not affected by freezing temperatures
+- Internal compensation for commonly found salinity levels
+- Inexpensive
+- Easy to use
+- No maintenance
+
+### Sensor de Radiación Solar
+
+Es un sensor analógico que mide la radiación global por intermedio de un fotodiodo, el sensor entrega un valor de voltaje que corresponde a la radiación. Algunas de sus características se presentan a continuación:
+
+- Respuesta espectral: 400 a 1.100 nm
+- Rango: 0 a 1.800 W/m2
+- Precisión: ±5%
+- Deriva: 2% por año (máx.)
+- Voltaje de alimentación: 3 VDC
+- Consumo: 1 mA
+- Señal de salida: 0 a 3 VDC
+- Temperatura de funcionamiento: -40ºC a 65ºC
+- Material: plástico ABS resistente a los rayos UV
+- Dimensiones: 51 x 70 x 57 mm
+- Peso: 75 g
+
+### Temperature / Humidity Sensor
+
+Es un sensor digital, el sensor mide las dos variable y puede ser integrado a un microcontrolador por la interfaz I2C. A continuación se presentan sus características principales:
+
+
 ## Hardware component description.
 
 ### River Level Sensor
