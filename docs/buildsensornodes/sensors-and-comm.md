@@ -62,7 +62,8 @@ The MB7388 HRXL-MaxSonar-WRMLT sensor is a cost-effective solution for applicati
 
 ###  Rain collector with AeroCone 
 
-El sensor de precipitación es de tipo balancín, elcual concentra la lluvia en un cono que al llenarse provoca un cambio de estado de 0 a 3.3V. Las principales caracteristicas son tomadas de [Rain collector with AeroCone.](https://www.kritech.be/en/products/meteorology/sensors/precipitation-sensors/136-7852m-tipping-bucket-rain-gauge-starter-version)
+
+El sensor de precipitación es de tipo balancín, el cual concentra la lluvia en un cono que al llenarse provoca un cambio de estado de 0 a 3.3V. Las principales características son tomadas de [Rain collector with AeroCone.](https://www.kritech.be/en/products/meteorology/sensors/precipitation-sensors/136-7852m-tipping-bucket-rain-gauge-starter-version)
 
 - Collecting area : 214 cm²
 - Resolution : 0,2 mm
@@ -71,6 +72,17 @@ El sensor de precipitación es de tipo balancín, elcual concentra la lluvia en 
 - Material : UV-stabilized ABS plastic
 - Mounting : on a flat surface
 - Delivered with bird spikes, new filter and 12 m cable
+
+### Soil temperature sensor (DS18B20)
+
+El sensor de temperatura DS18B20 es una sonda que mide la temperatura de forma precisa en ambientes húmedos, tiene 3 cables; 2 son utilizados para alimentación y el restante es el de la señal digital. Las principales características se indican a continuación:
+
+- 3.0-5.5V input voltage 
+- Waterproof
+- -55°C to +125°C Temperature range 
+- ±0.5°C accuracy from -10°C to +85°C
+- 1 Wire interface 
+- Probe is 7mm in diameter and roughly 26mm long, overall length (including wire) is 6 feet.
 
 ## Hardware component description.
 
