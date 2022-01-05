@@ -94,7 +94,7 @@ El sensor de temperatura DS18B20 es una sonda que mide la temperatura de forma p
 - 1 Wire interface 
 - Probe is 7mm in diameter and roughly 26mm long, overall length (including wire) is 6 feet.
 
-### WATERMARK Soil Moisture Sensor 
+### Soil Moisture Sensor 
 
 El sensor de humedad de suelo es una sonda que permite medir la resistencia eléctrica de un sólido y por intermedio de la misma se mide la tensión del suelo. Para lo cual se utiliza un circuito de excitación que se puede encontrar en [IRROMETER](https://www.irrometer.com/200ss.html). Las caracteristicas principales se detallan a continuación:
 
@@ -189,6 +189,22 @@ El sensor está conectado al MCU por intermedio de los puertos GPIO digitales, p
 |![fig:BornerPinCon](img/BornerconRLS.PNG)|
 |-----------|
 |Header for MB7388 sensor pin connections.|
+
+### Multi Sensor 
+
+El hardware está integrado en un Placa de Circuito Impreso (PCB), el mismo tiene como componente principal el módulo de desarrollo Lopy4, encargado de realizar las tareas de control, almacenamiento y transmisión. 
+
+Los demás perifericos con los que cuenta el dispositivo (RTC ds3231, FTDI Basic, DHT22, adc-ads1115, MIC2545A-2YM-TR, CD74HC4052MG4 y los conectores para los sensores) están integrados a la mencionada Unidad Central de Procesamiento (Lopy4). 
+
+Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria de Litio de 3.7V, para alimentar la placa.
+
+#### Lopy4 connections.
+
+La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alimentación y una salida de 3.3V, la disposición de los mismos podemos observar en la figura a continuación. También se detalla la conexión de pines con los perifericos.
+
+|![fig:Lopy4pinConnections](img/Lopy4SCHRLS.PNG)|
+|-----------|
+|Lopy4 pin connections.|
 
 ## Start-up
 
