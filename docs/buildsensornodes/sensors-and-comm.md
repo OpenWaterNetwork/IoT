@@ -229,9 +229,17 @@ La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alime
 
 El multiplexor es utilizado para medir hasta 4 sensores de humedad de suelo con un único dispositivo lopy4. Se puede cambiar desde el software los canales para la lectura de los diferentes sensores. A continuación se presenta un diagrama de las conexiones.
 
-|![fig:Lopy4pinConnections](img/WATERMARK_hw.PNG)|
+|![fig:watermarkSensorConct](img/WATERMARK_hw.PNG)|
 |-----------|
 |Multiplexor CD74HC4051 connections.|
+
+#### High-side switch MIC2545A.
+
+Es un interruptor que se encarga de desconectar la alimentación de los sensores, cuando entra en modo de sueño profundo; con la finalidad de reducir el consumo energético. El diagrama de conexión se muestra en la siguiente figura:
+
+|![fig:swMPDhw](img/sw_MPD_hw.PNG)|
+|-----------|
+|High-side switch MIC2545A connections.|
 
 ## Start-up
 
