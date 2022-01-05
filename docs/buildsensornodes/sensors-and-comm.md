@@ -257,7 +257,7 @@ Se utilizan los siguientes conectores:
 - 4 borneras de 2 posiciones para sensores de humedad de suelo.
 - 3 borneras de 3 posiciones para los sensores de temperatura de suelo, nivel de agua y otros sensores analógicos.
 
-|![fig:pluvioHW](img/pluvio_hw)|
+|![fig:pluvioHW](img/pluvio_hw.PNG)|
 |-----------|
 |Pluviometric sensor connections.|
 
