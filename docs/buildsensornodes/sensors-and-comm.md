@@ -206,6 +206,25 @@ La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alime
 |-----------|
 |Lopy4 pin connections Multi-Sensor PCB.|
 
+- P0: Rx P1: Tx. Comunicación UART con el FTDI Basic.
+- P2: Pin de Arranque, para actualizar el firmware.
+- P3: Pin A de Control del multiplexador CD74HC4052MG4.
+- P4: Pin de lectura del sensor de temperatura 18b20.
+- CLK: Pin de control de GPRS SIM800L (si se utilza).
+- MOSI: Tx MISO: Rx. Comunicación UART con GPRS SIM800L.
+- P8: Pin B de Control del multiplexador CD74HC4052MG4.
+- P9: SDA P10: SDL. Comunicación I2C con el RTC ds3231, el adc-ads1115 y el contador de pulsos S-35770E01I-K8T2U.
+- P11: Polo 1 de alimentación del sensor de humedad del suelo.
+- P12: Polo2 de alimentación del sensor de humedad del suelo.
+- P13: Adc interno para lectura del sensor de humedad de suelo.
+- P14, P15, P16: Pines para lectura de sensores analógicos de 0-3.3V.
+- P18: Lectura de pulsante para cambio de modos de funcionamiento.
+- P19: Pin de activación de alimentación para los sensores.
+- P20: Pin de reset de los pulsos contados desde el sensor de lluvia.
+- P21: Pin de lectura de señal del sensor DHT22. 
+- P22: Pin SDA para lectura de sensor de temperatura y humedad externa.
+- P23: Pin SCL para lectura de sensor de temperatura y humedad externa.
+
 ## Start-up
 
 En esta sección se presenta la puesta en marcha del dispositivo, se describe los comandos necesarios para la configuración. 
