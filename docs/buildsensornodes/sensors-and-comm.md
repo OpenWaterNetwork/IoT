@@ -261,6 +261,18 @@ Se utilizan los siguientes conectores:
 |-----------|
 |Pluviometric sensor connections.|
 
+|![fig:radSolarHW](rad_solar_hw.PNG)|
+|-----------|
+|Solar Radiation sensor connections.|
+
+|![fig:TemHumHW](temhum_hw.PNG)|
+|-----------|
+|Temperature and humidity sensor connections.|
+
+|![fig:temp18b20](temp_18b20_hw.PNG)|
+|-----------|
+|Soil Temperature sensor connections.|
+
 ## Start-up
 
 En esta sección se presenta la puesta en marcha del dispositivo, se describe los comandos necesarios para la configuración. 
