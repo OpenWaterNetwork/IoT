@@ -194,7 +194,7 @@ El sensor está conectado al MCU por intermedio de los puertos GPIO digitales, p
 
 El hardware está integrado en un Placa de Circuito Impreso (PCB), el mismo tiene como componente principal el módulo de desarrollo Lopy4, encargado de realizar las tareas de control, almacenamiento y transmisión. 
 
-Los demás perifericos con los que cuenta el dispositivo (RTC ds3231, FTDI Basic, DHT22, adc-ads1115, MIC2545A-2YM-TR, CD74HC4052MG4 y los conectores para los sensores) están integrados a la mencionada Unidad Central de Procesamiento (Lopy4). 
+Los demás perifericos con los que cuenta el dispositivo (RTC ds3231, FTDI Basic, DHT22, adc-ads1115, MIC2545A-2YM-TR, CD74HC4052 y los conectores para los sensores) están integrados a la mencionada Unidad Central de Procesamiento (Lopy4). 
 
 Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria de Litio de 3.7V, para alimentar la placa.
 
@@ -208,11 +208,11 @@ La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alime
 
 - P0: Rx P1: Tx. Comunicación UART con el FTDI Basic.
 - P2: Pin de Arranque, para actualizar el firmware.
-- P3: Pin A de Control del multiplexador CD74HC4052MG4.
+- P3: Pin A de Control del multiplexador CD74HC4052.
 - P4: Pin de lectura del sensor de temperatura 18b20.
 - CLK: Pin de control de GPRS SIM800L (si se utilza).
 - MOSI: Tx MISO: Rx. Comunicación UART con GPRS SIM800L.
-- P8: Pin B de Control del multiplexador CD74HC4052MG4.
+- P8: Pin B de Control del multiplexador CD74HC4052.
 - P9: SDA P10: SDL. Comunicación I2C con el RTC ds3231, el adc-ads1115 y el contador de pulsos S-35770E01I-K8T2U.
 - P11: Polo 1 de alimentación del sensor de humedad del suelo.
 - P12: Polo2 de alimentación del sensor de humedad del suelo.
@@ -224,6 +224,14 @@ La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alime
 - P21: Pin de lectura de señal del sensor DHT22. 
 - P22: Pin SDA para lectura de sensor de temperatura y humedad externa.
 - P23: Pin SCL para lectura de sensor de temperatura y humedad externa.
+
+#### Multiplexor CD74HC4051.
+
+El multiplexor es utilizado para medir hasta 4 sensores de humedad de suelo con un único dispositivo lopy4. Se puede cambiar desde el software los canales para la lectura de los diferentes sensores. A continuación se presenta un diagrama de las conexiones.
+
+|![fig:Lopy4pinConnections](img/WATERMARK_hw.PNG)|
+|-----------|
+|Multiplexor CD74HC4051 connections.|
 
 ## Start-up
 
