@@ -202,9 +202,9 @@ Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria 
 
 La tarjeta Lopy4 cuenta con 28 pines, entre los cuales están los pines de alimentación y una salida de 3.3V, la disposición de los mismos podemos observar en la figura a continuación. También se detalla la conexión de pines con los perifericos.
 
-|![fig:Lopy4pinConnections](img/Lopy4SCHRLS.PNG)|
+|![fig:Lopy4pinConnections](img/lopy4_MPD_hw.PNG)|
 |-----------|
-|Lopy4 pin connections.|
+|Lopy4 pin connections Multi-Sensor PCB.|
 
 ## Start-up
 
