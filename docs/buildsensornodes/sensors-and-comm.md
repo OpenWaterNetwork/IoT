@@ -245,9 +245,21 @@ Es un interruptor que se encarga de desconectar la alimentación de los sensores
 
 Es el encargado de adquirir los datos analógicos de la tensión de la batería y los sensores de radiación solar y humedad del suelo. Los datos son convertidos a un valor entero y los pasa al MCU por la interfaz I2C. El diagrama de conexión se muestra a continuación
 
-|![fig:swMPDhw](img/ads1115_hw.PNG)|
+|![fig:ads1115hw](img/ads1115_hw.PNG)|
 |-----------|
 |ADC ads1115 connections.|
+
+#### Conectores para los sensores.
+
+Se utilizan los siguientes conectores:
+
+- 3 RJ11 para los sensores de radiación solar, lluvia, temperatura y humedad ambiental.
+- 4 borneras de 2 posiciones para sensores de humedad de suelo.
+- 3 borneras de 3 posiciones para los sensores de temperatura de suelo, nivel de agua y otros sensores analógicos.
+
+|![fig:pluvioHW](img/pluvio_hw)|
+|-----------|
+|Pluviometric sensor connections.|
 
 ## Start-up
 
