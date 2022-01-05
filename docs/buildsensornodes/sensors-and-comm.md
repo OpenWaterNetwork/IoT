@@ -241,6 +241,14 @@ Es un interruptor que se encarga de desconectar la alimentación de los sensores
 |-----------|
 |High-side switch MIC2545A connections.|
 
+#### ADC ads1115.
+
+Es el encargado de adquirir los datos analógicos de la tensión de la batería y los sensores de radiación solar y humedad del suelo. Los datos son convertidos a un valor entero y los pasa al MCU por la interfaz I2C. El diagrama de conexión se muestra a continuación
+
+|![fig:swMPDhw](img/ads1115_hw.PNG)|
+|-----------|
+|ADC ads1115 connections.|
+
 ## Start-up
 
 En esta sección se presenta la puesta en marcha del dispositivo, se describe los comandos necesarios para la configuración. 
