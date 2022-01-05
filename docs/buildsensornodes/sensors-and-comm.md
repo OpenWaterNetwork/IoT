@@ -49,6 +49,17 @@ The central processing unit of the equipment is the Lopy4 development board. The
 - Lithium battery 
     - 3.7V 5000mAh. 
 
+### Temperature / Humidity Sensor (DHT22)
+
+Es un sensor digita que puede ser integrado a la placa de circuito impreso (PCB). Tiene una salida digital con la señal de temperatura y humedad. A continuación se indican sus características principales:
+
+- Operating Voltage: 3.5V to 5.5V.
+- Operating current: 0.3mA (measuring) 60uA (standby)
+- Output: Serial data.
+- Temperature Range: -40°C to 80°C.
+- Humidity Range: 0% to 100%
+- Accuracy: ±0.5°C and ±1%
+ 
 ### MB7388 HRXL-MaxSonar-WRMLT Sensor
 
 The MB7388 HRXL-MaxSonar-WRMLT sensor is a cost-effective solution for applications that requiere accurate distance detection. The main technical features are taken from [HRXL-MaxSonar- WR Series](https://www.maxbotix.com/documents/HRXL-MaxSonar-WR_Datasheet.pdf).
@@ -61,7 +72,6 @@ The MB7388 HRXL-MaxSonar-WRMLT sensor is a cost-effective solution for applicati
 - Nominal current draw of 2.3mA (peak ~49mA) at 3.3V.
 
 ###  Rain collector with AeroCone 
-
 
 El sensor de precipitación es de tipo balancín, el cual concentra la lluvia en un cono que al llenarse provoca un cambio de estado de 0 a 3.3V. Las principales características son tomadas de [Rain collector with AeroCone.](https://www.kritech.be/en/products/meteorology/sensors/precipitation-sensors/136-7852m-tipping-bucket-rain-gauge-starter-version)
 
@@ -118,6 +128,10 @@ Es un sensor analógico que mide la radiación global por intermedio de un fotod
 
 Es un sensor digital, el sensor mide las dos variable y puede ser integrado a un microcontrolador por la interfaz I2C. A continuación se presentan sus características principales:
 
+- Resolution and Units 0.1°F or 0.1°C (user-selectable).
+- Range -40° to +150° F (-40° to +65° C).
+- Sensor Accuracy ±0.5°F (±0.3°C).
+- Update Interval 10 to 12 seconds.
 
 ## Hardware component description.
 
