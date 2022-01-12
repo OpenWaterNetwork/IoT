@@ -211,22 +211,26 @@ El hardware está integrado en un Placa de Circuito Impreso (PCB), el mismo tien
 
 Los demás perifericos con los que cuenta el dispositivo (RTC ds3231, FTDI Basic, DHT22, adc-ads1115, MIC2545A-2YM-TR, CD74HC4052 y los conectores para los sensores) están integrados a la mencionada Unidad Central de Procesamiento (Lopy4). 
 
-Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria de Litio de 3.7V, para alimentar la placa. En la siguiente figura se observa una vista 3D del dispositivo IoT LoRa River Level con cada uno de sus componentes, que se detallan a continuación:
+Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria de Litio de 3.7V, para alimentar la placa. En la siguiente figura se observa una vista 3D del dispositivo IoT LoRa Multi Parameter Sensor con cada uno de sus componentes, que se detallan a continuación:
 
-|![fig:RLS_3d](img/RiverLevelSensorDatalogger_3d_borner.PNG)|
+|![fig:RLS_3d](img/multiparameter_3d.PNG)|
 |-----------|
-|IoT LoRa River Level Sensor Datalogger|
+|IoT LoRa Multi Parameter Sensor Datalogger|
 
-- U1: GPRS module SIM800L.
 - U2: Lopy 4.
 - U3: RTC DS3231.
 - J1: Temperature and humidity sensor DHT22.
+- J3: RJ11 for solar Radiation sensor.
+- J4: RJ11 for external Temperature and humidity sensor.
+- J5: RJ11 for rain sensor.
 - P1: Power In connector.
-- H1: Jumper conector - boot mode selector.
-- H2: usb to serial converter.
+- P2: usb to serial converter.
+- H1 H2: Jumper conector - boot mode selector.
 - S1: Operating mode selector button
-- B2: Header - Power sensor.
-- B1: Header - Signals sensor.
+- B1 B2 B3 B4: Header - Soil humidity sensor.
+- B5: Header - Soil temperature sensor.
+- B6: Header - River Level sesnor.
+- B7 B8: Header - Analog inputs. 
 
 #### Lopy4 connections.
 
