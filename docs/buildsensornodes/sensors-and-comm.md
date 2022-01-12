@@ -153,7 +153,7 @@ Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria 
 - J1: Temperature and humidity sensor DHT22.
 - P1: Power In connector.
 - H1: Jumper conector - boot mode selector.
-- H2: usb to serial converter.
+- H4: usb to serial converter.
 - S1: Operating mode selector button
 - B2: Header - Power sensor.
 - B1: Header - Signals sensor.
@@ -315,7 +315,7 @@ Para comenzar la configuración del Gateway, es necesario descargar el software 
 
 En caso de usar Windows es necesario descargar los drivers del conversor Usb-serial desde la página de [FTDI Chip - VCP](https://ftdichip.com/drivers/vcp-drivers/), de esta manera se tiene el puerto COM correspondiente.
 
-Una vez se han instalado los componentes de software, conecte la placa a la alimentación a travéz de P1 y a una PC con un cable micro USB para uso de datos, a travéz de P2.
+Una vez se han instalado los componentes de software, conecte la placa a la alimentación a travéz de P1 y a una PC con un cable micro USB para uso de datos, a travéz de P2 y H4 en las PCB Multi-Sensor y de Nivel de Rio respectivamente.
 
 La placa tiene un led que indica el arranque normal del sistema y el modo en que se encuentra funcionando. La secuencia inicia con el led de color rojo encendido por 1 segundo, lo que quiere decir que la placa entra en modo de espera (Modo de configuración).
 
