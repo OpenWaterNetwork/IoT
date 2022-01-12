@@ -141,7 +141,22 @@ El hardware está integrado en un Placa de Circuito Impreso (PCB), el mismo tien
 
 Los demás perifericos con los que cuenta el dispositivo (RTC ds3231, FTDI Basic, DHT22 y MB7388 HRXL-MaxSonar-WRMLT sensor) están conectados a la mencionada Unidad Central de Procesamiento (Lopy4). 
 
-Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria de Litio de 3.7V, para alimentar la placa.
+Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria de Litio de 3.7V, para alimentar la placa. En la siguiente figura se observa una vista 3D del dispositivo IoT LoRa River Level con cada uno de sus componentes, que se detallan a continuación:
+
+|![fig:RLS_3d](img/RiverLevelSensorDatalogger_3d_borner.PNG)|
+|-----------|
+|IoT LoRa River Level Sensor Datalogger|
+
+- U1: GPRS module SIM800L.
+- U2: Lopy 4.
+- U3: RTC DS3231.
+- J1: Temperature and humidity sensor DHT22.
+- P1: Power In connector.
+- H1: Jumper conector - boot mode selector.
+- H2: usb to serial converter.
+- S1: Operating mode selector button
+- B2: Header - Power sensor.
+- B1: Header - Signals sensor.
 
 #### Lopy4 connections.
 
@@ -196,7 +211,22 @@ El hardware está integrado en un Placa de Circuito Impreso (PCB), el mismo tien
 
 Los demás perifericos con los que cuenta el dispositivo (RTC ds3231, FTDI Basic, DHT22, adc-ads1115, MIC2545A-2YM-TR, CD74HC4052 y los conectores para los sensores) están integrados a la mencionada Unidad Central de Procesamiento (Lopy4). 
 
-Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria de Litio de 3.7V, para alimentar la placa.
+Además del PCB mencionado anteriormente, el dispositivo cuenta con una bateria de Litio de 3.7V, para alimentar la placa. En la siguiente figura se observa una vista 3D del dispositivo IoT LoRa River Level con cada uno de sus componentes, que se detallan a continuación:
+
+|![fig:RLS_3d](img/RiverLevelSensorDatalogger_3d_borner.PNG)|
+|-----------|
+|IoT LoRa River Level Sensor Datalogger|
+
+- U1: GPRS module SIM800L.
+- U2: Lopy 4.
+- U3: RTC DS3231.
+- J1: Temperature and humidity sensor DHT22.
+- P1: Power In connector.
+- H1: Jumper conector - boot mode selector.
+- H2: usb to serial converter.
+- S1: Operating mode selector button
+- B2: Header - Power sensor.
+- B1: Header - Signals sensor.
 
 #### Lopy4 connections.
 
@@ -276,23 +306,6 @@ Se utilizan los siguientes conectores:
 ## Start-up
 
 En esta sección se presenta la puesta en marcha del dispositivo, se describe los comandos necesarios para la configuración. 
-
-En la siguiente figura se observa una vista 3D del dispositivo IoT LoRa Gateway con cada uno de sus componentes, que se detallan a continuación:
-
-|![fig:RLS_3d](img/RiverLevelSensorDatalogger_3d_borner.PNG)|
-|-----------|
-|IoT LoRa River Level Sensor Datalogger|
-
-- U1: GPRS module SIM800L.
-- U2: Lopy 4.
-- U3: RTC DS3231.
-- J1: Temperature and humidity sensor DHT22.
-- P1: Power In connector.
-- H1: Jumper conector - boot mode selector.
-- H2: usb to serial converter.
-- S1: Operating mode selector button
-- B2: Header - Power sensor.
-- B1: Header - Signals sensor.
 
 Para comenzar la configuración del Gateway, es necesario descargar el software para gestión y programación según lo indicado en la pagina de [Documentos de Pycom Lopy 4](https://docs.pycom.io/gettingstarted/software/). Se puede trabajar con las 2 opciones tanto el software "ATOM" como también "Visual Studio Code".
 
