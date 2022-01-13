@@ -85,7 +85,7 @@ El sensor de precipitación es de tipo balancín, el cual concentra la lluvia en
 
 ### Soil temperature sensor (DS18B20)
 
-El sensor de temperatura DS18B20 es una sonda que mide la temperatura de forma precisa en ambientes húmedos, tiene 3 cables; 2 son utilizados para alimentación y el restante es el de la señal digital. Las principales características se indican a continuación:
+El sensor de temperatura DS18B20 es una sonda que mide la temperatura de forma precisa en ambientes húmedos, tiene 3 cables; 2 son utilizados para alimentación y el restante es el de la señal digital. Las principales características (ver [DS18b20](https://www.gaimc.com/Uploads/Download/Temperature/GTS200.pdf))se indican a continuación:
 
 - 3.0-5.5V input voltage 
 - Waterproof
