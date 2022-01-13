@@ -126,7 +126,7 @@ Es un sensor analógico que mide la radiación global por intermedio de un fotod
 
 ### Temperature / Humidity Sensor
 
-Es un sensor digital, el sensor mide las dos variable y puede ser integrado a un microcontrolador por la interfaz I2C. A continuación se presentan sus características principales:
+Es un sensor digital, el sensor mide las dos variable y puede ser integrado a un microcontrolador por la interfaz I2C. A continuación se presentan sus características principales (ver [Sensor de temperatura y humedad](https://weerhuisje.nl/Weerhuisje-docs/davis/IM_6830.pdf)):
 
 - Resolution and Units 0.1°F or 0.1°C (user-selectable).
 - Range -40° to +150° F (-40° to +65° C).
