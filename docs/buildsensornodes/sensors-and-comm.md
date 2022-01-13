@@ -110,7 +110,7 @@ El sensor de humedad de suelo es una sonda que permite medir la resistencia elé
 
 ### Sensor de Radiación Solar
 
-Es un sensor analógico que mide la radiación global por intermedio de un fotodiodo, el sensor entrega un valor de voltaje que corresponde a la radiación. Se puede encontrar en detalle en [Sensor de Radiación Solar](https://www.davis-tr.com/Downloads/6450_6490_Instruction_Manual.pdf). Algunas de sus características se presentan a continuación:
+Es un sensor analógico que mide la radiación global por intermedio de un fotodiodo, el sensor entrega un valor de voltaje que corresponde a la radiación. Se puede encontrar un manual de instalación en [Sensor de Radiación Solar](https://www.davis-tr.com/Downloads/6450_6490_Instruction_Manual.pdf). Algunas de sus características se presentan a continuación (ver [Caracteristicas del Sensor de Radiación](https://www.arcus-eds.de/fileadmin/arcus/Doku/30_Doku_S8/6450_SS.pdf)):
 
 - Respuesta espectral: 400 a 1.100 nm
 - Rango: 0 a 1.800 W/m2
