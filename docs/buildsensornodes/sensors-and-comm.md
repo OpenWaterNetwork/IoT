@@ -96,7 +96,7 @@ El sensor de temperatura DS18B20 es una sonda que mide la temperatura de forma p
 
 ### Soil Moisture Sensor 
 
-El sensor de humedad de suelo es una sonda que permite medir la resistencia eléctrica de un sólido y por intermedio de la misma se mide la tensión del suelo. Para lo cual se utiliza un circuito de excitación que se puede encontrar en [IRROMETER](https://www.irrometer.com/200ss.html). Las caracteristicas principales se detallan a continuación:
+El sensor de humedad de suelo es una sonda que permite medir la resistencia eléctrica de un sólido y por intermedio de la misma se mide la tensión del suelo. Para lo cual se utiliza un circuito de excitación que se puede encontrar en [IRROMETER](https://www.irrometer.com/pdf/sensors/403%20WATERMARK%20Sensor-WEB.pdf). Las caracteristicas principales se detallan a continuación:
 
 - 0-200 Centibar range
 - Stainless steel enclosure
