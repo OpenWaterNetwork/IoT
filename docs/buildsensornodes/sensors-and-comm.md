@@ -73,7 +73,7 @@ The MB7388 HRXL-MaxSonar-WRMLT sensor is a cost-effective solution for applicati
 
 ###  Rain collector with AeroCone 
 
-El sensor de precipitación es de tipo balancín, el cual concentra la lluvia en un cono que al llenarse provoca un cambio de estado de 0 a 3.3V. Las principales características son tomadas de [Rain collector with AeroCone.](https://www.kritech.be/en/products/meteorology/sensors/precipitation-sensors/136-7852m-tipping-bucket-rain-gauge-starter-version)
+El sensor de precipitación es de tipo balancín, el cual concentra la lluvia en un cono que al llenarse provoca un cambio de estado de 0 a 3.3V. Las principales características son tomadas de [Rain collector with AeroCone.](https://manuals.plus/davis/rain-collector-manual.pdf)
 
 - Collecting area : 214 cm²
 - Resolution : 0,2 mm
