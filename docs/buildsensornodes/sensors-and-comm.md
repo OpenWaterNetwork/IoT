@@ -53,12 +53,12 @@ The central processing unit of the equipment is the Lopy4 development board. The
 
 Es un sensor digital que puede ser integrado a la placa de circuito impreso (PCB). Tiene una salida digital con la señal de temperatura y humedad. A continuación se indican sus características principales (ver [DHT22](https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf)):
 
-- Operating Voltage: 3.5V to 5.5V.
-- Operating current: 0.3mA (measuring) 60uA (standby)
-- Output: Serial data.
-- Temperature Range: -40°C to 80°C.
-- Humidity Range: 0% to 100%
-- Accuracy: ±0.5°C and ±1%
+- Tensión de funcionamiento: 3,5V a 5,5V.
+- Corriente de funcionamiento: 0,3mA (medición) 60uA (standby).
+- Salida: Datos en serie.
+- Rango de temperatura: -40°C a 80°C.
+- Rango de Humedad: 0% a 100%.
+- Precisión: ±0,5°C y ±1%.
  
 ### MB7388 HRXL-MaxSonar-WRMLT Sensor
 
@@ -277,7 +277,7 @@ Es un interruptor que se encarga de desconectar la alimentación de los sensores
 
 #### ADC ads1115.
 
-Es el encargado de adquirir los datos analógicos de la tensión de la batería y los sensores de radiación solar y humedad del suelo. Los datos son convertidos a un valor entero y los pasa al MCU por la interfaz I2C. El diagrama de conexión se muestra a continuación
+Es el encargado de adquirir los datos analógicos de la tensión de la batería y los sensores de radiación solar y humedad del suelo. Los datos son convertidos a un valor entero y los pasa al MCU por la interfaz I2C. El diagrama de conexión se muestra a continuación:
 
 |![fig:ads1115hw](img/ads1115_hw.PNG)|
 |-----------|
@@ -325,6 +325,7 @@ La placa tiene un led que indica el arranque normal del sistema y el modo en que
 
 ### Mododos de funcionamiento.
 
+#### Config mode
 En el modo de configuración el sistema está a la espera de ejecutar algún comando. Al cargar el software por primera vez, el sistema entrará en este modo y se encenderá un LED ROJO como indicador.
 
 El sistema realiza automáticamente el siguiente proceso:
@@ -351,7 +352,7 @@ Para entrar en el modo de ejecución, se ejecuta el siguiente comando.
 runModeOutConsole()
 ```
 
-### Run mode - Active console.
+#### Run mode - Active console.
 
 Este es el modo en el que el dispositivo permanecerá constantemente en funcionamiento. El dispositivo realizará los siguientes pasos:
     
@@ -362,7 +363,7 @@ Este es el modo en el que el dispositivo permanecerá constantemente en funciona
 - Se une a la red lorawan y transmite los paquetes.
 - Entra en modo de reposo profundo.
     
-### Run mode - Inactive console,
+#### Run mode - Inactive console,
 
 Este es el modo en el que el dispositivo permanecerá constantemente en funcionamiento. El dispositivo realizará los siguientes pasos:
     
@@ -374,9 +375,9 @@ Este es el modo en el que el dispositivo permanecerá constantemente en funciona
 - Se une a la red lorawan y transmite los paquetes.
 - Entra en modo de reposo profundo.
 
-## Métodos de configuración.
+### Métodos de configuración.
 
-### Real time clock (RTC) ds3231
+#### Real time clock (RTC) ds3231
 
 The external real time clock (RTC) ds3231 is the one that will keep the system synchronized in time and date, due to an independent battery. The methods for synchronization are presented below.
 
@@ -407,7 +408,7 @@ ds3231.sinc_RTC_from_ds3231(None)
 -   Response: (year, day, month, hour, minute, second, millisecond,
     None)
 
-### Temperature and humidity sensor DHT11
+#### Temperature and humidity sensor DHT11
 
 The sensor reading is carried out by the following method:
 
@@ -417,7 +418,7 @@ result = th.read(None)
 -   Response: result.temperature
 -   Response: result.humidity
 
-### MB7388 HRXL sensor DHT11
+#### MB7388 HRXL sensor DHT11
 
 The sensor reading is carried out by the following method:
 
@@ -426,7 +427,7 @@ The sensor reading is carried out by the following method:
 ```
 -   Response: level
 
-### LoRaWan
+#### LoRaWan
 
 ```python:
     joinLoraWan() 
@@ -439,51 +440,3 @@ The sensor reading is carried out by the following method:
 ```
 - Adquiere los datos de los sensores, los almacena y los transmite por LoRaWan
 - Response: (dataTempInt, dataHumInt, dataLevel)
-
-## Create a docs version
-
-Release a version 1.0 of your project:
-
-```bash
-npm run docusaurus docs:version 1.0
-```
-
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
-
-Your docs now has 2 versions:
-
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
-
-## Add a Version Dropdown
-
-To navigate smoothly across versions, add a version dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The docs version dropdown appears in your navbar:
-
-![Docs Version Dropdown](/img/tutorial/docsVersionDropdown.png)
-
-## Update an existing version
-
-It is possible to edit versioned docs in their own folder:
-
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
