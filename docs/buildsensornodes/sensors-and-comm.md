@@ -51,7 +51,7 @@ The central processing unit of the equipment is the Lopy4 development board. The
 
 ### Temperature / Humidity Sensor (DHT22)
 
-Es un sensor digita que puede ser integrado a la placa de circuito impreso (PCB). Tiene una salida digital con la señal de temperatura y humedad. A continuación se indican sus características principales:
+Es un sensor digital que puede ser integrado a la placa de circuito impreso (PCB). Tiene una salida digital con la señal de temperatura y humedad. A continuación se indican sus características principales (ver [DHT22](https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf)):
 
 - Operating Voltage: 3.5V to 5.5V.
 - Operating current: 0.3mA (measuring) 60uA (standby)
