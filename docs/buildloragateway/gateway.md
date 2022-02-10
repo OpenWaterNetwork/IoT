@@ -1,7 +1,6 @@
 # Gateway
 
-This document contains the hardware technical characteristics, as well as its components. Additionally, there is a full description of the programming methods and the configuration commands of the meteorological data concentrator device (Iot-LoRa-Gateway). It is worth mentioning that the product is compatible with devices that have LoRa communication.
-Test
+This document contains the hardware technical characteristics, as well as its components. Additionally, there is a complete description of the programming methods and the configuration commands of the meteorological data concentrator device (Iot-LoRa-Gateway). It is worth mentioning that the product is compatible with LoRa communication devices.
 
 ## Technical Characteristics
 
@@ -64,9 +63,9 @@ The Lopy4 development board is the central processing unit of the equipment. The
 
 ## Hardware component description
 
-The hardware is integrated into a Printed Circuit Board (PCB), which has the Lopy4 development module as its main component. The PCB is responsible for carrying out control, storage and transmission tasks. The other device peripherals (RTC ds3231, FTDI Basic, DHT22 and GPRS SIM800L) are connected to the aforementioned Central Processing Unit (Lopy4).
+The hardware is integrated into a Printed Circuit Board (PCB), with the Lopy4 development module as its main component. The PCB is responsible for carrying out control, storage, and transmission tasks. The other device peripherals (RTC ds3231, FTDI Basic, DHT22, and GPRS SIM800L) are connected to the aforementioned Central Processing Unit (Lopy4).
 
-In addition to the PCB, the device has a Lithium battery, an MPPT charge controller and a 6V solar panel.
+In addition to the PCB, the device has a Lithium battery, an MPPT charge controller, and a 6V solar panel.
 
 |![IoT LoRa Gateway Architecture](img/GatewayArchGen.png)|
 |-----------|
@@ -74,7 +73,7 @@ In addition to the PCB, the device has a Lithium battery, an MPPT charge control
     
 ### Lopy4 connections
 
-The Lopy4 board has 28 pins, incluiding the power pins and a 3.3V output. The arrangement and connections with other peripherals are detailed below:
+The Lopy4 board has 28 pins, including the power pins and a 3.3V output. The arrangement and connections with other peripherals are detailed below:
 
 -   P0: Rx P1: Tx. UART communication with the FTDI Basic.
 -   P2: Boot pin to update the firmware.
@@ -93,7 +92,7 @@ The Lopy4 board has 28 pins, incluiding the power pins and a 3.3V output. The ar
 
 ### DHT22
 
-The internal temperature and humidity sensor are connected to a MCU digital pin, which is configured as an input. A pull up resistor is also connected to the signal output, as shown in the following figure:
+The internal temperature and humidity sensor are connected to an MCU digital pin, configured as an input. A pull up resistor is also connected to the signal output, as shown in the following figure:
 
 |![DHT22 pin connections](img/dht22SCH.PNG)|
 |-----------|
@@ -101,7 +100,7 @@ The internal temperature and humidity sensor are connected to a MCU digital pin,
 
 ### GPRS SIM800L
 
-This peripheral uses the UART protocol to connect to the MCU and to a digital pin to control the start, as shown in the figure below. It is powered from a lithium battery (3.7V - 4.2V).
+This peripheral uses the UART protocol to connect to the MCU; further, it uses a digital pin to control the start, shown in the figure below. It is powered by a lithium battery (3.7V - 4.2V).
 
 |![GPRS Sim800L pin connections](img/Sim800LSCH.PNG)|
 |-----------|
@@ -109,11 +108,11 @@ This peripheral uses the UART protocol to connect to the MCU and to a digital pi
 
 ### FTDI Basic
 
-The module connects to the MCU through the UART protocol and shares the same GND reference.
+The module connects to the MCU through the UART protocol and shares the reference to GND.
 
 ### RTC DS3231
 
-This peripheral is connected to the MCU through the I2C protocol, two pull-up resistors are used in the communication pins (see figure below). It also has a small battery to power it in case of power failure.
+This peripheral is connected to the MCU through the I2C protocol; two pull-up resistors are used in the communication pins (see figure below). It also has a small battery to power it in case of power failure.
 
 |![fig:DS3231PinCon](img/ds3231SCH.PNG)|
 |-----------|
@@ -122,7 +121,7 @@ This peripheral is connected to the MCU through the I2C protocol, two pull-up re
 Installation and Start-up
 ---------------------
     
-This section introduces the device start-up, it also gives a brief description of the software to be used and describes the commands required for the configuration. Below is a 3D view of the LoRa Gateway IoT device and details of each component:
+This section introduces the device start-up; it also gives a brief description of the software to be used and describes the commands required for the configuration. Below is a 3D view of the LoRa Gateway IoT device and details of each component:
 
 -   U1: GPRS module SIM 800L
 -   U2: Lopy 4
@@ -139,13 +138,13 @@ This section introduces the device start-up, it also gives a brief description o
      
 ### Start-up
 
-To start configuring the Gateway, it is necessary to download the software for management and programming as indicated in the webpage [Documentos de Pycom Lopy4](https://docs.pycom.io/gettingstarted/software/). You can work with both “ATOM” and/or “Visual Studio Code” software.
+It is necessary to download the software for management and programming to start configuring the Gateway as indicated on the webpage [Documentos de Pycom Lopy4](https://docs.pycom.io/gettingstarted/software/). We can work with both "ATOM" and/or "Visual Studio Code" software.
 
-In case of using Windows, it is necessary to download the Usb-serial converter drivers from the website [FTDI Chip -VCP](https://ftdichip.com/drivers/vcp-drivers/). In this way, you will have the corresponding COM port.
+In the case of using Windows, it is necessary to download the Usb-serial converter drivers from the website [FTDI Chip -VCP](https://ftdichip.com/drivers/vcp-drivers/). In this way, we will have the corresponding COM port.
 
-Once the software components have been installed, connect the board to the power supply through P1 and to a PC with a micro USB cable for data use through P2.
+Once the software components have been installed, we have to connect the board to the power supply through P1 and a PC with a micro USB cable for data use through P2.
 
-The board has a LED that indicates the normal startup of the board and the mode in which it is running. The sequence starts with the RED LED on for 1 seconds, which means that the board enters in a standby mode (Configuration mode).
+The board has a LED that indicates the normal mode startup of the board and the mode in which it is running. The sequence starts with the RED LED on for 1 second, which means that the board enters standby mode (Configuration mode).
 
 |![USB connection](img/usbConnect.PNG)|
 |-----------|
@@ -165,7 +164,7 @@ Note that it is necessary to open the programming environment to add the COM dev
 |-----------|
 |Open Global Settings|
     
--   Set the corresponding COM port, verify from the device manager.
+-   Set the corresponding COM port to verify from the device manager.
 
 |![Set COM port](img/openCOM_3.png)|
 |-----------|
@@ -188,14 +187,14 @@ The system can operate in 3 modes, which are described below:
     
 ### Configuration mode 
 
-In configuration mode the system is waiting to execute some command. When the software is loaded for the first time, the system will enter this mode and a RED LED will light up as an indicator.
+In configuration mode, the system is waiting to execute some commands. When the software is loaded for the first time, the system will enter this mode, and a RED LED will light up as an indicator.
 
 The system automatically performs the following process:
 -   Synchronizes time and date from the RTC DS3231.
--   Activate LoRaRaw mode.
--   Wait for command execution.
+-   Activates LoRaRaw mode.
+-   Waits for command execution.
 
-To configure first we must execute the next command, this is responsible for synchronizing the time from the NTP server and uploading it to the RTC DS3231.
+First, we must execute the following command to configure the NTP server's time synchronization and upload it to the RTC DS3231.
  ```python:
 sincTimeRTC_ext()
 ```   
@@ -233,7 +232,7 @@ Configuration Methods
 
 ### GPRS SIM800L mobile connection
 
-To configure the device, the time synchronization should be consired first through the Network time protocol (NTP) and the GPRS SIM 800L
+The time synchronization should be considered first to configure the device. The synchronization is done through the Network time protocol (NTP) and the GPRS SIM 800L.
 
 The following are the synchronization methods with the GPRS SIM 800L module.
 
@@ -281,8 +280,8 @@ sim800L.GPRS_NTP(None)
 
 ### Real time clock (RTC) ds3231
 
-The external real time clock (RTC) ds3231 is the one that will keep the
-system synchronized in time and date, due to an independent
+The external real-time clock (RTC) ds3231 is the one that will keep the
+system synchronized in time and date due to an independent
 battery. The methods for synchronization are presented below.
 
 
@@ -307,10 +306,8 @@ get_time_ds3231(None)
 ```python:
 ds3231.sinc_RTC_from_ds3231(None)
 ```
--   Synchronizes the internal clock (lopy 4) with the time of the
-    external real-time clock (ds3231).
--   Response: (year, day, month, hour, minute, second, millisecond,
-    None)
+-   Synchronizes the internal clock (lopy 4) with the time of the external real-time clock (ds3231).
+-   Response: (year, day, month, hour, minute, second, millisecond, None)
 
 ### Temperature and humidity sensor DHT11
 
@@ -324,16 +321,12 @@ result = th.read(None)
     
 ## Scripts
 
-The scripts within the system are divided into .py files, which contain the classes and methods for the correct operation of the system. These files are:
+The system scripts are divided into .py files. These files contain the classes and methods for the correct operation of the system. These files are:
 
 
 ### Boot.py
 
-The first file is called boot.py, which starts the system and defines:
-
-- The serial communication for the display console and to upload the programs.
-- The WIFI module is disabled to reduce energy consumption.
-- The program that will start after these configurations is defined.
+The first file is called boot.py, which starts the system. This file defines the serial communication to display the console and upload the programs. Additionally, it sets up the program that will start after these configurations. Furthermore, the WiFi module is disabled to reduce energy consumption.
 
 <details open>
 <summary><strong>Code:</strong> Boot.py</summary>
@@ -752,7 +745,7 @@ class DS3231():
 ```
 ### dht.py 
 
-This file contains the class and methods for the configuration and sampling of the temperature and humidity sensor dht22, it was taken from [JurassicPork/DHT_PyCom](https://github.com/JurassicPork/DHT_PyCom/blob/master/dth.py)
+This file contains the class and methods for the configuration and sampling of the temperature and humidity sensor dht22; it was taken from [JurassicPork/DHT_PyCom](https://github.com/JurassicPork/DHT_PyCom/blob/master/dth.py)
 
 ### main.py 
 
