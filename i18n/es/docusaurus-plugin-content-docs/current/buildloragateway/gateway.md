@@ -6,12 +6,12 @@ sidebar_position: 1
 
 En este documento por una parte, se describe las características técnicas de hardware, así como también se detalla los componentes del dispositivo. Por otra parte, se indican los métodos de programación y los comandos de configuración del dispositivo concentrador de datos meteorológicos (Iot-LoRa-Gateway). El producto es compatible con dispositivos que cuenten con comunicación LoRa.
 
-## Technical Characteristics
+## Carácterísticas técnicas
 
 La unidad central de procesamiento del equipo es la tarjeta de desarrollo LoPy4, las características de mayor relevancia fueron tomadas
 de [Lopy 4 datasheet!](https://docs.pycom.io/datasheets/development/lopy4/#datasheet).
 
-### Electrical
+### Eléctricas
 
 -   Voltaje de entrada: 3.5 - 4.2V
 -   Voltaje de salida: 3,3V, 1.2 A.
@@ -128,7 +128,7 @@ Esta sección presenta la puesta en marcha del dispositivo, brinda una breve des
 
 ![IoT LoRa Gateway Device](img/gateway_3d.PNG "fig:") [fig:gateway~3~d]
 
-#Start-up
+# Start-up
 
 Para comenzar la configuración del Gateway, es necesario descargar el software para gestión y programación según lo indicado en la página de [Documentos de Pycom Lopy4](https://docs.pycom.io/gettingstarted/software/). Se puede trabajar con las 2 opciones tanto el software "ATOM" como también "Visual Studio Code".
 
