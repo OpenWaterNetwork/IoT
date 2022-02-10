@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Gateway registration on TTN
+# Registrar el Gateway en TTN
 
 Let's translate `docs/getting-started.md` to French.
 
