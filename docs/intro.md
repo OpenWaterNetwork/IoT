@@ -1,6 +1,3 @@
-<style>
-comment { color: red }
-</style>
 ---
 sidebar_position: 1
 ---
@@ -9,4 +6,3 @@ sidebar_position: 1
 
 Let's discover **Open Water Network**.
 
-\comment{TODO: }
