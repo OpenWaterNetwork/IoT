@@ -1,5 +1,4 @@
 ---
-header-includes: \usepackage{xcolor}
 sidebar_position: 1
 ---
 
@@ -7,4 +6,4 @@ sidebar_position: 1
 
 Let's discover **Open Water Network**.
 
-\textcolor{red}{TODO: Text is green!}
+This is *red*{: style="color: red"}.
