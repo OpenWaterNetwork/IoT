@@ -4,7 +4,9 @@ sidebar_position: 4
 
 # Sensor node registration on TTN
 
-Let's translate `docs/getting-started.md` to French.
+We have to do something ....
+
+[comment]: <> (You have to put a figure here link )
 
 ## Configure i18n
 
