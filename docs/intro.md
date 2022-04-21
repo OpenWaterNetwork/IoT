@@ -6,4 +6,4 @@ sidebar_position: 1
 
 Let's discover **Open Water Network**.
 
-This is *red*{: style="color: red"}.
+\textcolor{red}{red}
