@@ -1,6 +1,5 @@
-header-includes: \usepackage{xcolor}
-
 ---
+header-includes: \usepackage{xcolor}
 sidebar_position: 1
 ---
 
