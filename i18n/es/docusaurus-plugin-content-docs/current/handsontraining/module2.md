@@ -2,55 +2,6 @@
 sidebar_position: 2
 ---
 
-# Module 2 - Basic components of an IoT system
+# Módulo 2 - Componentes básicos de un sistema IoT
 
-Documents are **groups of pages** connected through:
-
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
-
-## Create your first Doc
-
-Create a markdown file at `docs/hello.md`:
-
-```md title="docs/hello.md"
-# Hello
-
-This is my **first Docusaurus document**!
-```
-
-A new document is now available at `http://localhost:3000/docs/hello`.
-
-## Configure the Sidebar
-
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
-
-Add metadatas to customize the sidebar label and position:
-
-```diff title="docs/hello.md"
-+ ---
-+ sidebar_label: "Hi!"
-+ sidebar_position: 3
-+ ---
-
-
-# Hello
-
-This is my **first Docusaurus document**!
-```
-
-It is also possible to create your sidebar explicitly in `sidebars.js`:
-
-```diff title="sidebars.js"
-module.exports = {
-  tutorialSidebar: [
-    {
-      type: 'category',
-      label: 'Tutorial',
--     items: [...],
-+     items: ['hello'],
-    },
-  ],
-};
-```
+[![IoT Training - Module 2 - Basic Componentes of an IoT System _ Spanish Subtitles](https://res.cloudinary.com/marcomontalbano/image/upload/v1656674284/video_to_markdown/images/youtube--D5BrKfHrdCM-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/D5BrKfHrdCM "IoT Training - Module 2 - Basic Componentes of an IoT System _ Spanish Subtitles")
