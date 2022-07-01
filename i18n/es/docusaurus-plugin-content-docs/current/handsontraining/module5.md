@@ -4,28 +4,4 @@ sidebar_position: 5
 
 # Module 5 - Building the first basic IoT system
 
-Docusaurus is a **static-site-generator** (also called **[Jamstack](https://jamstack.org/)**).
-
-It builds your site as simple **static HTML, JavaScript and CSS files**.
-
-## Build your site
-
-Build your site **for production**:
-
-```bash
-npm run build
-```
-
-The static files are generated in the `build` folder.
-
-## Deploy your site
-
-Test your production build locally:
-
-```bash
-npm run serve
-```
-
-The `build` folder is now served at `http://localhost:3000/`.
-
-You can now deploy the `build` folder **almost anywhere** easily, **for free** or very small cost (read the **[Deployment Guide](https://docusaurus.io/docs/deployment)**).
+[![IoT Training - Module 5 - Building the First IoT Basic System_Spanish Subtitles](https://res.cloudinary.com/marcomontalbano/image/upload/v1656674854/video_to_markdown/images/youtube--4gmrrgNB6nQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/4gmrrgNB6nQ "IoT Training - Module 5 - Building the First IoT Basic System_Spanish Subtitles")
