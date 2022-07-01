@@ -4,16 +4,4 @@ sidebar_position: 6
 
 # Module 6 - Building an improved IoT system with more sensors
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
-
-Docusaurus has **much more to offer**!
-
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
-
-## What's next?
-
-- Read the [official documentation](https://docusaurus.io/).
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+[![IoT Training - Module 6 - Building an improved IoT system with more sensors_ Spanish Subtitles](https://res.cloudinary.com/marcomontalbano/image/upload/v1656674919/video_to_markdown/images/youtube--bl6Ikpit710-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/bl6Ikpit710 "IoT Training - Module 6 - Building an improved IoT system with more sensors_ Spanish Subtitles")
