@@ -1,29 +1,7 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# Module 3 - Introduction to python/Micro-python
+# Módulo 4 - La unidad de procesamiento IoT
 
-Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
-
-## Create your first Post
-
-Create a file at `blog/2021-02-28-greetings.md`:
-
-```md title="blog/2021-02-28-greetings.md"
----
-slug: greetings
-title: Greetings!
-author: Steven Hansel
-author_title: Docusaurus Contributor
-author_url: https://github.com/ShinteiMai
-author_image_url: https://github.com/ShinteiMai.png
-tags: [greetings]
----
-
-Congratulations, you have made your first post!
-
-Feel free to play around and edit this post as much you like.
-```
-
-A new blog post is now available at `http://localhost:3000/blog/greetings`.
+[![IoT Training - Module 4 - The IoT Processing Unit- Spanish Subtitles](https://res.cloudinary.com/marcomontalbano/image/upload/v1656674662/video_to_markdown/images/youtube--K1UxxdqMP3o-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/K1UxxdqMP3o "IoT Training - Module 4 - The IoT Processing Unit- Spanish Subtitles")
