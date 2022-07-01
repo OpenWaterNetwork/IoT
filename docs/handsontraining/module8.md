@@ -4,40 +4,5 @@ sidebar_position: 8
 
 # Module 8 - Building your own LoRa Gateway for data transmission
 
-Add **Markdown or React** files to `src/pages` to create a **standalone page**:
+[![IoT Training - Module 8 - Building your own LoRa Gateway for data transmisión-Spanish Subtitles](https://res.cloudinary.com/marcomontalbano/image/upload/v1648566548/video_to_markdown/images/youtube--U4Lk2cMyhWg-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/U4Lk2cMyhWg "IoT Training - Module 8 - Building your own LoRa Gateway for data transmisión-Spanish Subtitles")
 
-- `src/pages/index.js` -> `localhost:3000/`
-- `src/pages/foo.md` -> `localhost:3000/foo`
-- `src/pages/foo/bar.js` -> `localhost:3000/foo/bar`
-
-## Create your first React Page
-
-Create a file at `src/pages/my-react-page.js`:
-
-```jsx title="src/pages/my-react-page.js"
-import React from 'react';
-import Layout from '@theme/Layout';
-
-export default function MyReactPage() {
-  return (
-    <Layout>
-      <h1>My React page</h1>
-      <p>This is a React page</p>
-    </Layout>
-  );
-}
-```
-
-A new page is now available at `http://localhost:3000/my-react-page`.
-
-## Create your first Markdown Page
-
-Create a file at `src/pages/my-markdown-page.md`:
-
-```mdx title="src/pages/my-markdown-page.md"
-# My Markdown page
-
-This is a Markdown page
-```
-
-A new page is now available at `http://localhost:3000/my-markdown-page`.
